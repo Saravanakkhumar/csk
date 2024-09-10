@@ -1,0 +1,61 @@
+\NeedsTeXFormat{LaTeX2e}[2020/02/20]
+\ProvidesPackage{book-2-custom}[2020/02/20 book-2-custom Package]
+
+%%%%Bibiliography Environment%%%%
+\newenvironment{biblist}{%
+  \begingroup
+  \begin{list}{}%
+    {%
+     \section*{References}%
+     \markright{References}
+     %\addtocontents{toc}{\protect\contentsline {section}{References}{\rmfamily\bfseries\thepage}{page.\thepage}}
+     \RaggedRight\small%
+     \setlength{\leftmargin}{9\p@}%
+     \setlength{\listparindent}{\parindent}%
+     \setlength{\itemindent}{-9.5\p@}%
+     \setlength{\topsep}{\medskipamount}%
+     \setlength{\labelsep}{\z@}%
+     \setlength{\labelwidth}{\z@}%
+     \setlength{\itemsep}{\z@}}}
+{\end{list}\endgroup}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%Listing font in this book
+\lstset{basicstyle={\fontsize{9.5pt}{11.5pt}\selectfont\ttfamily},breaklines=true,escapeinside={(*@}{@*)},morecomment = [l]{*}}
+
+
+%%%%Theorem Definitions
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+\newtheorem{challenge}{Challenge}
+\newtheorem*{solution}{Solution}
+\newtheorem{question}{Query}[chapter]
+
+\setlength\medskipamount{.5\baselineskip \@plus 2\p@ \@minus 2\p@} % half-line
+
+\newenvironment{speech}[1]{\addvspace{\medskipamount}
+  \begingroup\begin{list}{}{%
+      \setlength\topsep{\z@}
+      \setlength\partopsep{\z@}%
+      \setlength\labelwidth{\z@}%
+      \setlength\labelsep{\z@}%
+      \setlength\leftmargin{\z@}%
+      \setlength\rightmargin{\z@}%
+%      \fontsize{8.5\p@}{10.5\p@}\fontshape{it}\selectfont
+      \setlength\listparindent{\z@}}
+  \item[\textbf{#1}\space]}
+{\end{list}\endgroup\addvspace{\medskipamount}}
+
+\newenvironment{answer}[1]{\addvspace{\medskipamount}
+  \begin{list}{}{%
+      \setlength\topsep{\z@}
+      \setlength\partopsep{\z@}%
+      \setlength\labelwidth{\z@}%
+      \setlength\labelsep{\z@}%
+      \setlength\leftmargin{\z@}%
+      \setlength\rightmargin{\z@}%
+%      \fontsize{8.5\p@}{10.5\p@}\fontshape{it}\selectfont
+      \setlength\listparindent{\z@}}
+  \item[\textbf{#1}\space]}
+{\end{list}\addvspace{\medskipamount}} 

@@ -1,0 +1,142 @@
+%https://tex.stackexchange.com/questions/326893/how-can-i-set-default-monospace-font-for-texttt-in-lualatex
+%https://tug.org/FontCatalogue/opentypefonts.html
+
+% \RequirePackage{fontspec}%
+% \setmainfont[%
+%   Extension = .otf,%
+% %  UprightFont = *-Light,
+%   ItalicFont = *Italic,%
+%   BoldFont = Arnhem-Bold,%
+%   BoldItalicFont = Arnhem-BoldItalic,%
+%   Numbers={Lining},
+%   Ligatures=TeX%
+% ]{Arnhem-Blond}%
+%
+% %\addfontfeatures{Numbers={Lining}}
+%
+% \setsansfont[Ligatures=TeX,%
+%   ItalicFont = *Italic,%
+% %  BoldFont = *Bold,%
+% %  BoldItalicFont = *BoldItalic,%
+% ]{Flama-Bold}
+%
+% \newfontfamily{\FlamaBlackRegular}{FlamaBlack}
+% \newfontfamily{\ArnhemProSemiBold}{Arnhem Pro SemiBold}
+% \newfontfamily{\ArnhemProBold}{Arnhem Pro Bold}
+%
+% \setmonofont[Ligatures=TeX,
+%    ItalicFont = lmroman7-italic,%
+%    BoldFont = lmroman5-bold,%
+% %  BoldItalicFont = lmmonoproplt10-boldoblique,%
+% ]{lmmono9-regular}%lmmono9-regular
+
+%\usepackage{lmodern}
+%\usepackage{tgcursor}
+%\usepackage[ttdefault=true]{AnonymousPro}
+%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+%\usepackage{AnonymousPro}
+%\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+
+\definecolor{titlecolor}{cmyk}{1,0,0,0.25}
+\definecolor{partcolor}{cmyk}{0.57,0.10,0.07,0}
+\definecolor{chapternumcolor}{cmyk}{0.10,0,0,0.02}
+\definecolor{tablegray}{cmyk}{0,0,0,0.10}
+
+\let\oldrmntonum\rmntonum
+\renewcommand{\rmntonum}[1]{\expandafter\oldrmntonum\expandafter{#1}}
+
+\titlecontents{part}[0mm]
+  {\addvspace{1.2pc}\hspace*{-3pt}\filright\rmfamily\bfseries\fontsize{14pt}{16pt}\selectfont\color{black}}%\bfseries
+  {\bgroup\sans\bfseries\color{titlecolor}\hspace*{-12pt}\contentslabel[\hypersetup{linkcolor=titlecolor}\hyperlink{part.\rmntonum{\thecontentslabel}}{\hfill{PART\space}\thecontentslabel}]{5pc}\hspace*{12pt}\egroup}{\hspace*{-1pc}}
+  {\bgroup\hspace*{5.5pt}\hypersetup{linkcolor=titlecolor}\contentspage\egroup}[\addvspace{.1pc}]%\titlerule*[0.7pc]{.}\hspace*{2pt}
+
+
+
+%{\phantomsection\hyperlink{subsection::\arabic{chapter}.\arabic{section}.\arabic{subsection}}{\thecontentslabel}\ }%
+
+\titlecontents{chapter}[1.5pc]
+  {\addvspace{1.2pc}\filright\hspace*{-3pt}\rmfamily\fontseries{b}\fontsize{11pt}{13pt}\selectfont\color{black}}%\bfseries
+  {\bgroup\sans\bfseries\color{titlecolor}\hspace*{-30pt}\contentslabel[\hypersetup{linkcolor=titlecolor}\hyperlink{chapter.\thecontentslabel}{\hfill{Chapter\space}\thecontentslabel}]{5pc}\hspace*{12pt}\egroup}{\bgroup\hspace*{-1.5pc}\egroup}
+ {\bgroup\hspace*{5.5pt}\hypersetup{linkcolor=titlecolor}\contentspage\egroup}[\addvspace{.1pc}]%\titlerule*[0.7pc]{.}\hspace*{2pt}
+
+
+\titlecontents{section}[1.5pc]
+  {\color{black}\filright\hangindent1.05em}%\bfseries
+  %{\bgroup\hspace*{10.5pt}\color{titlecolor}\contentslabel{2.35pc}\egroup}
+  {\bgroup\hspace*{10.5pt}\contentslabel[\hypersetup{linkcolor=titlecolor}\hyperlink{section.\thecontentslabel}{\thecontentslabel}]{2.35pc}\egroup}
+  {\hspace*{-1.5pc}}
+  {\bgroup\hspace*{3.9pt}\rmfamily\bfseries\hypersetup{linkcolor=titlecolor}\contentspage\egroup}[\addvspace{-.1pc}]%\titlerule*[0.7pc]{.}\raggedleft\hspace*{2pt}
+
+\titlecontents{subsection}[1.5pc]
+  {\color{black}\filright\hangindent3.90em}%\bfseries
+  %{\bgroup\hspace*{10.5pt}\color{titlecolor}\contentslabel{2.35pc}\egroup}
+  {\bgroup\hspace*{39pt}\contentslabel[\hypersetup{linkcolor=titlecolor}\hyperlink{subsection.\thecontentslabel}{\thecontentslabel}]{2.35pc}\egroup}
+  {\hspace*{-1.5pc}}
+  {\bgroup\hspace*{3.9pt}\rmfamily\bfseries\hypersetup{linkcolor=titlecolor}\contentspage\egroup}[\addvspace{-.1pc}]%\titlerule*[0.7pc]{.}\raggedleft\hspace*{2pt}
+
+
+%\titlecontents{subsection}[1.5pc]
+%  {\color{black}\filright\hangindent3.90em}%\bfseries
+%  %{\bgroup\hspace*{10.5pt}\color{titlecolor}\contentslabel{2.35pc}\egroup}
+%{\bgroup\hspace*{39pt}\contentslabel[\hypersetup{linkcolor=titlecolor}\hyperlink{subsection.\thecontentslabel}{\thecontentslabel}]{2.35pc}\egroup}
+%  {\hspace*{-1.5pc}}
+%{\bgroup\hspace*{3.9pt}\rmfamily\bfseries\hypersetup{linkcolor=titlecolor}\contentspage\egroup}[\addvspace{-.1pc}]%\titlerule*[0.7pc]{.}\raggedleft\hspace*{2pt}
+
+
+%\hyperlink{section.\thecontentslabel}{\thecontentslabel}\hspace*{2.35pc}
+%\titlecontents{subsection}[3.5pc]
+%  {%\addvspace{0.1pc}%
+%  \filright}
+%  {\bgroup\hspace*{24pt}\color{titlecolor}\contentslabel{3.05pc}\egroup}{\hspace*{2pc}}
+%  {\bgroup\hspace*{3.9pt}\rmfamily\bfseries\hypersetup{linkcolor=titlecolor}\hbox to %\@pnumwidth{\contentspage}\egroup}[\addvspace{-.1pc}]%\titlerule*[0.7pc]{.}\raggedleft\hspace*{2pt}
+
+% \titlecontents{subsubsection}[5.5pc]
+%   {\addvspace{0.1pc}\filright\tiny}
+%   {\contentslabel{2pc}}{\hspace*{-2pc}}
+%   {\titlerule*[0.7pc]{.}\contentspage}
+
+
+% \usepackage{tocloft}
+% \renewcommand{\cftdot}{}
+% \renewcommand{\cfttoctitlefont}{\huge\sffamily\color{titlecolor}}
+% %\renewcommand{\cftchapfont}{\normalfont\sffamily}
+% \renewcommand{\cftchappresnum}{\begingroup\sffamily\hspace*{-48pt}Chapter\,\,}
+% \renewcommand{\cftchapaftersnum}{\endgroup}
+% \renewcommand{\cftdotfill}[1]{%
+%   \def\@tempa{#1}%
+%   \def\@tempb{\cftnodots}%
+%   \ifx\@tempa\@tempb
+%     \hfill
+%   \else
+%     \quad%\leaders\hbox{$\m@th\mkern #1 mu\hbox{\cftdot}\mkern #1 mu$}
+%   \fi
+% }
+
+
+%\renewcommand{\contentsname}{\begingroup\sffamily\huge Contents\endgroup}
+%\usetocstyle{KOMAlike}
+%\RedeclareSectionCommand[%
+%tocindent=9em,tocnumwidth=7em,]{subsection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% List of Figures and Tables %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\titlecontents{section}[1.5pc]
+%  {\color{black}\filright\hangindent1.05em}%\bfseries
+  %{\bgroup\hspace*{10.5pt}\contentslabel[\hypersetup{linkcolor=titlecolor}\hyperlink{section.\thecontentslabel}{\thecontentslabel}]{2.35pc}\egroup}
+%  {\hspace*{-1.5pc}}
+%{\bgroup\hspace*{3.9pt}\rmfamily\bfseries\hypersetup{linkcolor=titlecolor}\contentspage\egroup}[\addvspace{-.1pc}]%\titlerule*[0.7pc]{.}\raggedleft\hspace*{2pt}
+
+\titlecontents{figure}[3.75pc]
+    {\filright\contentslabel[\hypersetup{linkcolor=titlecolor}\hyperlink{figure.\thecontentslabel}{\thecontentslabel}]{2.9pc}}
+    {\color{black}\filright}
+    {\filright}
+    {\bgroup\hspace*{3.9pt}\rmfamily\hfill\hypersetup{linkcolor=titlecolor}\contentspage\egroup}[\addvspace{-.1pc}]%\titlerule*[0.7pc]{.}\raggedleft\hspace*{2pt}
+
+
+\titlecontents{table}[3.75pc]
+    {\filright\contentslabel[\hypersetup{linkcolor=titlecolor}\hyperlink{table.\thecontentslabel}{\thecontentslabel}]{2.9pc}}
+    {\color{black}\filright}
+    {\filright}
+    {\bgroup\hspace*{3.9pt}\rmfamily\hfill\hypersetup{linkcolor=titlecolor}\contentspage\egroup}[\addvspace{-.1pc}] 

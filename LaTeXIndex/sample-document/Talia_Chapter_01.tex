@@ -1,0 +1,471 @@
+%\documentclass{acm-book-v2}
+%%\newcommand{\mpage}[1]{}
+%%\newcommand{\indexfn}[1]{}
+
+%\usepackage{showframe}
+
+%\usepackage{custom-tooltip}
+%\usepackage{custom-tooltip-Alt-Text-View}
+
+
+%\usepackage{algorithm}
+
+
+
+%\begin{document}
+
+\setcounter{chapter}{0}
+
+\chapter{\label{chap:1}Algorithms---From Mathematics to People}
+
+
+\noindent This chapter introduces the concept of algorithm, its principles and features, and discusses the history and evolution of algorithms from the ancient and original definition to the present day. Algorithms, as procedural artifacts made by human beings, are explored a little further by analyzing some examples and discussing how they are designed to be executed by computers for solving simple problems or for providing basic mechanisms in the implementation of the Internet.
+
+
+
+\section{\label{sec:1.1}Introducing Algorithms}
+
+
+The word ``algorithm'' is commonly used nowadays to denote a method composed of a sequence of steps to accomplish a task. This does not just apply to computers and machines but also to human actions. In fact, according to this definition, we perform algorithms every day: at work when we organize a meeting, at home when we cook spaghetti or make a sandwich, in a store when we fill our shopping basket, when we drive our car to reach a destination, or when we withdraw cash or view our balance at an ATM machine.
+
+The very general definition given above does not really explain the long history of this concept. Actually, in its basic meaning an algorithm is a mathematical procedure to solve a problem using a finite number of operations. In fact, algorithms originated in mathematics, where they were conceived and used before the term was explicitly defined.
+
+
+However, despite their ubiquity today and their long and controversial history, the term ``algorithm'' did not appear in \textit{Webster's New World Dictionary} until as recently as 1957. By then, 20 years had already passed since the English mathematician Alan Turing published, in his essay ``On computable numbers'' [\citealt{chap:01:Turing:1937}], a mathematical description of what he called a universal computing machine (later called the universal Turing machine). It had also been 12 years since the first electronic general-purpose digital computer ENIAC (Electronic Numerical Integrator and Computer), designed at the University of Pennsylvania in Philadelphia, was put to work for practical purposes. The universal Turing machine, the ENIAC computer and its successor EDVAC (Electronic Discrete Variable Automatic Computer) are deeply rooted in the history of algorithms. In fact, the Turing machine is an abstract computing model that can simulate any computer algorithm, and it provides an accurate definition of an algorithm or ``mechanical procedure.'' The ENIAC was the first programmable electronic digital computer that was able to run different algorithms for solving complex mathematical calculations.
+
+The origin of the word ``algorithm,'' however, is neither Philadelphia nor any other city in the USA but Khwarezm, an oasis region south of the Aral Sea in Central Asia. Khwarezm is the birthplace of the 9th-century mathematician Mu\d{h}ammad ibn M\={u}s\={a} al-Khw\={a}rizm\={\i} (whose name actually means ``Mohammed, son of Moses, native of Khwarezm''). He was a member of the ancient academy known as Bayt al-Hikma (House of Wisdom), which was founded around the year 820 BCE in Baghdad by the caliph al-Mamun. In that academy, as al-Khw\={a}rizm\={\i} reported, he was assigned the task ``\ldots~to compose a short report concerning computation by means of the rules of restoration and reduction, limited to the simplest and most useful aspects of mathematics that are constantly applied \ldots '' [\citealt{chap:01:Ausiello:2013}].
+
+Around 820 CE, al-Khw\={a}rizm\={\i} wrote a mathematical treatise describing what is called \textit{algorism}, that is, the method of using Arabic numerals for doing mathematical computation. Those symbols and the associated methods were actually introduced in ancient India. However, they were spread in medieval Europe thanks to the treatise of al-Khw\={a}rizm\={\i}, which illustrated the first systematic solution of linear and quadratic equations. The title of the book is \textit{The Compendious Book on Calculation by Completion and Balancing}. During the 12th century, it was translated into Latin with the title \textit{Algoritmi de numero Indorum}. In late medieval Latin, \textit{algorismus}, a corruption of al-Khw\={a}rizm\={\i}'s name, simply meant the ``decimal number system.'' This is still the meaning of the modern English word ``algorism,'' which refers to the system of Arabic numerals. The dissemination of the Latin version of the book of al-Khw\={a}rizm\={\i} inspired several studies in Europe, and the term \textit{algorismus} became largely synonymous with computing procedures. As the banker and diplomat Giovanni Villani testified in the \textit{Nuova Cronica }(\textit{New Chronicles}\break [\citealt{chap:01:Villani:2015}]), in 1338 in Florence, ``\ldots~we find boys and girls that learn to read are between eight and ten thousand. The young students that learn the abacus and the algorismus in six schools are between one thousand and one thousand two hundred.''
+
+
+On the basis of these and other events, it seems clear that the word ``algorithm'' originated as a variant spelling of ``algorism,'' probably under the influence\vadjust{\vspace*{-6pt}\pagebreak} of the word ``arithmetic'' or its Greek source \textit{arithmos }(``number''). However, it has only been with the development of electronic computers in the 20th century that the word has been used as a convenient term for expressing a set of steps stated in a given formalism to solve a problem or to compute a result. For this reason, the concept of an algorithm is basic to all of computer science as it is a foundational formal strategy for expressing the solution of a well-specified computational problem.
+
+Now, using a more technical definition, we may say that an algorithm, as a step-by-step method for solving a problem through which computers are programmed, defines non-ambiguous computational procedures composed of a sequence of instructions that takes one or a set of values as the input and produces one or a set of values as the output. To be valid as a solution method, an algorithm must have five important properties:
+
+\def\labelenumi{(\arabic{enumi})}
+\begin{enumerate}
+\item  It must be \textit{finite}. Every time an algorithm is executed, it must terminate after a finite number of steps. The steps of an algorithm can be arbitrarily large; however, they must be finite. As a practical matter, if an algorithm never ends, trying to solve a problem with it is useless.
+\item  It has zero or more \textit{inputs}. An algorithm input is a data item given to it initially before it executes the first step. For example, an algorithm computing the age of a person needs the date of birth as an input.
+\item  It computes zero or more \textit{outputs}. An algorithm output is a result produced when the algorithm is executed. The output values are intermediate or final solutions to a problem; for example, the age of a person, given her/his  birth date, or the area of a rectangle, given its length and width.
+\item  It must be \textit{definite}. Each step of an algorithm must be exactly and unambiguously defined for each possible case where the algorithm can be used. This means that all actions carried out by an algorithm must be precisely defined, thus avoiding the possibility that an executor might not understand exactly what the author of the algorithm intended. This property requires that every statement of an algorithm must have a precise meaning that can be interpreted in a single way with no ambiguity.
+\item  It must be \textit{effective}. Each step of an algorithm must not only be definite but must also be feasible. This means that the sequence of steps that compose an algorithm should solve correctly what it is supposed to solve, and each step must be basic enough to be completed in a finite amount of time. This should also be able to be done by hand with just pencil and paper in a finite interval of time.
+\end{enumerate}
+
+\noindent Together with these important properties, we should also consider \textit{efficiency}, another important feature of algorithms that relates to the time necessary for an algorithm to complete its work on a given input and to the amount of computational resources used to execute the steps of that algorithm. In fact, even if algorithms are finite, definite, and effective, they are not necessarily efficient. As each algorithm defines a procedure to accomplish a task or to solve a problem, different algorithms can be conceived to solve the same problem, in the same way that different recipes can be used to make a pizza. They can be more or less efficient; therefore, they may require different amounts of time to be completed and different amounts of resource to be executed. The English mathematician and writer Ada Lovelace, who is widely regarded as one of the first computer programmers, clearly expressed this concept in 1843 in the following comment on Charles Babbage's mechanical analytical engine: ``In almost every computation a great variety of arrangements for the succession of the processes is possible, and various considerations must influence the selections amongst them for the purposes of a calculating engine. One essential object is to choose that arrangement which shall tend to reduce to a minimum the time necessary for completing the calculation.'' [\citealt{chap:01:Menabrea:1843}]
+
+\section{\label{sec:1.2}Babylonian Algorithms}
+
+
+As was noted by Donald \citeauthor{chap:01:Knuth:1972} [\citeyear{chap:01:Knuth:1972}] in his paper titled ``Ancient Babylonian algorithms,'' the earliest known documents dealing with computation and algorithms are a collection of clay tablets written during the Hammurabi dynasty, c. 1800--1600 BCE. As we mentioned, at that time the term ``algorithm'' had not yet been coined; however, archeological expeditions in the Middle East have found that around 38 centuries ago the Babylonians defined solution methods the same way we do with algorithms today. To show the ancient roots of algorithms and computation, Knuth began his paper with the statement ``One of the ways to help make computer science respectable is to show that [it] is deeply rooted in history, not just a short-lived phenomenon. Therefore, it is natural to turn to the earliest surviving documents which deal with computation, and to study how people approached the subject nearly 4000 years ago.'' [\citealt{chap:01:Knuth:1972}]
+
+
+Otto \citeauthor{chap:01:Neugebauer:1969} [\citeyear{chap:01:Neugebauer:1969}], an Austrian-American mathematician and historian of science, originally deciphered most of the clay tablets mentioned by Knuth. They are covered with cuneiform script and come from Mesopotamia (present-day Iraq), a region between the Tigris and Euphrates rivers, centered around the ancient city of Babylon. In the middle of the Bronze Age, Babylonian mathematicians were not only able to simply make use of addition, subtraction,\vadjust{\pagebreak} multiplication, and \hbox{division,} they were skilled in solving algebraic equations, although they did not use a modern algebraic notation like ours. As we do today by using algorithms, they represented each mathematical formula by a step-by-step list of rules (i.e., a procedure) for computing that formula. As noted by Knuth: ``In effect, they worked with a `machine language' representation of formulas instead of a symbolic language.'' [\citealt{chap:01:Knuth:1972}]
+
+
+A few examples of the algorithms, coded with cuneiform script on clay tablets c. 4,000 years ago, show how at that time, Babylonians dealt with computation by defining simple algorithms that were useful in daily life not to solve a single problem but for solving a class of problems. Therefore, they used abstract procedures that were used on a set of problems, as is used today, with algorithms that work with different input data. As a good recipe for making pizza can be used for preparing and cooking pizzas with different toppings, Babylonian algorithms were independent of the different input values. For this reason, they represent general methods that were useful for solving a set of analogous problems. In fact, whereas in some Babylonian tablets general algorithms were described together with a sample calculation, in other cases, as in the following texts, the algorithms designed to compute some geometric values were very general and abstract.
+
+To understand the calculations in those very ancient algorithms, it must be noted that in old Babylonia, numbers were expressed in a sexagesimal number system where 1 corresponds to 60. Thus, the expression ``2 times 30 is 1'' corresponds to $2 \times 30 = 60$ and the two-digit number 2,24 corresponds to $2 \times 60 + 24 = 144$ in decimal numbers. The procedure below, the same as the following one, treats a problem that uses the following formula to compute the diagonal \textit{d} of a rectangle when it is known that $(\textit{l} + \textit{w} + \textit{d} = 12)$, where \textit{l} is the length, \textit{w} the width, and the area = \textit{lw} is also equal to 12,
+\begin{equation*}
+d=1/2\ [(l+w+d)^{2} -\ 2lw]/(l+w+d)
+\end{equation*}
+\indent In particular, the algorithm section shown here discusses the case where $(l,\ w) = (3,\ 4)$ and $d = 5$.
+
+\medskip
+{\arrayrulecolor{black}
+\noindent \begin{tabular}{lp{336.0pt}}
+\hline
+\multicolumn{2}{p{.95\textwidth}}{\texttt{The sum of the length, width, and diagonal is 12 and 12 is the area.}}\\
+&\texttt{What are the corresponding length, width, and diagonal?}\\
+&\texttt{The quantities are unknown.}\\
+&\texttt{1. 12 times 12 is 2,24.}\\
+&\texttt{2. 12 times 2 is 24.}\\
+&\texttt{3. Take 24 from 2,24 and 2 remains.}
+\end{tabular}}
+
+{\arrayrulecolor{black}
+\noindent \begin{tabular}{lp{336.0pt}}
+&\texttt{4. 2 times 30 is 1.}\\
+&\texttt{5. By what should 12} \texttt{be multiplied with} \texttt{to obtain 1?}\\
+&\texttt{6. 12 times 5 is 1.}\\
+&\texttt{7. 5 is the diagonal.}\\\hline
+\end{tabular}}
+\medskip
+
+A rare Babylonian tablet containing the text of a general algorithm without numerical values is kept in the Louvre Museum in Paris. The text of the algorithm is shown below. It contains a simple procedure to compute the value of $y$ when $x + y = xy$, by calculating $y = (x - 1)$${}^{-1}\ x$. The two copies of the parameter to be made at step 1 refers to $x$. One of them is then subtracted by 1 and its reciprocal $(x - 1)$${}^{-1}$ is calculated. It is then multiplied with the first copy of $x$ to obtain $y$ (the width).
+
+\medskip
+{\arrayrulecolor{black}
+\noindent \begin{tabular}{lp{335.0pt}}
+\hline
+\multicolumn{2}{l}{\texttt{Length and width is to be equal to the area.}}\\
+&\texttt{You should proceed as follows.}\\
+&\texttt{1. Make two copies of one parameter.}\\
+&\texttt{2. Substract 1.}\\
+&\texttt{3. Form the reciprocal.}\\
+&\texttt{4. Multiply the parameter you copied.}\\
+&\texttt{5. This gives the width.}\\ \hline
+\end{tabular}}
+
+\medskip
+As Knuth noted in his paper, the statement ``Make two copies of one parameter'' directly recalls the concept of ``data.'' Like a modern computer that stores data (and numbers) in its ``digital memory'' and uses data to perform calculations, the Babylonian algorithms define and use numerical data. Their sequences of operations work on data as is done in today's algorithms by copying or assigning values to memory cells. This example shows how Babylonian mathematicians used a computational approach similar to the one used today by programmers in dealing with data needed during the execution of a program by a computer.
+
+A few other tablets preserved in the Louvre and in the Museum of the Ancient Near East in Berlin (see, e.g., Figure~\ref{fig:1.1}) contain algorithms that include different iterations. They specify the repetition of a group of operations for a given number of times or until a given condition is satisfied. Those are very similar to what is done in modern algorithms using, for example, the statement ``DO operations FROM 1 TO N'' or using a \textit{WHILE} clause in the iterations, as in ``WHILE sum $<$  100 DO sum +  20,'' which computes the value of a given sum of money (\textit{sum}) by increasing it by 20 while it is smaller than 100. In fact, today, as we discuss later, iterations are important statements in algorithms and in software programs for marking out a block of operations to be executed for a defined number of repetitions or until a given condition is satisfied.
+
+\begin{figure}[t!]
+\tooltip{\includegraphics{graphics/Chapter_01/Figure1.\image}}{Photograph of a clay tablet where sequences of symbols have been engraved in Babylonian characters indicating mathematical operations. }[-330pt,3pt]
+\caption{\label{fig:1.1}The tablet VAT 8389 from the Museum of the Ancient Near East in Berlin, Germany, containing the solution to a system of linear equations. (Source: \copyright  Staatliche Museen zu Berlin---Museum of the Ancient Near East~$|$ Photo: Olaf M. Te{\ss}mer, May 2010). (Reproduced with permission.)}\vspace*{-6pt}
+\end{figure}
+
+A similar concept is used in a portion of a more recent Babylonian clay tablet from the Seleucid period, c. 300 BCE, which contains the best algorithm for computing the sum of the power of 2 series from 1 to 10 (1, 2, 4, 8, 16, 32, 64, 128, 256, 512), which in this case is obtained by summing 512 + 511 = 1,023. The algorithm of the clay tablet is as follows, and, obviously, it uses the sexagesimal number system where 1 corresponds to 60, thus 8,32 corresponds to $8 \times 60 + 32 = 512$ and 17,3 corresponds to $17 \times 60 + 3 = 1023$ in our decimal number system.
+
+
+\medskip
+{\arrayrulecolor{black}
+\noindent \begin{tabular}{lp{335.0pt}}
+\hline
+\multicolumn{2}{l}{\texttt{From 1 to 10, sum the powers of 2.}}\\
+&\texttt{1. The last term you add is 8,32.}\\
+&\texttt{2. Subtract 1 from 8,32, obtaining 8,31.}\\
+&\texttt{3. Add 8,31 to 8,32, obtaining the answer 17,3.}\\\hline
+\end{tabular}
+
+\medskip
+Unfortunately, only a very small fraction of the total collection of Babylonian clay tablets has survived. Those available today in different museums are just a small testimony of how advanced Babylonian mathematics was, and how it was able to develop and use efficient algorithms for solving real problems in that very ancient period.
+
+\section{\label{sec:1.3}Other Ancient Algorithms}
+
+Babylonians were not the only ancient civilization that developed and used mathematics and abstract formulation of algorithms for solving problems. Archeologists in Egypt have discovered papyri that are almost as old as the Babylonian tablets. Two papyri in particular must be mentioned, the \textit{Rhind Mathematical Papyrus} in the British Museum, which dates c. 1550 BCE, and the \textit{Moscow Mathematical Papyrus} in the Pushkin State Museum of Fine Arts in Moscow, based on older material dating to the Twelfth Dynasty of Egypt, c. 1850 BCE. Both those papyri clearly demonstrate that Egyptians used complex mathematics for solving practical problems. For example, ancient Egyptian multiplication is based on an algorithm used by scribes for multiplying two numbers that do not require a multiplication table. Only the ability to multiply and divide by 2 is necessary. Thus, they use a binary number system similar to what modern computers use today.
+
+\looseness-1As pointed out by Leon \citeauthor{chap:01:Cooper:2011} [\citeyear{chap:01:Cooper:2011}], from the Rhind Mathematical Papyrus we have learned that Egyptian scribes discovered and used an algorithm for finding the area of a circle of a known diameter. The method employed in this algorithm was based on the subtraction of a 1/9th part from the diameter of a circle, and then multiplying the remaining length by itself. In fact, this corresponds to ``square'' 8/9ths of the diameter's length. In modern formulation this would be expressed as:
+\begin{equation*}
+A=(8/9\times D)^{2},
+\end{equation*}
+where \textit{A} is the circle's area and \textit{D} is the known circle's diameter. As mentioned by Cooper in his paper, it is worth noting that this method discovered by the scribes is both easy to remember and easy to implement. Finally, it provides an extremely accurate way with which to determine the area of a circle. Indeed, the result it computes is too large by only around 3/5 of 1\% of the real area.
+
+In ancient Egypt, these kinds of computing methods were used in practical calculations, for example, in agriculture and in the construction of buildings. This is clearly explained in the book \textit{The Pyramids and Temples of Gizeh} where W. M. F. \citeauthor{chap:01:Petrie:1883} [\citeyear{chap:01:Petrie:1883}] determined that some values of the dimensions of the Khufu Pyramid at Giza (also known as the Pyramid of Cheops) revealed the same relationship as that of a circle's circumference to its radius, hence to its diameter. In particular, a specific finding was that the ratio of the height of the Khufu Pyramid (146.5m---480.6ft) to its base perimeter ($4 \times 230.3 = 921.3$m) essentially squares the circle. In other words, a circle drawn using the pyramid's height as its radius has a circumference that is the same length as the pyramid's perimeter at its base. The same results have been achieved for other pyramids such as the Meidum Pyramid. They demonstrate that the scribes of the Middle Kingdom of Egypt had the computational capability to determine the circumference of a circle of known diameter length and used it in their architectural designs.
+
+The use of algorithms in this important field in ancient Egypt is also demonstrated by the so-called \textit{Problem 14} of the Moscow Mathematical Papyrus (\textit{MMP 14}). This problem describes an algorithm by which it is possible to compute the volume of a frustum, that is, the portion of a solid, for example, a cone or pyramid, that lies between one or two parallel planes cutting it. In this case the algorithm calculates the volume of a square-based truncated pyramid whose dimensions are known.
+
+\medskip
+{\arrayrulecolor{black}
+\noindent \begin{tabular}{lp{325.0pt}}
+\hline
+\texttt{1.}&\texttt{Find the area of the pyramid's base by squaring the length of the base-side (a).}\cr
+\texttt{2.} &\texttt{Multiply this side-length of the base (a) by the side-length of the truncated pyramid's top surface (b).}\cr
+\texttt{3.} &\texttt{Find the area of the top surface by squaring the length of its side (b).}\cr
+\texttt{4.} &\texttt{Add together the findings of steps 1, 2, and 3.}\cr
+\texttt{5.} &\texttt{Then multiply the result of step 4 by 1/3rd of the object height (h).}\cr\hline
+\end{tabular}}
+
+\medskip
+The given method leads to an accurate result, and it is essentially the same as the formula used today for the volume of a truncated pyramid:
+\begin{equation*}
+V=(a^{2} +ab+b^{2} )\times h/3,
+\end{equation*}
+where \textit{a} and \textit{b} are the base and top side lengths of the truncated pyramid, and \textit{h} is the height.
+
+
+Also, ancient Greek, Indian, and Chinese civilizations developed mathematics and defined problem solving procedures similar to modern algorithms. When considering ancient Greece, we must mention the algorithm that represents an efficient method, proposed c. 300 BCE by the Greek mathematician Euclid, for computing the greatest common divisor (GCD) of two positive integer numbers. That is the largest number that divides them both without a remainder. For example, the GCD of 9, 15, and 21 is 3. Euclid first described his algorithm in his \textit{Elements} [\citealt{chap:01:Fitzpatrick:2008}], a mathematical treatise consisting of 13 books that is regarded as one of the most influential scientific textbooks ever written. Euclid's algorithm is a clear example of a mathematical procedure expressed as a step-by-step method for performing a calculation according to well-defined rules. It is worth mentioning that Euclid's algorithm is one of the oldest algorithms in widespread use today. For this reason, we will discuss it in detail later in this chapter.
+
+Although the Euclid approach to computing has sometimes been classified as \textit{demonstrative},  the algorithmic tradition should be considered as a constituent element of Greek mathematics. In this scenario, together with Euclid, the works of Heron and Diophantus, two Greek mathematicians who proposed algorithmic solutions to several mathematical problems, show how Greek mathematics demonstrated a close relationship with Egyptian and Babylonian mathematics and had an advanced algorithmic character. Heron's algorithm iteratively computes the square root of an input number \textit{n}, starting from an initial estimate \textit{e}, until the result is correct within a given tolerance $\varepsilon$. Diophantus of Alexandria studied polynomial equations, usually involving two or more unknowns, such that the only solutions of interest are the integer ones. He was also the author of a series of books titled \textit{Arithmetica}, mainly dealing with solving algebraic equations where iterative solution methods were proposed.
+
+The Chinese counterpart to Euclid's \textit{Elements} is \textit{The Nine Chapters of the Art of Mathematics} [\citealt{chap:01:Kangshenetal:1999}], that was published before 213 BCE and which has been regarded as the seminal work of ancient Chinese mathematics for nearly two millennia. This book includes a collection of 246 problems and algorithms for solving problems in several domains such as agriculture, engineering, business, equation solutions, and properties of geometric figures. The book shows how mathematics was extensively used in ancient China and how mathematical solutions were expressed as algorithms, although---as we mentioned and as will be discussed later---at that time the word had not yet been coined. In fact, it is worth mentioning that \textit{The Nine Chapters of the Art of Mathematics} lays out an algorithm-based approach to mathematics and problem solving. It focuses on defining the most general procedures of solving problems, which may be differentiated from the ancient Greek mathematicians' approach, that it is more formal and tends to deduce propositions from an initial\vadjust{\vspace*{-17pt}\pagebreak} set of axioms.
+
+Also, ancient Indian mathematics made extensive use of algorithmic procedures. It includes many algorithms for efficient computations with number, algebraic, and geometric problems. The texts called \textit{Sulbasutras} [\citealt{chap:01:Bhattacharya:2019}], written c. 800--500 BCE, are appendices to \textit{Vedas} containing the mathematical procedures, expressed as sequences of steps, hence as algorithms, for constructing various types of Vedic altars. Although the \textit{Sulbasutras} texts do not provide logical proofs of the methods they describe and used, they represent a clear proof that ancient Indians had a practical and effective knowledge of mathematical principles. Modern historians have shown that what is known as Pythagoras' theorem was already known to the ancient Indians. Whereas Pythagoras is given credit for this formula in modern Western culture, Vedic priests were already using this principle to build their altars. In fact, in \textit{Sulbasutras} the concept of the Pythagorean theorem was used to find a square equal in area to the sum of two given squares that was needed to construct fire altars. If the ritual sacrifices of Vedic people were to be successful, the altars had to conform to very precise measurements. People made sacrifices to their gods so that the gods might be pleased and give the people what they needed. For the gods to be pleased, everything had to be carried out with a very precise formula, thus mathematical accuracy was seen to be of the greatest importance. In this case the algorithmic approach helped to please the gods.
+
+\section{\label{sec:1.4}Euclid's Algorithm}
+
+Our knowledge of Euclid of Alexandria
+(Eukleides in Greek) comes from the Greek philosopher Proclus, who mentions him in his ``summary'' of famous Greek mathematicians. According to Proclus, Euclid taught at Alexandria in the time of Ptolemy I Soter, who reigned over Egypt from 323 to 285 BCE. According to \citeauthor{chap:01:Richeson:2012} [\citeyear{chap:01:Richeson:2012}], Proclus wrote that Euclid ``\ldots~put together the `Elements,' arranging in order many of Eudoxus' theorems, perfecting many of Theaetetus', and also bringing to irrefutable demonstration the things which had been only loosely proved by his predecessors.'' Because of the wide circulation of that book, Euclid was also usually referred to as ``the author of \textit{Elements}.''
+
+\begin{figure}[t!]
+\hspace*{-65pt}\tooltip{\includegraphics{graphics/Chapter_01/Figure2.\image}}{Photograph of a papyrus fragment from an ancient book showing some sentences in Greek and a simple geometric figure. }[-295pt,5pt]
+\caption{\label{fig:1.2}A fragment of the second book of Euclid's
+\textit{Elements}, in Greek, discovered in 1897 at Oxyrhynchus, Egypt. The diagram accompanies proposition 5 of Book 2 of the \textit{Elements}, and, along with other results in Book 2, it has been interpreted as a geometric formulation of an algebraic identity. (Source: \href{https://personal.math.ubc.ca/~cass/Euclid/papyrus/tha.jpg}{https://{\allowbreak}personal.{\allowbreak}math.{\allowbreak}ubc.{\allowbreak}ca/$\sim$cass/{\allowbreak}Euclid/{\allowbreak}papyrus/{\allowbreak}tha.jpg}. Accessed Jan. 10, 2022, with permission from Bill Casselman of the University of British Colombia).}
+\end{figure}
+
+Euclid's \textit{Elements} is one of the most influential books in the history of mathematics, serving as the main textbook for teaching mathematics, and in particular geometry, up to the present day. The \textit{Elements} are divided into 13 books (Figure~\ref{fig:1.2} shows a fragment of the second book). The first six deal with plane geometry; Books 7, 8, and 9 are about number theory. Book number 10 deals with Eudoxus' theory of irrational numbers. The last three books (11, 12, and 13) are on solid geometry and include a discussion of the properties of the five regular polyhedrons and proof that there can only be these five. Euclid compiled his \textit{Elements} c. 300 BCE from a number of works of earlier mathematicians. There he provided definitions, \hbox{postulates,} and axioms that he called\vadjust{\vspace*{-17pt}\pagebreak} ``common notions.'' Euclid presented \hbox{geometry} as an axiomatic system. His main effort was to compile all the contributions in a single and coherent structure, making it easy to read and including a system of rigorous mathematical proofs that was studied in Western countries through the Middle Ages, the Renaissance, and are still valid today, more than 20 centuries later. In fact, Newton's \textit{Principia}, which marked the beginning of modern physics, took Euclid's work as its intellectual and stylistic model.
+
+As stated previoulsy, among many mathematical methods and algorithms, Euclid's \textit{Elements} contained in Book 7 (propositions 1 and 2) and in Book 10 (propositions 2 and 3) one for finding the GCD of two natural numbers \textit{a} and \textit{b}, that is, the largest number \textit{g} that divides them both without a remainder. Euclid's algorithm uses the principle that the GCD of two numbers does not change if the larger number is replaced by the difference with the smaller number. For example, 9 is the GCD of 144 and 81 $(\text{as}\ 144 = 9 \times 16$ and $81 = 9 \times 9)$, and at the same time 9 is also the GCD of 81 and $144 - 81 = 63$ (that can be expressed as $9 \times 7$). As this substitution decreases the larger of the two numbers, reiterating this process gives successively smaller pairs of numbers until the two numbers become equal. When that occurs, they are the GCD of the original two numbers.
+
+\medskip
+{\arrayrulecolor{black}
+\noindent \begin{tabular}{lp{325.0pt}}
+\hline
+\multicolumn{2}{p{.95\textwidth}}{\texttt{Given two positive integers a and b, find their greatest common divisor, that is, the largest positive integer that evenly divides both a and b.}}\\
+\texttt{1.} &\texttt{Divide a by b and let r be the remainder.}\\
+\texttt{2.} &\texttt{If r = 0, the algorithm terminates, in this case b is the answer.}\\
+\texttt{3.} &\texttt{Assign a the value of b and b the value of r, then go back to step 1.}\\\hline
+\end{tabular}
+
+\medskip
+
+The input of this algorithm is composed of two positive numbers and the output is one positive number. Suppose that we are given \textbf{\textit{a}} equal to 81 and \textbf{\textit{b}} equal to 144, by having those two numbers the algorithm can start finding the GCD of those numbers. Step 1: dividing 81 by 144 the obtained quotient is 0, and the remainder \textbf{\textit{r}} is 81. Step 2: since \textbf{\textit{r}} is not equal to 0, no answer is provided. Step 3 is then executed and \textbf{\textit{a}} is assigned the value 144 and \textbf{\textit{b}} is assigned the value 81, then the operations go back to step 1 where 144 is divided by 81. Now the quotient is 1, and the value of the remainder \textbf{\textit{r}} is 63. Again, at step 2, since \textbf{\textit{r}} is not equal to 0, the answer cannot be given, and at the next step (3) \textbf{\textit{a}} is assigned the value 81 and \textbf{\textit{b}} is assigned the value 63. Returning to step 1, \textbf{\textit{a}} (equal to 81) is divided by 63 and a new value of \textbf{\textit{r}} (equal to 18) is obtained. Again step 2 does not provide any answer, and at step 3 \textbf{\textit{a}} is assigned the value 63 and \textbf{\textit{b}} is assigned 18. In the next round no output is produced since \textbf{\textit{r}} is equal to 3, but the new computed values for \textbf{\textit{a}} and \textbf{\textit{b}} are, respectively, 18 and 9. Finally, \textbf{\textit{r}} is equal to 0, and at step 2 in this round the algorithm terminates, giving 9 as the GCD of 81 and 144.
+
+Many applications of Euclid's algorithm were developed over the centuries. In particular, in the 19th century the algorithm led to the development of new number systems, such as Gaussian integers and Eisenstein integers. In volume II of his book on computer programming [\citealt{chap:01:Knuth:1998}], Donald Knuth wrote that this algorithm ``is the granddaddy of all algorithms, because it is the oldest nontrivial algorithm that has survived to the present day.''
+
+\section{\label{sec:1.5}Fibonacci and His Numbers}
+
+Leonardo Pisano (who lived between c. 1170 and 1242) was one of the European mathematicians who knew and contributed\vadjust{\pagebreak} to spreading the work of al-Khw\={a}rizm\={\i}. Pisano, also known as Fibonacci, was an Italian mathematician from Pisa who is considered to be one of the most talented European mathematicians of the Middle Ages. He traveled extensively in the Mediterranean area with his father, who was a merchant, and while in Algeria he learned about the Hindu--Arabic numeral system and in particular about Al-Khw\={a}rizm\={\i} and his treatise. In 1202, Fibonacci wrote, in Latin, the first version of the \textit{Liber Abbaci} (\textit{The Book of the Abacus} or \textit{The Book of Calculation}), a book that describes the many methods of doing calculations including a theory on algebraic methods and problem solutions based on the use of Hindu--Arabic numerals. In his book, Fibonacci explains the work he did to combine Arab computing with Indian and Euclidean mathematics. In fact, through the \textit{Liber Abbaci}, Fibonacci introduced Arabic numerals to Europeans and popularized their use using material from Al-Khw\={a}rizm\={\i}'s book. Indeed, Fibonacci wrote a pre-eminent book of calculations that included algebraic and geometrical methods, which contained many algorithms that are still frequently used today. Many of them have been implemented in software programs and are often executed by our modern computers.
+
+
+\textit{Liber Abbaci} was not the first Western book to describe Arabic numerals, but it was addressed to tradesmen rather than mathematicians and academics and convinced the public of the superiority of the Arabic system with respect to Roman numerals. Its first section introduces the Hindu--Arabic numeral system, and the second section presents calculations and algorithms for commerce such as currency conversions and calculations of profit and interest. The book's third section illustrates and discusses a set of mathematical problems. The fourth and final section derives approximations, both numerical and geometrical, of irrational numbers such as square roots. The \textit{Liber Abbaci} includes geometric proofs from Euclid's \textit{Elements} and a large amount of  material derived from old textbooks. One of the problems introduced in the third section is devoted to the description of the growth of a population of rabbits and originated the Fibonacci sequence for which the author is famous for today. Given a pair of isolated rabbits, how many rabbits would be generated in one year considering that a pair of rabbits can generate another pair every month and that after one month the recently born rabbits are themselves able to reproduce. Fibonacci noted that after each monthly generation, the number of pairs of rabbits increased from 1 to 2 to 3 to 5 to 8 to 13, and so on. He identified how the sequence progressed by adding the previous two terms to obtain the next one, which in mathematical terminology can be expressed\break as:
+\begin{equation*}
+F(n)=F(n-1)+F(n-2),
+\end{equation*}
+\removelastskip{\vfill\pagebreak}
+
+\noindent a sequence that can extend indefinitely.\footnote{The Fibonacci sequence is defined as $F(0)=0$, $F(1)=1$, and $F(n)=F(n-1)+F(n-2)$ for $n\geq 2$. Therefore, the sequence starting with $F(0)$ is 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \ldots~.\vspace*{14pt}} Given a number \textit{n}, the algorithm that calculates the Fibonacci sequence $F(n)$ is composed of three steps:
+
+\medskip
+{\arrayrulecolor{black}
+\noindent \begin{tabular}{lp{325.0pt}}
+\hline
+\texttt{1.} &\texttt{If n = 0, then the answer is F(n) equal to 1.}\\
+\texttt{2.} &\texttt{Else if n = 1, then the answer is F(n) equal to 1.}\\
+\texttt{3.} &\texttt{Else the answer is F(n) equal to F(n-1) + F(n-2).}\\ \hline
+\end{tabular}
+
+\medskip
+Note that at step 3 this algorithm divides the problem of computing the sequence into two sub-problems of the same nature. The algorithm invokes itself with smaller input values and obtains the results by simply performing the operations on these smaller values. This algorithm is a well-known example of a recursive algorithm. In computer science, recursive algorithms are methods of solving a problem by solving a combination of smaller instances of the same problem. Such problems can generally be solved by iteration, that is, the repetition of operations, but this needs to identify and index the smaller instances at the programming time. Recursion solves such problems by using functions that call themselves from within their own code. This is not the only interesting property of the Fibonacci sequence. Another important property is that the ratio between $F(n)$ and $F(n-1)$ tends to the value $\phi = 1.618$, known as the ``golden ratio.'' This name indicates the ratio existing between two segments \textit{a} and \textit{b} that satisfy the relation:
+\begin{equation*}
+a/b=(a+b)/a=\phi .
+\end{equation*}
+
+Ancient mathematicians studied the golden ratio because of its frequent appearance in geometry. This quantity received the attention of scientists, engineers, architects and artists, including Le Corbusier, Salvador Dal\'{\i}, and Karlheinz Stockhausen, who have designed their works to approximate the golden ratio for aesthetic and harmonic reasons.
+
+\section{\label{sec:1.6}A Few Simple Examples of Algorithms}
+
+After its long history stemming from the name of a 9th-century Persian mathematician, Mu\d{h}ammad ibn M\={u}s\={a} al-Khw\={a}rizm\={\i}, and despite its mathematical nature, the word \textit{algorithm} has now become a popular word often paired with other words to specify the activity for which a sequence of steps have been designed. For example, a \textit{search algorithm} is a procedure that looks for some information that must be retrieved from a collection of data. A \textit{sorting algorithm} is a sequence of operations that puts elements of a list in a certain order. An \textit{encryption algorithm} implements a sequence of rules by which data or messages are encoded so that unauthorized people or systems cannot read them.
+
+Here we introduce some examples of algorithms starting from very simple algorithms that are widely used in many computer programs and software applications. We describe algorithms as programs written in a pseudocode, including instructions that in some respects are similar to those offered by popular programming languages although they are intended to be read by humans. All data are represented as elementary or structured variables, each of them stored in memory cells. The first algorithm we discuss is the one that finds the maximum value in a list of numbers.
+
+
+\begin{algorithm}[!h]
+\textbf{\textit{Problem Description}}: Given an array of numbers of size \textit{N}, find the maximum element present in the array.
+
+\textbf{\textit{Input}}: \textit{The array A }with \textit{N }elements.
+
+\textbf{\textit{Output}}: The maximum value \textit{max.}
+
+\hrulefill
+
+\medskip
+\texttt{1.\qquad     \textbf{Set}  max \textbf{$\leftarrow$}  A[1];}
+
+\texttt{2.\qquad     \textbf{For  }i = 2   \textbf{to}   N}
+
+\texttt{3.\qquad\quad            \textbf{If }A[i] $>$ max}
+
+\texttt{4.\qquad\qquad                \textbf{Set }max $\leftarrow$ A[i];}
+
+\texttt{5.\qquad     \textbf{End For}}
+
+\texttt{6.\qquad     \textbf{Answer }max;}
+
+\end{algorithm}
+
+This algorithm initializes the maximum element to the first element of the array, that is, it assigns the value of the first element of the array \textit{A} to the variable that will store the maximum value. Executing steps 2 and 3 for each element from \textit{A[2]} to \textit{A[n]}, it linearly traverses the array \textit{A}, comparing each element with the temporary maximum and updating it (at step 4) only if the new element contained in the \textit{i}-th position of \textit{A} is greater than the current value stored in \textit{max}. The arrow ``\textbf{$\leftarrow$}'' in steps 1 and 4 represents the assignment or substitution operation. In fact, \textit{max} \textbf{$\leftarrow$} \textit{A[i]} means that the value of variable \textit{max} (stored in a memory cell) is to be substituted by the current value of the element at position \textit{i} of array \textit{A}.\footnote{In general, the operation ``\textit{variable}\textbf{$\leftarrow$}\textit{formula}'' means that the formula is to be computed using the current values of the variables used in it, the obtained value will then replace the existing value of the variable at the left of the arrow.} Note that the algorithm passes through the array with \textit{N} steps and it needs \textit{N - 1} comparisons. This simple algorithm which is run every day by billions of computers is used in countless applications. Computers execute it to find the maximum value in short sequences of numbers or in long sequences, even billions, of values.
+
+Another simple class of frequently used algorithms are \textit{search algorithms}, applied for finding a given value in a small or a very large set of elements. Several search algorithms have been designed, all of them work to find and retrieve data stored within a data structure or are computed in the search space of a given problem domain, either composed of discrete or continuous values. A search algorithm often depends on how the data to be searched are structured. For example, some database structures are designed to make search algorithms faster or more efficient, such as a search tree, an index, or a hash map. Here we show a very simple linear search algorithm used for finding an item in an unordered list of items. This basic algorithm sequentially checks each element of the list until one match is found or the whole list has been searched.
+
+\begin{algorithm}[!h]
+\noindent \begin{tabular}{@{}p{\textwidth}}
+\textbf{\textit{Problem Description: }}Given an array of elements of size \textit{N, }find a given value \textit{x }if it is within the array.
+
+\textbf{\textit{Input: }}The array \textit{S }with \textit{N }elements and the value \textit{x}.
+
+\noindent \textbf{\textit{Output: }}The index \textit{j }of the element in the list, if it is found, or 0\textit{.}\\[-6pt] \hrulefill%
+
+\medskip
+\texttt{1.\qquad     \textbf{Set}  j \textbf{$\leftarrow$} 0;}
+
+\texttt{2.\qquad     \textbf{For}  i = 1   \textbf{to}   N}
+
+\texttt{3.\quad\qquad            \textbf{If }S[i] = x}
+
+\texttt{4.\qquad\qquad                  \textbf{Set} j \textbf{$\leftarrow$} i;}
+
+\texttt{5.\qquad\qquad                  \textbf{Break};}
+
+\texttt{6.\qquad\quad            \textbf{End If}}
+
+\texttt{6.\qquad     \textbf{End For}}
+
+\texttt{6.\qquad     \textbf{Answer} j;}
+\end{tabular}
+\end{algorithm}
+
+This algorithm searches for \textit{x} starting from the first element, at position 1, and proceeds toward the next positions until a first instance of \textit{x} is found. In this positive case, the algorithm breaks the search, exiting from the \textbf{For} loop and answering the location of the found value. If \textit{x} is not present in the list, the answer will be 0. The best-case scenario is when the element is in the first position of the list, whereas in the worst-case it is at the end. We can then deduce that the time required to search an element using this linear search algorithm depends on the size of the list. A linear search is practical when the list contains a limited number of elements; however, it must be used whenever there is a need to search an unordered list. When a very long list of elements has to be searched, it is better to sort the list by using a \textit{sorting algorithm} and then to run a binary search algorithm on the sorted list. A binary search looks for the position of a value by exploiting the sorted list. In particular, a binary search equates the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is obviously eliminated and the search continues on the remaining half. This strategy is iterated until the target value is found or the remaining half is empty. In this last case, the target is not in the array. A binary search is faster than a linear search as it works on a sorted array; thus, it runs in logarithmic time whereas linear time is needed for a linear search.
+
+Sorting algorithms play a significant role in computation methods, and they are very often used in software applications. As an example of a sorting algorithm, here we show a procedure for sorting a set of numeric values that is used in many applications when there is a need to order arbitrarily long sequences of numbers. The algorithm we discuss here is called \textit{insertion sort} (sort by insertion), and although it is simple, it is not the most efficient sorting algorithm. Other more efficient sorting algorithms are, for example, the \textit{quick sort}, \textit{merge sort}, and \textit{heap sort} algorithms. In this sorting method, insertion sort at each iteration takes one element from the input data, identifies the location where it belongs within the sorted list, and inserts it exactly there. This operation is repeated for each element until no input elements remain.
+
+\begin{figure}[b!]
+\tooltip{\includegraphics{graphics/Chapter_01/Figure3.\image}}{A table composed of six rows and five columns where each element contains an integer number. }[-200pt,-200pt]
+\caption{\label{fig:1.3}Insertion sort execution example for sorting the sequence 5, 4, 10, 2, 7.}\vspace*{-10pt}
+\end{figure}
+
+
+
+Sorting is done in-place, by iterating up the array, growing the sorted list behind it. At each position, the algorithm checks the value there against the largest value in the sorted list, which happens to be next to it, in the previous position checked. If the element is larger, it is left in place and the algorithm moves to the next position. If the element is smaller, its correct position within the sorted list is found, all the larger values are shifted up to make a space, and it is inserted into the correct position. In Figure~\ref{fig:1.3}, we show a very simple execution example of an insertion sort on the sequence 5, 4, 10, 2, 7; arrows indicate where smaller elements are moved to sort the sequence.
+
+
+\begin{algorithm}[h!]
+\textbf{\textit{Problem Description: }}Given an array of numbers of size \textit{N}, sort it according to numerical order from lowest to highest.
+
+\textbf{\textit{Input:}} The unsorted array \textit{A} containing \textit{N} elements.
+
+\textbf{\textit{Output:}} The sorted version of array \textit{A}.
+
+\hrulefill
+
+\texttt{1.\quad     \textbf{Set } i \textbf{$\leftarrow$} 2;}
+
+\texttt{2.\quad     \textbf{While } i $<$= N}
+
+\texttt{3.\qquad\qquad           \textbf{Set  }x \textbf{$\leftarrow$} A[i];}
+
+\texttt{4.\qquad\qquad           \textbf{Set  }j \textbf{$\leftarrow$} i - 1;}
+
+\texttt{5.\quad\qquad           \textbf{While } j $>$ 0 \textbf{and}  A[j] $>$ x}
+
+\texttt{6.\qquad\qquad\qquad                 \textbf{Set  }A[j+1]  $\leftarrow$ A[j];}
+
+\texttt{7.\qquad\qquad\qquad                 \textbf{Set } j \textbf{$\leftarrow$} j - 1;}
+
+\texttt{8.\quad\qquad           \textbf{End While}}
+
+\texttt{9.\quad\qquad           \textbf{Set} A[j+1]  \textbf{$\leftarrow$ }x;}
+
+\texttt{10.\qquad         \textbf{Set}  i \textbf{$\leftarrow$ }i + 1;}
+
+\texttt{11.\quad    \textbf{End} \textbf{While}}
+
+\texttt{12.\quad    \textbf{Answer}  A;}
+\end{algorithm}
+
+\section{\label{sec:1.7}Algorithms and Computers}
+
+Algorithms, such as the simple ones we discussed here or such as the many much more complex ones used in billions of software applications, are very useful tools for solving problems and for calculating complex results. However, every algorithm needs an executor, a person or a machine, to perform its sequence of actions, step by step, from the first operation to the last one. Together with a designer who proposes a solution strategy and defines the operations of each step, every algorithm needs a computer to do its task, and to produce its output.
+
+Whereas today the term ``computer'' refers to a machine that can be programmed to automatically carry out algorithms as sequences of operations, the original meaning of the word was ``one who calculates,'' referring to a person, not a machine. In fact, the  first known use of the word ``computer'' was in 1613 in a book called \textit{The Yong Mans Gleanings} by the English writer Richard Braithwaite [\citealt{chap:01:Brathwaite:1614}]. That usage of the term referred to a human computer, that is, a person who can carry out mathematical and logical computations. The word maintained the same meaning for around four centuries, until the middle of the 20th century when electronic computers\vadjust{\vspace*{-10pt}\pagebreak} were designed and produced. A famous human computer was George Parker Bidder, an English engineer who revealed a natural skill at calculation from an early age. For this reason, his father exhibited him as a ``calculating boy.'' After World War II and as a consequence of the introduction of electronic computers, the word ``computer'' changed in meaning, referring to a machine able to execute algorithms symbolized by a set of statements coded in a so-called programming language (which we will discuss in detail in Chapter~\ExternalLink{chap:2}{2}).
+
+In the early 17th century, when the term ``computer'' was coined, it was customary to have persons perform mathematical calculations and assist scientists, engineers, or architects in solving their computation problems. However, in that same period, important scientists and mathematicians were working to devise and implement machines capable of automatically performing calculations. Among them were Wilhelm Schickard, Blaise Pascal, Leonhard Euler, and Gottfried Wilhelm von Leibniz. They pursued the objective of designing a mechanical computer, which was a primary goal for several mathematicians and philosophers in the previous centuries. Among them we must mention Leonardo da Vinci, one of the greatest geniuses of humankind, who during the last years of the 15th century worked to design automatic machines as can be seen in the \textit{Madrid Manuscripts}. Da Vinci sketched plans for a calculator including the sketch of a calculation mechanism. Although Leonardo's machinery was designed for automating calculations, it was not built at that time and had no influence over the development of the mechanical calculating devices built during the 17th century and in the following centuries.
+
+More than a century after Leonardo's sketch, in 1623 the German astronomer and mathematician Wilhelm Schickard assembled the first mechanical calculator. He called it a \textit{Calculating Clock}, which modern engineers have been able to reproduce from details described in the Schickard letters to Johannes Kepler, where the inventor explained how to use his machine for calculating astronomical tables. Schickard's calculator is composed of three modules. The superior module can perform multiplications and divisions; the intermediate executes additions and subtractions; and the inferior one is a mechanism to record the results. In fact, that machine is able to add and subtract six-digit numbers through six interlocking gears. Each of them turned one-tenth of a rotation for each full rotation of the gear to its right. Thus, ten rotations of any gear would produce a ``carry'' of one digit on the following gear and change the corresponding display.
+
+Two decades later in 1642, to help with his father's tax work in Rouen, the French mathematician, physicist, and philosopher Blaise Pascal began work on his calculating machine, the \textit{Pascaline} or \textit{machine of Pascal}. In 1645, Pascal published a pamphlet describing his machine. It was called \textit{Lettre d\'{e}dicatoire \`{a} Monseigneur le Chancelier sur le sujet de la machine nouvellement invent\'{e}e par le\vadjust{\vspace*{10pt}\pagebreak} Sieur B. P. pour} \textit{faire toutes sortes d'op\'{e}rations d'arithm\'{e}tique, par un mouvement regl\'{e}, sans plume ny jettons avec un advis necessaire \`{a} ceux qui auront curiosit\'{e} de voir ladite machine}. After making several prototypes of the Pascaline, in 1649 Blaise Pascal received a patent from the French king for manufacturing and producing his calculating machine, and in five years he had sold around 20 machines. Pascal designed his machine to add and subtract two numbers directly and to perform multiplication and division through repeated addition or subtraction. The front panel of Pascal's calculator had a sequence of metal wheel-shaped input dials and output apertures. Each input dial was divided into ten as written around the circumference of each wheel by a set of spokes. If a user wanted to enter a number into the machine, a stylus needed to be placed between the relevant spokes and the wheel then rotated clockwise to reach the metal stop. Numbers could be added by turning the wheels clockwise and subtracted by turning the wheels counterclockwise. Each digit in the answer was displayed in a separate window.
+
+The cost and complexity of the Pascaline was a barrier to further sales, and production ceased in 1654. However, the contribution of Pascal to the design and development of a mechanical computer inspired or influenced the design of computing machines in the decades to come, for example, by Pierre Petit, John Napier, and Gottfried Wilhelm Leibniz. In particular, Leibniz worked on the idea of a calculating machine in the early 1670s with the goal of improving upon Pascal's calculator. In 1673, Leibniz completed a drawing of his calculating machine mechanism, and he presented a wooden model to the Royal Society of London. The Leibniz's calculator, called the \textit{Stepped Reckoner}, was based on a stepped drum for implementing mechanized addition and subtraction. That machine also performed multiplication by repeated addition and division by repeated subtraction. The stepped-drum gear, or \textit{Leibniz wheel}, was a workable solution to certain calculating machine problems until the end of 19th century.
+
+In one essay written in 1685, Leibniz argued for the need for automatic calculators to free humans from the strain of complex mathematical calculations [\citealt{chap:01:Leibniz:1929}]: ``And now that we may give final praise to the machine, we may say that it will be desirable to all who are engaged in computations which, it is well known, are the managers of financial affairs, the administrators of others' estates, merchants, surveyors, geographers, navigators, astronomers ... . For it is unworthy of excellent men to lose hours like slaves in the labor of calculations which could safely be relegated to anyone else if the machine were used.'' This thesis can be considered as an early attempt to explain to people that computing machines were important in many human activities. Indeed, at that time the practical and scientific benefit of computers, though it was evident to Leibniz, as it was later to Babbage,\vadjust{\vspace*{10pt}\pagebreak} Turing, and von Neumann, was far from obvious to most people. However, we must remember that both Leibniz's calculator and the Pascaline were calculators able to execute automatic arithmetic operations, not general-purpose programmable computers.
+
+The \textit{Analytical Engine}, the first programmable computing machine, was conceived by Charles Babbage c. 1834, more than a decade after proposing the model of his first \textit{Difference Engine}, a special-purpose calculator that linked adding and subtracting mechanisms to one another for calculating the values of more complex mathematical functions. The  Analytical Engine was the first general purpose programmable computer. In designing it, Babbage assimilated concepts and names from the textile industry including data and program input, output, and storage on punched cards (similar to those used in the Jacquard loom), a central processing unit called the ``mill,'' and a memory called the ``store.'' In 1840 in Turin, Italy, during a conference, Academy of Science, Charles Babbage gave the only lecture concerning the design and operation of the Analytical Engine to a group of Italian scientists. In attendance at Babbage's presentation was the mathematician Luigi Federico Menabrea, who from his notes prepared an account of the principles of the Analytical Engine. Two years later, Menabrea's paper was published in French in a Swiss journal, and the following year it was translated into English by Lord Byron's legitimate daughter, Augusta Ada King, Countess of Lovelace, who, in collaboration with Babbage, included a series of additional notes extending the planned design and operation of Babbage's machine.
+
+In October 1843, as we outlined before, Ada Lovelace published in \textit{Scientific Memoirs} her annotated translation of the paper by Menabrea titled ``Sketch of the Analytical Engine invented by Charles Babbage, Esq'' [\mbox{\citealt{chap:01:Menabrea:1843}}]. This commented translation is today considered one of the most important papers in the history of digital computing before modern times [\citealt{chap:01:Bromley:1984}]. During the writing of the additional notes, Babbage supplied Ada with algorithms for the solution of various problems. She worked on and included them in the notes as charts describing the stepwise sequence of operations as the machine progressed through a string of instructions input from punched cards. These can be considered the first published examples of ``computer programs,'' although neither Ada Lovelace nor Babbage used this exact term. In developing those algorithms, Ada extended Babbage's general goals of the Analytical Engine, thinking of it as a symbol-manipulating device rather than a simple processor of numbers. In her notes, she wrote that the Analytical Engine ``might act upon other things besides number, were objects found whose mutual fundamental relations could be expressed by those of the abstract science of operations, and which should be also susceptible of adaptations to the action of the operating notation and mechanism of the engine'' [\citealt{chap:01:Toole:1998}].
+
+
+\begin{figure}[b!]
+\hspace*{-50pt}\tooltip{\includegraphics{graphics/Chapter_01/Figure4.\image}}{Photograph of a page showing a table with 25 rows and 23 columns containing numbers and mathematical formulas. }[-320pt,-400pt]
+\caption{\label{fig:1.4}Ada Lovelace's diagram from ``Note G'' to compute Bernoulli numbers, which is considered to be the first published computer program. (Source: \citet{chap:01:Menabrea:1843}, public domain).}
+\end{figure}
+
+Ada Lovelace's additional notes to the translation of Menabrea's
+paper were labeled alphabetically from A to G. In particular, in
+``Note G'' (see Figure~\ref{fig:1.4}) she described an algorithm to
+be executed by the Analytical Engine to compute Bernoulli
+numbers
+[\citealt{chap:01:HuskeyandHuskey:1980}]. This algorithm is considered to be the first published program ever specifically tailored for implementation using a computer. Although the Analytical Engine was not implemented, for this designed algorithm Ada Lovelace is often cited as the first computer programmer. ``Note G'' also contains Ada Lovelace's dismissal of machine intelligence. Indeed, she noted that the ``The Analytical Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform. It can follow analysis; but it has no power of anticipating any analytical relations or truths.'' This raised objections and, in particular, a rebuttal from Alan Turing in his paper ``Computing machinery and intelligence,'' as we will discuss in a next chapter of this book.
+
+Although the Analytical Engine was not really implemented, Babbage's design c. 1834 of his computing machine anticipated virtually all the main features of present-day computers. In fact, it was not until over a hundred years later that another general-purpose computer, in this case an electronic one, was conceived. In 1935, during his graduate studies in physics at Harvard University, Howard H. Aiken first considered building an automated computing machine. After convincing IBM to undertake the project, known initially as the \textit{Automatic Sequence Controlled Calculator} (ASCC) and later called the \textit{Harvard Mark I}, construction began, and the new computer run its programs in 1943. Aiken's Harvard Mark was an elaborate electromechanical calculator, ``programmable'' on strips of paper tape capable of evaluating algorithms. Two years later, Aiken published \textit{Tables of the Modified Hankel Functions of Order One-Third and of their Derivatives} that were computed by the Mark I. Calculating these tables required the equivalent of 45 days of computer processing time on the Harvard Mark I, which would have required quite a few years of human calculations.
+
+Since Charles Babbage's and Lady Lovelace's writings a century earlier, Howard Aiken can be considered as Babbage's successor due to the design of his computer and for his extended analysis of what is now known as computer programming. The statement sequences written in the Mark I manual are the original examples of digital computer programs. After Aiken, other scientists worked on designing and building digital computers. Among them are the physicist John Atanasoff, who designed the ABC machine, J. Presper Eckert and John Mauchly, who worked on the construction of the ENIAC that was completed in 1945, and John von Neuman, a very talented scientist and inventor who joined Eckert and Mauchly in designing the successor of the ENIAC, the EDVAC. This new computer, differently from its predecessor, was binary rather than decimal and, thanks to the contribution of von Neumann, was designed to store program instructions in the electronic memory. In fact, the concept of the stored-program computer can be found in the 1936 theoretical concept of a universal Turing machine sketched by Alan Turing in the scientific paper ``On computable numbers'' [\citealt{chap:01:Turing:1937}] and we now know that Von Neumann was aware of that paper. The German engineer Konrad Zuse also exploited the Turing concepts to implement his first computer called the \textit{Z3}.
+
+Through the decades from the 1950s to the 1970s and after, thanks to the work of Turing, von Neumann, and other scientists and engineers, computers became both smaller and faster. This evolution led to the worldwide spread and use of digital computers that were used not only for executing long and complex calculations but also for handing communications and information sharing everywhere and around the clock. The powerful concepts introduced by Alan Turing and John von Neumann together with the implementation of commercial mainframe \hbox{computers} significantly contributed in the 20th century to the birth of computer science and provided an impressive and trustworthy contribution to the advancements of other scientific fields that benefited from the intensive use of computers. Through algorithm design and its execution on electronic computers, mathematics, and computer science revealed the formidable theoretical and applicative potential of algorithms that, with increasing speed, extended their use to every scientific, commercial, and professional area.
+
+\section{\label{sec:1.8}Algorithms and the Internet}
+
+Nearly 25 years after the EDVAC design, algorithms---coded as software programs---moved from mainframe computers to computer networks and allowed the birth of a worldwide network of machines and people, the Internet. Although innovations are not born in a day, there are days when events happen that will span decades or centuries and from then on the world will never be the same. What happened on October 29, 1969, in an area of California that a few years later would be called Silicon Valley, changed the world forever, even if the protagonists of the time did not have a precise idea of what would happen after that day. The real story began in 1966 when the Advanced Research Projects Agency (ARPA) of the US Department of Defense decided to fund the Advanced Research Projects Agency Network (ARPANET), a research project for creating a network of computers. Consequently, some research groups began to work on a project that was unprecedented and that, if it had achieved the expected objectives, would have connected only a few North American computers. After several meetings, discussions, and phone calls, it was decided to try to connect only two computers: one was at the University of California at Los Angeles (UCLA) and the other further north, at the Stanford Research Institute (SRI) in San Francisco Bay. When the algorithms composing the first communication software prototype were developed, it was necessary to carry out the first experimental test to verify if the data arrived at its destination. Due to various technical problems and tedious details to be solved, the moment of the test came only after sunset, by which time the California sky had lost its usual blue color.
+
+It was a little after 9pm when Charley Kline, a young long-haired programmer, typed the letter ``\textit{L}'' on his computer keyboard, and after a few seconds he received the telephone confirmation from Menlo Park: ``\textit{Yes. Let's see the L}.'' In front of the other computer, at the Stanford Research Institute, sat Bill Duvall, another long-haired, bearded programmer waiting to receive the characters typed by Charley. The two of them, together with all their colleagues from the two research groups to which they were part of, on that evening of Wednesday, October 29, 1969, made the first communication experiment on ARPANET, the progenitor of the Internet. That single character was the first tiny step in the network that today connects people and things all over the Earth and beyond. This was also the first experiment in which communication algorithms were designed. ARPANET was the mother of the Internet that has now entered our lives in an all-encompassing and pervasive way, but we cannot forget that in the late evening of October 29, 1969, an algorithm was running on the Honeywell DDP 516 computer of the University of California at Los Angeles and another one was waiting for a packet from it on the SDS 90 at the Stanford Research Institute in Menlo Park. That was a packet of a few tens of bits that traveled over 500km on a telephone line at a speed of 50Kbps. A small package of data that was certainly the first grain of a story that perhaps will end with the history of man.
+
+In front of the UCLA computer were members of Prof. Leonard Kleinrock's group attempting to connect to the computer of the Stanford Research Institute. The reason for the choice for the first node of ARPANET designed to guide the first experiment was also linked to the fact that Kleinrock, together with Paul Baran and Donald Davies, developed the theory of packet switching and worked to find innovative solutions for the theory of packet switching and for his studies on analysis, design, and measurement of the exchange of messages between computers [\citealt{chap:01:Abbate:2000}]. In 1961,  Kleinrock had published a key scientific paper on the theory of data packet switching, which underlay the experiment. In fact, in the years preceding that experiment, Leonard Kleinrock had argued for the theoretical feasibility of communications between computers based on the sending of individual data packets rather than on the creation of ad hoc circuits, as happened for traditional telephony. This choice had represented a significant contribution toward the creation of communication networks between computers. To carry out the communication that day, it was necessary to send the word ``\textit{LOGIN}.'' Len Kleinrock was connected by telephone with his colleagues at UCLA while with his collaborators he was making the first communication between two computers. After his young assistant Charley Kline typed the character ``\textit{L}'' came the telephone confirmation from Menlo Park: ``\textit{Yes. Let's see the L}.'' Then, after pressing the character ``O,'' they asked on the phone if it had arrived at the destination and the answer was again ``\textit{Yes. Let's see the O}.'' The problem arose after typing the ``G,'' which never reached the other end of the line due to an unexpected crash of the Stanford Research Institute's SDS 90 system. The first communication between two computers had registered an error as soon as it started and only two characters had managed to travel from Los Angeles to San Francisco. However, at that very moment the Internet was born, and the history of algorithms and of humankind changed. The ``\textit{LOGIN}'' message was sent correctly about an hour later at 10:30pm (see Figure~\ref{fig:1.5}), and from that day communication between computers have not registered any more significant setbacks. After more than 50 years, the Internet now enables billions of people around the world to quickly access, retrieve, and share very large amounts of information. This is done with the aid of clever and efficient algorithms.
+
+\begin{figure}[t!]
+\tooltip{\includegraphics{graphics/Chapter_01/Figure5.\image}}{Photograph of notes indicating a date (29 October 69), two time logs (21:00 and 22:30) in handwritten text.}[-300pt,3pt]
+\caption{\label{fig:1.5}The log note of the first ARPANET message sent at 10:30pm on October 29, 1969. The initials ``CSK'' in the log stand for Charles S. Kline, the student programmer at UCLA who was the first person to connect to a remote computer. (Source: \href{https://www.upi.com/Top\_News/US/2019/10/29/First-Internet-connection-made-over-military-ARPANET-50-years-ago/9531572312859/}{https://{\allowbreak}www.{\allowbreak}upi.{\allowbreak}com/{\allowbreak}Top{\allowbreak}\_{\allowbreak}News/{\allowbreak}US/{\allowbreak}2019/{\allowbreak}10/{\allowbreak}29/{\allowbreak}First-{\allowbreak}Internet-{\allowbreak}connection-{\allowbreak}made-{\allowbreak}over-{\allowbreak}military-{\allowbreak}ARPANET-{\allowbreak}50-{\allowbreak}years-{\allowbreak}ago/{\allowbreak}9531572312859/}).}
+\end{figure}
+
+
+
+\section{\label{sec:1.9}Algorithms in Our Daily Life}
+
+In ancient Babylonia, algorithms were used not only to solve mathematics problems but also to provide answers to practical problems that occurred daily. Today we are making extensive use of algorithms in most human processes, thus the relationship of human beings with reality is more and more often and more deeply regulated by algorithms, which encode billions of operations recorded in digital storage and continuously activated with just a click or a touch of a finger.
+
+
+Throughout ancient history algorithms significantly evolved and, especially in the recent decades, took on a role that was unexpected and disruptive in many ways. Today an algorithm is not only a procedure to solve a mathematical or commercial task or to compute a numerical result. As algorithms are used in almost all human activities, their role and impact are pervasive and are concerned with the challenges people face every day. They have moved from mathematical and computer science manuals to newspapers, TV series, judicial acts, or laws of parliament. Deliveroo riders, contract drivers for Amazon.com, Uber drivers, trade unionists, and lawmakers are confronted daily with algorithms and are struggling to understand what algorithms are and how they operate. For example, the \hbox{\citeauthor{chap:01:AlgorithmicAccountabilityAct:2019}} [\citeyear{chap:01:AlgorithmicAccountabilityAct:2019}] that was introduced in the US Congress in April 2019 in Section 2 refers to an algorithm as an ``automated decision system'' and defines it as ``a computational process, including one derived from machine learning, statistics, or other data processing or artificial intelligence techniques, that makes a decision or facilitates human decision making, that impacts consumers.'' The same Act deals with the risky effects of the pervasive use of algorithms and defines a ``high-risk automated decision system'' as a ``system that:
+
+\begin{enumerate}
+\item[(A)]  taking into account the novelty of the technology used and the nature, scope, context, and purpose of the automated decision system, poses a significant risk
+
+\begin{enumerate}
+\item[(i)]  to the privacy or security of personal information of consumers; or
+\item[(ii)]  of resulting in or contributing to inaccurate, unfair, biased, or discriminatory decisions impacting consumers;
+\end{enumerate}
+\item[(B)] makes decisions, or facilitates human decision making, based on systematic and extensive evaluations of consumers, including attempts to analyze or predict sensitive aspects of their lives, such as their work performance, economic situation, health, personal preferences, interests, behavior, location, or movements, that
+
+\begin{enumerate}
+\item[(i)] alter legal rights of consumers; or
+\item[(ii)] otherwise significantly impact consumers;
+\end{enumerate}
+\item[(C)] involves the personal information of a significant number of consumers regarding race, color, national origin, political opinions, religion, trade union membership, genetic data, biometric data, health, gender, gender identity, sexuality, sexual orientation, criminal convictions, or arrests;
+\item[(D)] systematically monitors a large, publicly accessible physical place; ...'' \hbox{[\citealt{chap:01:AlgorithmicAccountabilityAct:2019}]}
+\end{enumerate}
+
+
+Reading this portion of text of the Algorithmic Accountability Act, we can comprehend the novel and significant role of algorithms in the new millennium \hbox{society.} Also in Europe, China, and other countries, legislators have addressed algorithms' role and impact on society. For example, the European Parliament's Policy Department for Citizens' Rights and Constitutional Affairs worked on these issues, and in 2016, the European Parliament adopted a set of comprehensive regulations for the collection, storage, and use of personal information, the so-called General Data Protection Regulation (GDPR), which provide rules for the public use of data and algorithms. From these few examples of legislation, we can deduce how the use of algorithms may have an impact on the rights of citizens and may lead to discriminatory decisions, or how exploitation of algorithms raises privacy and security concerns. Today and in the future, the design, implementation, and use of algorithms can no longer be considered as an eminently technical matter as it also involves ethical and societal aspects. Algorithms are powerful tools that solve many problems and improve our lives. However, they should not be considered as shields to absolve those who designed and implemented them from responsibility for the practical effects and consequences of their use. For these reasons, citizens are increasingly demanding that companies, administrations, and producers guarantee algorithmic openness, accountability, and responsibility. The effect of the pervasive use of algorithms in our computers and digital devices is becoming a public issue that demands to be addressed.
+
+
+\begin{thebibliography}{}
+\bibitem[Abbate(2000)]{chap:01:Abbate:2000} J. Abbate. 2000. \textit{Inventing the Internet}. MIT Press, Cambridge, MA.
+
+\bibitem[Algorithmic Accountability Act(2019)]{chap:01:AlgorithmicAccountabilityAct:2019} ``H.R. 2231 --- 116th Congress: Algorithmic Accountability Act of 2019.'' \href{https://www.GovTrack.us}{www.GovTrack.us}. 2019. June 23, 2023 \href{https://www.govtrack.us/congress/bills/116/hr2231}{https://{\allowbreak}www.{\allowbreak}govtrack.{\allowbreak}us/{\allowbreak}congress/{\allowbreak}bills/{\allowbreak}116/{\allowbreak}hr2231} (accessed 21 June 2023).
+
+\bibitem[Ausiello(2013)]{chap:01:Ausiello:2013} G. Ausiello. 2013. Algorithms, an historical perspective. In G. Ausiello and R. Petreschi (Eds.), \textit{The Power of Algorithms}. Springer, Berlin. DOI:~\href{https://doi.org/10.1007/978-3-642-39652-6\_1}{https://{\allowbreak}doi.{\allowbreak}org/{\allowbreak}10.{\allowbreak}1007/{\allowbreak}978-{\allowbreak}3-{\allowbreak}642-{\allowbreak}39652-{\allowbreak}6\_1}.
+
+\bibitem[Bhattacharya(2019)]{chap:01:Bhattacharya:2019} R. Bhattacharya. 2019. \textit{The Origin of Geometry in India: A Study in the \'{S}ulbas\={u}tras}. Cambridge Scholars Publishing, Cambridge.
+
+\bibitem[Brathwaite(1614)]{chap:01:Brathwaite:1614} R. Brathwaite. 1614. \textit{The Yong Mans Gleanings}. Beniamin Lightfoote, London.
+
+\bibitem[Bromley(1984)]{chap:01:Bromley:1984} A. Bromley. 1984. Introduction. In \textit{Babbage's Calculating Engines: A Collection of Papers by Henry Prevost Babbage}. MIT Press, Cambridge, MA.
+
+\bibitem[Fitzpatrick(2008)]{chap:01:Fitzpatrick:2008} R. Fitzpatrick. 2008. \textit{Euclid's Elements of Geometry.} English translation and Greek Original Text. \href{https://farside.ph.utexas.edu/Books/Euclid/Elements.pdf}{https://{\allowbreak}farside.{\allowbreak}ph.{\allowbreak}utexas.{\allowbreak}edu/{\allowbreak}Books/{\allowbreak}Euclid/{\allowbreak}Elements.pdf}.
+
+\bibitem[Huskey and Huskey(1980)]{chap:01:HuskeyandHuskey:1980} V. R. Huskey and H. D. Huskey. 1980. Lady Lovelace and Charles Babbage. \textit{Ann. Hist. Comput.} 2, 4, 299--329. DOI:~\href{https://doi.org/10.1109/MAHC.1980.10042}{https://{\allowbreak}doi.{\allowbreak}org/{\allowbreak}10.{\allowbreak}1109/{\allowbreak}MAHC.{\allowbreak}1980.{\allowbreak}10042}.
+
+\bibitem[Kangshen et~al.(1999)]{chap:01:Kangshenetal:1999} S. Kangshen, J. Crossley, and A. Lun. 1999. \textit{The Nine Chapters on the Mathematical Art: Companion and Commentary}. Oxford University Press, Oxford.
+
+\bibitem[Knuth(1972)]{chap:01:Knuth:1972} D. E. Knuth. 1972. Ancient Babylonian algorithms. \textit{Commun. ACM} 15, 7, 671--677. DOI:~\href{https://doi.org/10.1145/361454.361514}{https://{\allowbreak}doi.{\allowbreak}org/{\allowbreak}10.{\allowbreak}1145/{\allowbreak}361454.{\allowbreak}361514}.
+
+\bibitem[Knuth(1998)]{chap:01:Knuth:1998} D. E. Knuth. 1998. \textit{The Art of Computer Programming, Volume II: Seminumerical Algorithms} (3rd. ed.). Addison-Wesley.
+
+\bibitem[Cooper(2011)]{chap:01:Cooper:2011} L. Cooper. 2011. Did Egyptian scribes have an algorithmic means for determining the circumference of a circle?. \textit{Hist. Math.} 38, 4, 455--484. DOI:~\href{https://doi.org/10.1016/j.hm.2011.06.001}{https://{\allowbreak}doi.{\allowbreak}org/{\allowbreak}10.{\allowbreak}1016/{\allowbreak}j.{\allowbreak}hm.{\allowbreak}2011.{\allowbreak}06.001}.
+
+
+\bibitem[Leibniz(1929)]{chap:01:Leibniz:1929} G. W. Leibniz. 1929. Machina arithmetica in qua non additio tantum et subtractio sed et multiplicatio nullo, divisio vero paene nullo animi labore peragantur. In \textit{A Source Book in Mathematics}. McGraw-Hill.
+
+\bibitem[Menabrea(1843)]{chap:01:Menabrea:1843} L. Menabrea. 1843. Sketch of the analytical engine invented by Charles Babbage, Esq. \textit{Sci. Mem.} 3, XXIX, 666--731.
+
+\bibitem[Neugebauer(1969)]{chap:01:Neugebauer:1969} O. Neugebauer. 1969. \textit{The Exact Sciences in Antiquity}. Dover Publications, New York.
+
+\bibitem[Petrie(1883)]{chap:01:Petrie:1883} W. M. F. Petrie. 1883. \textit{The Pyramids and Temples of Gizeh}. Field and Tuer, London.
+
+\bibitem[Richeson(2012)]{chap:01:Richeson:2012}D. S. Richeson. 2012. \textit{Euler's Gem: The Polyhedron Formula and the Birth of Topology}. Princeton University Press, Princeton, NJ.
+
+\bibitem[Toole(1998)]{chap:01:Toole:1998} B. A. Toole. 1998. \textit{Ada, the Enchantress of Numbers: Prophet of the Computer Age}. Strawberry Press, Moreton-in Marsh, UK.
+
+\bibitem[Turing(1937)]{chap:01:Turing:1937} A. Turing. 1937. On computable numbers, with an application to the Entscheidungsproblem. \textit{Proc. Lond. Math. Soc.} 2, 42, 230--265. DOI:~\href{https://doi.org/10.1112/plms/s2-42.1.230}{https://{\allowbreak}doi.{\allowbreak}org/{\allowbreak}10.{\allowbreak}1112/{\allowbreak}plms/{\allowbreak}s2-{\allowbreak}42.{\allowbreak}1.230}.
+
+\bibitem[Villani(2015)]{chap:01:Villani:2015} G. Villani. 2015. \textit{Villani's Chronicle: Being Selections From the First Nine Books of the Croniche Fiorentine}. Andesite Press.
+
+\end{thebibliography}

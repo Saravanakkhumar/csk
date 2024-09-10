@@ -5,28 +5,28 @@ import re
 import os
 import chardet
 import sys
-# from pymsgbox import alert
+from pymsgbox import alert
 import traceback
 
-# curDir = os.getcwd()
-# global serverIP
-# serverIP=''
-# if os.path.isfile(os.path.join(curDir,'ServerDetails.exe')):
-#     serverIP=os.popen(os.path.join(curDir,'ServerDetails.exe')).read().strip()
-#     if (os.path.isfile(r"\\"+str(serverIP)+r"\License\license.txt")):
-#         chklicense = open(r"\\"+str(serverIP)+r"\License\license.txt", 'r').read()
-#         if (chklicense != 'Active'):
-#             alert(text='Please contact the tech support!', title='expired', button='OK')
-#             exit()
-#     else:
-#         alert(text="Please check the \"internet\" or \"VPN\" connection", title='Expired', button='OK')
-#         exit()
-# else:
-#     alert(text="\"ServerDetails.exe\" file missing...", title='Missing', button='OK')
-#     exit()
+curDir = os.getcwd()
+global serverIP
+serverIP=''
+if os.path.isfile(os.path.join(curDir,'ServerDetails.exe')):
+    serverIP=os.popen(os.path.join(curDir,'ServerDetails.exe')).read().strip()
+    if (os.path.isfile(r"\\"+str(serverIP)+r"\License\license.txt")):
+        chklicense = open(r"\\"+str(serverIP)+r"\License\license.txt", 'r').read()
+        if (chklicense != 'Active'):
+            alert(text='Please contact the tech support!', title='expired', button='OK')
+            exit()
+    else:
+        alert(text="Please check the \"internet\" or \"VPN\" connection", title='Expired', button='OK')
+        exit()
+else:
+    alert(text="\"ServerDetails.exe\" file missing...", title='Missing', button='OK')
+    exit()
 
-# fin = input("Enter the original author file: ")
-# bibcheckIn = input("Enter the bibcheck file path: ")
+fin = input("Enter the original author file: ")
+bibcheckIn = input("Enter the bibcheck file path: ")
 
 labelOrder = []
 
@@ -52,8 +52,8 @@ def OriginalLabelCnt(originalfin):
         if r"{thebibliography}" in texCnt:
             pass
         else:
-            print('File not converted. Bibliography not pasted in the original file. Please copy bbl and paste it to the Original LaTeX Source:\n')
-            # sys.exit()
+            alert(text='File not converted. Bibliography not pasted in the original file. Please copy bbl and paste it to the Original LaTeX Source:\n' + fin, title='Message', button='OK')
+            sys.exit()
             
 
         texCnt = re.sub(r"\\begin{document}", "/StartDocument/", texCnt, flags=re.S)
@@ -109,14 +109,12 @@ def OriginalLabelCnt(originalfin):
                             for eachNode in nodes[currentNode].nodelist:
                                 labelOrder.append(eachNode.chars)
 
-        treePath = os.path.splitext(originalfin)[0] + "_tree.txt"
-        with open(treePath, "w", encoding=readFile[1]) as file:
-            file.write(collect_cnt)
+        treePath = os.path.splitext(fin)[0] + "_tree.txt"
+        # with open(treePath, "w", encoding=readFile[1]) as file:
+        #     file.write(collect_cnt)
         return labelOrder
     except Exception as err:
         print("Original Label content error " + str(err) + " " + str(traceback.format_exc()))
-
-
 
 def arrangeLabelCnt(bibcheckIn, getLabel, inputfile):
     
@@ -214,29 +212,27 @@ def arrangeLabelCnt(bibcheckIn, getLabel, inputfile):
             texCnt = texCnt.replace("<orderedReferenceCnt>", orderedReferenceCnt, 1)
 
         store_file = os.path.splitext(bibcheckIn)[0] + "_converted.tex"
-
         missing_label_file = os.path.splitext(bibcheckIn)[0] + "_converted_missing_label.txt"
 
-        # with open(store_file, "w", encoding=readFile[1]) as file:
-        with open(inputfile, "w", encoding=readFile[1], errors='ignore') as file:
+        with open(store_file, "w", encoding=readFile[1]) as file:
             file.write(texCnt)
 
-        with open(missing_label_file, "w", encoding=readFile[1], errors='ignore') as file:
+        with open(missing_label_file, "w", encoding=readFile[1]) as file:
             writeLabel = "\n\n".join(MissingLabel)
             file.write(writeLabel)
 
-        # if os.path.isfile(bibcheckIn):
-        #     print('Bib Checked file converted successfully. The file placed the following path:\n' + store_file, title='Message', button='OK')
+        if os.path.isfile(store_file):
+            alert(text='Bib Checked file converted successfully. The file placed the following path:\n' + store_file, title='Message', button='OK')
 
-        # else:
-        #     alert(text='File not converted. Please recheck the programme inputs:\n' + store_file, title='Message', button='OK')
+        else:
+            alert(text='File not converted. Please recheck the programme inputs:\n' + store_file, title='Message', button='OK')
 
     except Exception as err:
         print("Arrange Label content error. " + str(err) + " " + str(traceback.format_exc()))
 
 
-# getLabel = OriginalLabelCnt(fin)
-# arrangeLabel = arrangeLabelCnt(bibcheckIn, getLabel, fin)
+getLabel = OriginalLabelCnt(fin)
+arrangeLabel = arrangeLabelCnt(bibcheckIn, getLabel, fin)
 
 
 

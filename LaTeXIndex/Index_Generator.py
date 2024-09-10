@@ -206,8 +206,6 @@ def IDSequence(FileCnt,treePath):
                 revIDValue = "|".join(IDValue[eachchar] for eachchar in range(0,len(IDValue)))
                 Global_Dict["<" + revIDValue + ">"] = str_cnt
 
-
-
         # EnvironmentPattern
         EnvironmentPattern = r"LatexEnvironmentNode\(parsing_state=\<parsing state ([0-9]+)\>, pos=([0-9]+), len=([0-9]+), environmentname='(figure|figure\*|table|table\*|algorithm|math|displaymath|eqnarray|eqnarray\*|align|align\*|flalign|flalign\*|multline|multline\*|gather|gather\*|subequation|equation\*|equation|thebibliography|verbatim)',"
         
@@ -429,7 +427,6 @@ def DocRead(docpath):
             f1.write(decoded_content)
         
         inHTML = decoded_content
-
         
         inHTML = inHTML.encode()
 
@@ -758,6 +755,8 @@ def IndexImplementOnTeX(file_pathA,docpathA,pageInfoCnt,variablesIn):
 
         pageinfostartIndex = []
 
+        miscIndex = []
+
         if os.path.isfile(out_html_path):
             with open(out_html_path, "r", encoding="utf-8") as f1:
                 html_cnt = f1.read()
@@ -769,8 +768,10 @@ def IndexImplementOnTeX(file_pathA,docpathA,pageInfoCnt,variablesIn):
                 i = 1
                 for each_para in soup.find_all("p"):
                     each_para_text_cnt = str(each_para.contents[0])
+                    
                     if len(each_para_text_cnt) != 0:
                         each_para_text_cnt = each_para_text_cnt.strip()
+                    
                     if len(each_para.find_all("page")) != 0:
                         for each_page in each_para.find_all("page"):
                             each_page_text_cnt = str(each_page.contents[0])
@@ -966,7 +967,14 @@ def IndexImplementOnTeX(file_pathA,docpathA,pageInfoCnt,variablesIn):
                                                 file.write(tex_read)
                                     else:
                                         missing_Index.append("S.No: " + str(i) + ", Page No: " + str(page_Search) + ", Index Term: " + str(each_para_text_cnt))
-        
+                    else:
+                        if re.search(r"([A-Z]@\\textbf\{[A-Z]\})", each_para_text_cnt, flags=re.S):
+                            pass
+                        elif re.search(r"Index@\\textbf{Index}", each_para_text_cnt, flags=re.S):
+                            pass
+                        elif r"see" in each_para_text_cnt.lower():
+                            miscIndex.append(each_para_text_cnt)
+            
 
         pageinfopath = os.path.join(file_pathA, "pageInfoPath.txt")
         with open(pageinfopath, "w", encoding="utf-8") as f1:
@@ -980,115 +988,6 @@ def IndexImplementOnTeX(file_pathA,docpathA,pageInfoCnt,variablesIn):
             
             f1.write(collect_cnt)
 
-
-        # active code end
-
-                                # for each_occurrence in all_occurrences:
-                                #     print(each_occurrence[1], each_occurrence[2], each_occurrence[3], each_occurrence[4])
-                                    
-
-                                #     tex_read = open(each_occurrence[1], "r", encoding="latin-1").read()
-
-                                #     check_PID = "\\pageinfoStart{" + each_occurrence[3] + "} "
-
-                                #     grep_ID = r"pageinfoStart\{" + str(int(each_occurrence[3]) + 4) + r"\}"
-
-                                #     text_cnt_pattern = re.search(r"(pageinfoStart\{" + each_occurrence[3] + r"\}" + r"(.*)" + grep_ID + ")", tex_read, flags=re.S)
-
-        #                             if check_PID in tex_read:
-        #                                 text_cnt = text_cnt.replace(r"\(", "|()")
-        #                                 text_cnt = text_cnt.replace(r"\)", "|)")
-                                        
-        #                                 Check_Word = each_para_text_cnt
-
-        #                                 differentiate_cnt = ""
-        #                                 for each_char in range(0, len(each_para_text_cnt)):
-        #                                     if r" " in each_para_text_cnt[each_char]:
-        #                                         differentiate_cnt += each_para_text_cnt[each_char]
-        #                                     else:
-        #                                         differentiate_cnt += each_para_text_cnt[each_char] + "/idx/"
-
-        #                                 index_cnt = "/idx/i/idx/n/idx/d/idx/e/idx/x/idx/{" + differentiate_cnt + text_cnt + "}"
-                                        
-        #                                 if temp_cnt == 1:
-        #                                     if grep_ID:
-        #                                         Log_file_cnt.append(check_PID + " to " + "\\pageinfoStart{" + str(int(each_occurrence[3]) + 2) + "}")
-                                                
-        #                                     Log_file_cnt.append(each_occurrence[1] + ", " + index_cnt.replace(r"/idx/", "") + ", " + check_PID)
-
-        #                                     Log_file_cnt.append(Check_Word)
-
-        #                                     if text_cnt_pattern is not None:
-
-        #                                         check_count = 1
-        #                                         if Check_Word in text_cnt_pattern.group(1):
-        #                                             replace_cnt = text_cnt_pattern.group(1)
-        #                                             old_value = text_cnt_pattern.group(1)
-        #                                             new_value = ""
-
-        #                                             print(each_occurrence[1], index_cnt.replace(r"/idx/", ""), check_PID, "Second Print")
-
-        #                                             replace_cnt = replace_cnt.replace("pageinfoStart", "p/idx/a/idx/g/idx/e/idx/i/idx/n/idx/f/idx/o/idx/S/idx/t/idx/a/idx/r/idx/t")
-
-        #                                             replace_cnt = replace_cnt.replace(Check_Word, index_cnt + Check_Word, 1)
-
-        #                                             replace_cnt = replace_cnt.replace("p/idx/a/idx/g/idx/e/idx/i/idx/n/idx/f/idx/o/idx/S/idx/t/idx/a/idx/r/idx/t", "pageinfoStart")
-
-        #                                             new_value = replace_cnt
-
-        #                                             tex_read = tex_read.replace(old_value, new_value, 1)
-        #                                             check_count = check_count + 1
-
-        #                                                     # print(text_cnt_pattern.group(1))
-        #                                                     # new_string = ''.join('new' if substring == 'old' else substring for substring in old_string.split('old'))
-        #                                                     # print(text_cnt_pattern.group(1))
-        #                                                     # print("\n\n")
-        #                                                     # print(replace_cnt)
-        #                                                     # tex_read = re.sub(re.escape(text_cnt_pattern.group(1)), re.escape(replace_cnt), tex_read, count=1, flags=re.S)
-
-        #                                                     # tex_read = tex_read[:start_index] + new_value + tex_read[start_index:]
-        #                                                     # tex_read = tex_read.replace(tex_read[start_index: end_index], "CSK")
-        #                                                     # tex_read = re.sub(re.escape(old_value), re.escape(new_value), tex_read, flags=re.DOTALL | re.M)
-
-        #                                             # tex_read = tex_read.replace(old_value, new_value, 1)
-        #                                             # old_value = text_cnt_pattern.group(1)
-        #                                             # new_value = replace_cnt
-        #                                             # start_index = tex_read.find(old_value)
-        #                                             # end_index = start_index + len(old_value)
-
-        #                                             # print("+++++++++++++++++++++++++++++")
-        #                                             # print("\n")
-                                                    
-        #                                             # print(tex_read[start_index: end_index])
-                                                    
-        #                                             # print("\n")
-        #                                             # print("+++++++++++++++++++++++++++++")
-
-
-        #                                         else:
-        #                                                 print(each_occurrence[1], index_cnt.replace(r"/idx/", ""), check_PID, "Third Print")
-        #                                                 tex_read = tex_read.replace(check_PID, index_cnt + check_PID, 1)
-        #                                                 check_count = check_count + 1
-
-        #                                     else:
-        #                                         print(each_occurrence[1], index_cnt.replace(r"/idx/", ""), check_PID, "Fourth Print")
-        #                                         # tex_read = tex_read.replace(check_PID, index_cnt + check_PID, 1)
-        #                                 else:
-        #                                     break
-                                        
-        #                             temp_cnt = temp_cnt + 1
-
-        #                             fopen = open(os.path.join(file_pathA, each_occurrence[1]), "w", encoding="utf-8")
-        #                             fopen.write(tex_read)
-        #                             fopen.close()
-        #                             break
-
-            # with open(os.path.join(file_pathA, "Index_log.txt"), "w", encoding="utf-8") as fcnt:
-            #     for each_cnt in Log_file_cnt:
-            #         fcnt.write(str(each_cnt))
-            #         fcnt.write("\n")
-            #         fcnt.write("\n")                                
-
             with open(os.path.join(file_pathA, "Index_content.txt"), "w", encoding="utf-8") as fcnt:
                 for each_cnt in verify_index_cnt:
                     fcnt.write(str(each_cnt))
@@ -1098,7 +997,6 @@ def IndexImplementOnTeX(file_pathA,docpathA,pageInfoCnt,variablesIn):
                 for each_cnt in missing_Index:
                     fcnt.write(str(each_cnt))
                     fcnt.write("\n")
-
 
         for fname,cnts in variablesIn.items():
 
@@ -1113,7 +1011,18 @@ def IndexImplementOnTeX(file_pathA,docpathA,pageInfoCnt,variablesIn):
 
                 with open(fname, "w", encoding="latin-1") as f2:
                     f2.write(final_cnt)
-             
+
+        
+        with open(os.path.join(file_pathA, "see-index.tex") , "w", encoding="utf-8") as f1:
+            miscCnt = ""
+            
+            for eachValue in miscIndex:
+                miscCnt += "\\index{" + eachValue + "}"
+                miscCnt += "\n\n"
+
+            f1.write(miscCnt)
+
+
 
     except Exception as err:
         print("Index Implementation line no. 746 " + str(traceback.format_exc()))                                    
