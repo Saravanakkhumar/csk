@@ -43,13 +43,13 @@ config.optionxform = str  # Preserve the original case
 
 # Read the INI file
 
-if os.path.isfile('//192.168.7.5/SoftwareTools/Journals/Config/LaTeXUnicode.ini'):
+if os.path.isfile('./LaTeXUnicode.ini'):
     pass
 else:
     alert(text="\"LaTeXUnicode.ini\" file missing...", title='Missing', button='OK')
     exit()
 
-config.read('//192.168.7.5/SoftwareTools/Journals/Config/LaTeXUnicode.ini')
+config.read('./LaTeXUnicode.ini')
 
 ChapterNum = "1"
 
