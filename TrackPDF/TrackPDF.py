@@ -43,13 +43,13 @@ config.optionxform = str  # Preserve the original case
 
 # Read the INI file
 
-if os.path.isfile('./LaTeXUnicode.ini'):
+if os.path.isfile('//192.168.7.5/SoftwareTools/Journals/Config/LaTeXUnicode.ini'):
     pass
 else:
     alert(text="\"LaTeXUnicode.ini\" file missing...", title='Missing', button='OK')
     exit()
 
-config.read('./LaTeXUnicode.ini')
+config.read('//192.168.7.5/SoftwareTools/Journals/Config/LaTeXUnicode.ini')
 
 ChapterNum = "1"
 
@@ -76,6 +76,10 @@ def TrackConversion(htmlFileCnt,htmlpath):
     '''html file convert into latex content'''
 
     try:
+
+        testFileName = os.path.join(os.path.split(htmlpath)[0], "out.tex")
+
+        
 
         htmlFileCnt = htmlFileCnt.encode()
 
@@ -107,34 +111,48 @@ def TrackConversion(htmlFileCnt,htmlpath):
                     listDict[each_key] = each_val
 
         listCount = 1
-        previousList = ""
-        for idx, each_para in enumerate(htmlCnt.xpath("//p")):
+
+        closingList = []
+
+        firstListCount = ""
+
+        for idx, each_para in enumerate(htmlCnt.xpath("//p"), 1):
             if r"class" in each_para.attrib:
                 listType = each_para.get(r'class')
+                
                 if listType in listDict:
-                    previousList = str(listDict[listType].split(",")[1]) + "/custom-new-line//custom-new-line/"
                     if listCount == 1:
+                        firstListCount = listType
                         if each_para.text:
                             each_para.text = listDict[listType].split(",")[0] + "/custom-new-line/\\item " + each_para.text
                         else:
                             each_para.text = listDict[listType].split(",")[0] + "/custom-new-line/\\item "
+
+                        closingList.append(listDict[listType].split(",")[1])
+                        
+                    elif listType != firstListCount:
+                        firstListCount = listType
+                        if each_para.text:
+                            each_para.text = listDict[listType].split(",")[0] + "/custom-new-line/\\item " + each_para.text
+                        else:
+                            each_para.text = listDict[listType].split(",")[0] + "/custom-new-line/\\item "
+                        closingList.append(listDict[listType].split(",")[1])
                     else:
                         if each_para.text:
-                            each_para.text =  "\\item " + each_para.text
+                            each_para.text = "/custom-new-line/\\item " + each_para.text
                         else:
-                            each_para.text = "\\item "
+                            each_para.text = "/custom-new-line/\\item "
 
+                    if each_para.getnext().get("class") not in listDict:
+                        if each_para.tail is not None:
+                            each_para.tail = each_para.tail + "\n\n".join(eachEnd for eachEnd in reversed(closingList)) + "\n\n"
+                        else:
+                            each_para.tail = "\n\n".join(eachEnd for eachEnd in reversed(closingList)) + "\n\n"
+                        listCount = 0
+                        closingList.clear()
+                    
                     listCount = listCount + 1
-                else:
-                    listCount = 1
-                    endList = htmlCnt.xpath("//p")[idx-1]
-                    if r'class' in endList.attrib:
-                        listType = endList.get(r'class')
-                        if listType in listDict:
-                            if endList.tail:
-                                endList.tail = endList.tail + previousList
-                            else:
-                                endList.tail = previousList
+
 
         # Append list Dictionary through config file
         for each_section in config.sections():
@@ -269,11 +287,10 @@ def TrackConversion(htmlFileCnt,htmlpath):
 
 
         # Individual Table
-
         IndividualTabRow = 1
-        IndividualTableBody = ""
 
         for eachTable in htmlCnt.findall(".//table"):
+            IndividualTableBody = ""
             for eachRow in eachTable.findall(".//tr"):
 
                 if IndividualTabRow == 1:
@@ -296,10 +313,11 @@ def TrackConversion(htmlFileCnt,htmlpath):
 
             # print(html.tostring(eachTable))    
             eachTable.clear()
-            eachTable.text =  r"\begin{table}[!tpbh]/custom-new-line/{\begin{tabular*}{\textwidth}{" + str("l" * colcount) + "}/custom-new-line/" + IndividualTableBody + r"\end{tabular*}}{}/custom-new-line/" + r"\end{table}" + "/custom-new-line//custom-new-line/"
+            eachTable.text =  r"\begin{table}[!tpbh]/custom-new-line/{\begin{tabular*}{\textwidth}{" + str("l" * colcount) + "}/custom-new-line/" + IndividualTableBody + "CSK" + r"\end{tabular*}}{}/custom-new-line/" + r"\end{table}" + "/custom-new-line//custom-new-line/"
             # print(html.tostring(eachTable))
             # eachTable.tag = "del-table"
 
+       
 
         # footnote Processing
         for eachCommentSpan in htmlCnt.xpath("//a"):
@@ -321,42 +339,50 @@ def TrackConversion(htmlFileCnt,htmlpath):
         # Delete the footnote reference number
         for eachspan in htmlCnt.xpath(".//span[@class='MsoFootnoteReference']"):
             eachspan.drop_tree()
-
-
-        # Author Queries
-        # for eachCommentSpan in htmlCnt.xpath("//span[@class='MsoCommentReference']"):
-        #     if eachCommentSpan.find(".//a") is not None:
-        #         if r"name" in eachCommentSpan.find(".//a").attrib:
-        #             searchID = eachCommentSpan.find(".//a").get("name")
-                    
-        #             # print('".//div/a[@name=' + "'" + searchID + "']" + '"')
-        #             searchTerm = r".//a[@href=" + r'"#' + searchID + r'"]'
-
-        #             if htmlCnt.find(searchTerm).getparent().tag == "span":
-        #                 htmlCnt.find(searchTerm).getparent().drop_tag()
-                    
-        #                 paraTag = htmlCnt.find(searchTerm).getparent() 
-        #                 htmlCnt.find(searchTerm).drop_tag()
-        #                 if paraTag.text is not None:
-        #                     paraTag.text = r"\AQ{" + paraTag.text.replace("\n", " ") + r"}"
-        #                     # Replace eachCommentSpan with paraTag
-        #                     eachCommentSpan.getparent().replace(eachCommentSpan, paraTag)
-        #                     paraTag.drop_tag()
-
-
+        
         #href link Process
+        escape_char = {r"&":r"\&", 
+                       r"%":r"\%",
+                       r"$":r"\$", 
+                       r"#":r"\#", 
+                       r"_":r"\_",
+                       r"_": r"\_",
+                       r"{":r"\{",
+                       r"}":r"\}",
+                       r"~":r"\~",
+                       r"^":r"\^",
+                       r"\\": r"\\backslash"}
+        
         for aLink in htmlCnt.xpath("//a"):
+
+            linkStore = str(aLink.xpath("string()"))
+
+            for key,val in escape_char.items():
+                if key in linkStore:
+                    linkStore = re.sub(key, val, linkStore, flags=re.S)
+                else:
+                    pass
+
             if r"href" in aLink.attrib:
                 if aLink.text:
-                    aLink.text = r"\href{" + aLink.get("href") + r"}{" + aLink.xpath("string()") + r"}"
+                    aLink.text = r"\href{" + aLink.get("href") + r"}{" + linkStore + "}"
                     aLink.tag = "del-strip-tag"
                 else:
                     if r"style" in aLink.attrib:
                         if r"footnote" in aLink.get("style"):
                             pass
                         else:
-                            aLink.text = r"\href{" + aLink.get("href") + r"}{" + aLink.xpath("string()") + r"}"
+                            linkStore = aLink.xpath("string()")
+
+                            for key,val in escape_char.items():
+                                if key in linkStore:
+                                    linkStore = re.sub(key, val, linkStore, flags=re.S)
+                                else:
+                                    pass
+
+                            aLink.text = r"\href{" + aLink.get("href") + r"}{" + linkStore + "}"
                             aLink.tag = "del-strip-tag"
+            
             elif r"style" in aLink.attrib:
                 aLink.tag = "del-strip-tag"
 
@@ -469,6 +495,8 @@ def TrackConversion(htmlFileCnt,htmlpath):
 
             eachshapes.tag = "del-strip-tag"
 
+
+
         tags_to_remove = ["del-table", "del-p", "del-comment-span", "del-span", "del-div"]
 
         tags_to_strip = ["del-strip-span", "del-footnote-strip-a", "del-strip-p", "del-strip-div", "del-strip-tag"]
@@ -508,6 +536,7 @@ def TrackConversion(htmlFileCnt,htmlpath):
 
 
         with open(htmlpath, "w", encoding="utf-8") as f1:
+            
             tot_cnt = html.tostring(htmlCnt, pretty_print=True, method="html", encoding="utf-8").decode()
             # htmlCnt = etree.tostring(htmlCnt, encoding="utf-8").decode()
             # tot_cnt = htmlCnt
@@ -551,14 +580,9 @@ def TrackConversion(htmlFileCnt,htmlpath):
             
             tot_cnt = re.sub(r'/custom-new-line/', '\n', tot_cnt)
             tot_cnt = re.sub(r'/mathambersand/', r'&', tot_cnt)
-            tot_cnt = re.sub(r'(\\item\s+(.*)~\s+)', r'\\item ', tot_cnt)
+            tot_cnt = re.sub(r'\\item\s*(\(|)([A-Za-z0-9\.]+)(\)|)(\s*|~{1,})', r'\\item ', tot_cnt)
+            tot_cnt = re.sub(r'/preamble-percent/', r'%', tot_cnt)
             
-            # cleanDelTags = ["del-table", "del-p", "del-comment-span"]
-
-            # for eachDel in cleanDelTags:
-            #     # tot_cnt = re.sub(r"<" + eachDel + r"([^<>]+)>((?:(?!(?:<"+eachDel+"|</"+eachDel+">)).)*)</" + eachDel + r">", "", tot_cnt, flags=re.S)
-            
-             
             tot_cnt = tot_cnt.replace(r"/tableAmbersand/",r"&")
             tot_cnt = tot_cnt.replace(r"/mathnewline/","\n")
             tot_cnt = tot_cnt.replace(r"$",r"\$")
@@ -566,9 +590,6 @@ def TrackConversion(htmlFileCnt,htmlpath):
             tot_cnt = tot_cnt.replace(r"&lt;",r"<")
 
             tot_cnt = re.sub(r'<(/html|html)([^<>]+|)>', r'', tot_cnt)
-
-            
-            
             
             f1.write(tot_cnt)
         
