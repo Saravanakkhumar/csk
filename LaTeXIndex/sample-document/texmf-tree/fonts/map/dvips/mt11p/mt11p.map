@@ -1,0 +1,23 @@
+
+ * Driver declarations for MathTime mt11p:
+
+mtex    MTEX            <mtex.pfb
+mtexb  MTEXB 		<mtexb.pfb
+mtexh  MTEXH  		<mtexh.pfb
+
+mtsyn  MTSYN  		<mtsyn.pfb
+mtsyb  MTSYB  		<mtsyb.pfb
+mtsyh  MTSYH  		<mtsyh.pfb
+
+mtgu   MTGU   		<mtgu.pfb
+mtgub  MTGUB  		<mtgub.pfb
+mtms   MTMS   		<mtms.pfb
+mtmsb  MTMSB  		<mtmsb.pfb
+
+rmtmi   RMTMI           <rmtmi.pfb
+rmtmib RMTMIB 		<rmtmib.pfb
+rmtmih RMTMIH 		<rmtmih.pfb
+
+rmtmub RMTMUB 		<rmtmub.pfb
+rmtmuh RMTMUH 		<rmtmuh.pfb
+

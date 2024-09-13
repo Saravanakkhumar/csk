@@ -1,0 +1,8 @@
+\ProvidesFile{MY2mtt.fd}[2019/06/28 Loading Mtgub]
+
+\DeclareFontFamily{U}{mtt}{}%
+\DeclareFontShape{U}{mtt}{m}{n}{<->mtgu}{}%
+\DeclareFontShape{U}{mtt}{b}{n}{<->mtgub}{}%
+
+\endinput
+

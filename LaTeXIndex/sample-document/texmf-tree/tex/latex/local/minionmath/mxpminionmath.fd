@@ -1,0 +1,51 @@
+%%
+%% This is file `mxpminionmath.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `mxp,minionmath,newmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{mxpminionmath.fd}
+ [2006/30/01 NewMath v0.59a,\space
+  Math Extension Principal,\space
+  Minion Math
+ ]
+\DeclareFontFamily{MXP}{minionmath}{\skewchar\font127 }
+\DeclareFontShape{MXP}{minionmath}{m}{n}{
+   <-6>        MinionMath-MediumTiny-MXP
+   <6-8.5>     MinionMath-MediumCapt-MXP
+   <8.5-13.5>  MinionMath-Medium-MXP
+   <13.5-24.5> MinionMath-Medium-MXP
+   <24.5->     MinionMath-Medium-MXP}{}
+\DeclareFontShape{MXP}{minionmath}{d}{n}{
+   <-6>        MinionMath-MediumTiny-MXP
+   <6-8.5>     MinionMath-MediumCapt-MXP
+   <8.5-13.5>  MinionMath-Medium-MXP
+   <13.5-24.5> MinionMath-Medium-MXP
+   <24.5->     MinionMath-Medium-MXP}{}
+\DeclareFontShape{MXP}{minionmath}{sb}{n}{
+   <-6>        MinionMath-Bold-MXP
+   <6-8.5>     MinionMath-Bold-MXP
+   <8.5-13.5>  MinionMath-Bold-MXP
+   <13.5-24.5> MinionMath-Bold-MXP
+   <24.5->     MinionMath-Bold-MXP}{}
+\DeclareFontShape{MXP}{minionmath}{b}{n}{
+   <-6>        MinionMath-Bold-MXP
+   <6-8.5>     MinionMath-Bold-MXP
+   <8.5-13.5>  MinionMath-Bold-MXP
+   <13.5-24.5> MinionMath-Bold-MXP
+   <24.5->     MinionMath-Bold-MXP}{}
+\DeclareFontShape{MXP}{minionmath}{bx}{n}{<->ssub * minionmath/b/n}{}
+
+%% 
+%%
+%% End of file `mxpminionmath.fd'.

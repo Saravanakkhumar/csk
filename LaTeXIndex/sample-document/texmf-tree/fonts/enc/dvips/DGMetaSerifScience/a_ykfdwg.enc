@@ -1,0 +1,61 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_ykfdwgkxktf7fzzx2uf7n2deed
+% Encoding created by otftotfm on Sun May  5 21:26:51 2013
+% Command line follows encoding
+/AutoEnc_ykfdwgkxktf7fzzx2uf7n2deed [
+%00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni02D7 /arrowdown
+  /.notdef /uni0362 /.notdef /space /uni034D /.notdef /.notdef /.notdef
+%10
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /uni1D90 /.notdef /.notdef /.notdef /uni0297 /uni0286 /.notdef /.notdef
+  /.notdef /uni0238 /uni1D92 /uni1D93 /gamma /.notdef /.notdef /.notdef
+%30
+  /.notdef /uni027F /uni029D /uni0284 /.notdef /.notdef /uni019E /.notdef
+  /.notdef /uni0298 /uni1D97 /.notdef /.notdef /uni0239 /uni01AA /.notdef
+%40
+  /.notdef /.notdef /uni01BA /.notdef /.notdef /.notdef /.notdef /uni01C1
+  /uni01C2 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /thorn /thorn /thorn /thorn /uni0294 /uni0294 /uni0294 /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%70
+  /.notdef /.notdef /delta /.notdef /uni1D0B /.notdef /.notdef /uni1D0D
+  /uni1D18 /q /uni1D19 /.notdef /.notdef /.notdef /.notdef /.notdef
+%80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /hyphen /hyphen
+] def
+% Command line: 'otftotfm --automatic --encoding=ts3 --tfm-directory=.
+% --vf-directory=. --type1-directory=. --truetype-directory=.
+% --encoding-directory=. --map-file=./DGMetaSerifScience.map --no-updmap
+% --feature=kern --feature=liga --feature=lnum --feature=tnum
+% --ligkern=hyphen hyphenchar =: hyphen DG MetaSerif Science-Regular.otf
+% DGMetaSerifScience-tlf-ts3'

@@ -1,0 +1,61 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "NewMath 0.60 / MinionMath 1.024",
+%   date = "25jun2012",
+%   filename = "minionmath-msb.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX NewMath math symbol two encoding."
+% }
+%
+/MinionMath-MSBEncoding [          % now 256 chars follow
+% 0x00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x10
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x20
+  /uFFFFC /uni2A0B.small /uni2A0F.small /.notdef /uF5C70 /uF3C12 /uF5C80 /uF3C13
+  /uni3014 /uni3015 /uni2989 /uni298A /uni2983 /uni2984 /uF6220 /uF6230
+% 0x30
+  /zero.taboldstyle /one.taboldstyle /two.taboldstyle /three.taboldstyle /four.taboldstyle /five.taboldstyle /six.taboldstyle /seven.taboldstyle
+  /eight.taboldstyle /nine.taboldstyle /uni228D /uni2A40 /uF3400 /uni2AFE /uni2225 /uni2AF4
+% 0x40
+  /uni29B9.alt /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uFFFFD
+% 0x80
+  /uF4000 /uF4001 /uF4002 /uF4003 /uF4004 /uF4005 /uF4006 /uF4007
+  /uF4008 /uF4009 /uF400A /uF400B /uF400C /uF400D /uF400E /uF400F
+% 0x90
+  /uF4010 /uF4011 /uF4012 /uF4013 /uF4014 /uF4015 /uF4016 /uF4017
+  /uF4018 /uF4019 /uF401A /uF401B /uF401C /uF401D /uF401E /uF401F
+% 0xA0
+  /uF4020 /uF4021 /uF4022 /uF4023 /uF4024 /uF4025 /uF4026 /uF4027
+  /uF4028 /uF4029 /uF402A /uF402B /uF402C /uF402D /uF402E /uF402F
+% 0xB0
+  /uF4030 /uF4031 /uF4032 /uF4033 /uF4034 /uF4035 /uF4036 /uF4037
+  /uF4038 /uF4039 /uF403A /uF403B /uF403C /uF403D /uF403E /uF403F
+% 0xC0
+  /.notdef /uF4041 /uF4042 /uF4043 /uF4044 /uF4045 /uF4046 /uF4047
+  /uF4048 /uF4049 /uF404A /uF404B /uF404C /uF404D /uF404E /uF404F
+% 0xD0
+  /uF4050 /uF4051 /uF4052 /uF4053 /uF4054 /uF4055 /uF4056 /uF4057
+  /.notdef /uF4059 /uF405A /uF405B /uF405C /uF405D /uF405E /uF405F
+% 0xE0
+  /.notdef /uF4061 /uF4062 /uF4063 /uF4064 /uF4065 /uF4066 /uF4067
+  /.notdef /uF4069 /uF406A /uF406B /uF406C /uF406D /uF406E /uF406F
+% 0xF0
+  /.notdef /uF4071 /uF4072 /uF4073 /uF4074 /uF4075 /uF4076 /uF4077
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+] def

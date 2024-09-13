@@ -1,0 +1,74 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "1.00 / MinionMath 1.024",
+%   date = "05sep2013",
+%   filename = "minionmath-t1-tiny.enc",
+%   license = "part of MinionMath fonts, (c) 2008-2013 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX Extended TeX font encoding - latin (for optical size Tiny)."
+% }
+%
+% %% UNICODING gravecomb =: uni0300 ;
+% %% UNICODING acutecomb =: uni0301 ;
+% %% UNICODING circumflex =: uni0302 ;
+% %% UNICODING tildecomb =: uni0303 ;
+% %% UNICODING dieresis =: uni0308 ;
+%
+% %% LIGKERN less less =: guillemotleft
+% %% LIGKERN greater greater =: guillemotright
+% %% LIGKERN question quoteleft =: questiondown ; exclam quoteleft =: exclamdown ;
+% LIGKERN hyphen hyphen =: endash ; endash hyphen =: emdash ;
+% %% LIGKERN quoteleft quoteleft =: quotedblleft ;
+% %% LIGKERN quoteright quoteright =: quotedblright
+%
+/MinionMath-T1TinyEncoding [          % now 256 chars follow
+% 0x00
+  /grave /acute /circumflex /tilde /dieresis /.notdef /ring /caron
+  /breve /macron /dotaccent /.notdef /.notdef /.notdef /.notdef /.notdef 
+% 0x10
+  /.notdef /.notdef /.notdef /.notdef /.notdef /endash /emdash /uni200B
+  /zero.inferior /dotlessi /uni0237 /f_f /f_i /f_l /f_f_i /f_f_l
+% 0x20
+  /uni2423 /exclam /quotedbl /numbersign /dollar /percent /ampersand /.notdef
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+% 0x30
+  /zero /one /two /three /four /five /six /seven
+  /eight /nine /colon /semicolon /less /equal /greater /question
+% 0x40
+  /at /A /B /C /D /E /F /G 
+  /H /I /J /K /L /M /N /O
+% 0x50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+% 0x60
+  /.notdef /a /b /c /d /e /f /g
+  /h /i /j /k /l /m /n /o
+% 0x70
+  /p /q /r /s /t /u /v /w
+  /x /y /z /braceleft /bar /braceright /asciitilde /hyphen
+% 0x80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+% 0x90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /section
+% 0xA0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+% 0xB0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+  /.notdef /.notdef /.notdef /.notdef /.notdef /exclamdown /questiondown /sterling
+% 0xC0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+% 0xD0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+% 0xE0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+% 0xF0
+  /eth /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /thorn /.notdef 
+] def

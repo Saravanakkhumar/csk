@@ -1,0 +1,51 @@
+%%
+%% This is file `ot1minionmath.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `ot1,minionmath,oldmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{ot1minionmath.fd}
+ [Traditional TeX Math Setup (OldMath),\space
+  TeX Text,\space
+  Minion Math
+ ]
+\DeclareFontFamily{OT1}{minionmath}{\hyphenchar\font45 }
+\DeclareFontShape{OT1}{minionmath}{m}{n}{
+   <-6>        MinionMath-MediumTiny-OT1
+   <6-8.5>     MinionMath-MediumCapt-OT1
+   <8.5-13.5>  MinionMath-Medium-OT1
+   <13.5-24.5> MinionMath-Medium-OT1
+   <24.5->     MinionMath-Medium-OT1}{}
+\DeclareFontShape{OT1}{minionmath}{d}{n}{
+   <-6>        MinionMath-MediumTiny-OT1
+   <6-8.5>     MinionMath-MediumCapt-OT1
+   <8.5-13.5>  MinionMath-Medium-OT1
+   <13.5-24.5> MinionMath-Medium-OT1
+   <24.5->     MinionMath-Medium-OT1}{}
+\DeclareFontShape{OT1}{minionmath}{sb}{n}{
+   <-6>        MinionMath-Bold-OT1
+   <6-8.5>     MinionMath-Bold-OT1
+   <8.5-13.5>  MinionMath-Bold-OT1
+   <13.5-24.5> MinionMath-Bold-OT1
+   <24.5->     MinionMath-Bold-OT1}{}
+\DeclareFontShape{OT1}{minionmath}{b}{n}{
+   <-6>        MinionMath-Bold-OT1
+   <6-8.5>     MinionMath-Bold-OT1
+   <8.5-13.5>  MinionMath-Bold-OT1
+   <13.5-24.5> MinionMath-Bold-OT1
+   <24.5->     MinionMath-Bold-OT1}{}
+\DeclareFontShape{OT1}{minionmath}{bx}{n}{<->ssub * minionmath/b/n}{}
+
+%% 
+%%
+%% End of file `ot1minionmath.fd'.

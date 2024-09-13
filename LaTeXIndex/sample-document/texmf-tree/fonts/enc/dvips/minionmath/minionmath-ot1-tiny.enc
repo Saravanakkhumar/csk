@@ -1,0 +1,60 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "1.00 / MinionMath 1.024",
+%   date = "25jun2012",
+%   filename = "minionmath-ot1-tiny.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX OldMath TeX text encoding (for optical size Tiny)."
+% }
+%
+/MinionMath-OT1TinyEncoding [
+% 0x00
+  /Gamma /uni0394 /Theta /Lambda /Xi /Pi /Sigma /Upsilon
+  /Phi /Psi /uni03A9 /f_f /f_i /f_l /f_f_i /f_f_l
+% 0x10
+  /dotlessi /uni0237 /grave /acute /caron /breve /macron /uni030A
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x20
+  /.notdef /exclam /.notdef /numbersign
+  /dollar /percent /ampersand /.notdef
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+% 0x30
+  /zero /one /two /three /four /five /six /seven
+  /eight /nine /colon /semicolon /exclamdown /equal /questiondown /question
+% 0x40
+  /at /A /B /C /D /E /F /G /H /I /J /K /L /M /N /O
+% 0x50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /.notdef /bracketright /circumflex /dotaccent
+% 0x60
+  /.notdef /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o
+% 0x70
+  /p /q /r /s /t /u /v /w
+  /x /y /z /endash /emdash /.notdef /tilde /dieresis
+% 0x80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xA0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xB0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xC0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xD0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xE0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xF0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def

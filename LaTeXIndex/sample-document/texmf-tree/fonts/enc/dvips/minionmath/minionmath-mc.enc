@@ -1,0 +1,61 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "NewMath 0.60 / MinionMath 1.024",
+%   date = "25jun2012",
+%   filename = "minionmath-mc.enc",
+%   license = "part of MinionMath fonts, (c) 2008-2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX NewMath math core encoding."
+% }
+% 
+/MinionMath-MCEncoding [          % now 256 chars follow
+% 0x00
+  /uni230A /uni230B /uni2308 /uni2309 /uni27EE /uni27EF /uni23B0 /uni23B1
+  /bar /uni2016 /uni2980 /uni266D /uni266E /uni266F /dagger /daggerdbl
+% 0x10
+  /aleph /uni2136 /uni2137 /uni2138 /Rfraktur /Ifraktur /thorn /eth
+  /zero.slash /u1D6A4 /u1D6A5 /uni226C /proportional /infinity /uF8020 /uF8021
+% 0x20
+  /uFFFFC /exclam /uni27E6 /numbersign /uni27E7 /percent /ampersand /uni214B
+  /parenleft /parenright /asteriskmath /uni22C6 /comma /dotmath /period /slash
+% 0x30
+  /zero /one /two /three /four /five /six /seven
+  /eight /nine /colon /semicolon /uni27E8 /radical /uni27E9 /question
+% 0x40
+  /at /u1D434 /u1D435 /u1D436 /u1D437 /u1D438 /u1D439 /u1D43A
+  /u1D43B /u1D43C  /u1D43D /u1D43E /u1D43F /u1D440 /u1D441 /u1D442
+% 0x50
+  /u1D443 /u1D444  /u1D445 /u1D446 /u1D447 /u1D448 /u1D449 /u1D44A
+  /u1D44B /u1D44C /u1D44D  /bracketleft /backslash /bracketright /uni210F /uni210E.slashed
+% 0x60
+  /d /u1D44E /u1D44F /u1D450 /u1D451 /u1D452 /u1D453 /u1D454
+  /uni210E /u1D456 /u1D457 /u1D458 /u1D459 /u1D45A /u1D45B /u1D45C
+% 0x70
+  /u1D45D /u1D45E /u1D45F /u1D460 /u1D461 /u1D462 /u1D463 /u1D464
+  /u1D465 /u1D466 /u1D467 /braceleft /weierstrass /braceright /uni2113.mathit /uFFFFD
+% 0x80
+  /uFFFFB /Alpha /Beta /Gamma /uni0394 /Epsilon /Zeta /Eta 
+  /Theta /Iota /Kappa /Lambda /Mu /Nu /Xi /Omicron
+% 0x90
+  /Pi /Rho /Sigma /Tau /Upsilon /Phi /Chi /Psi 
+  /uni03A9 /Y /Chi.alt /gradient /uni2A3F /uni2127 /.notdef /.notdef
+% 0xA0
+  /partialdiff /alpha /beta /gamma /delta /uni03F5 /zeta /eta
+  /theta /iota /kappa /lambda /uni03BC /nu /xi /omicron
+% 0xB0
+  /pi /rho /sigma /tau /upsilon /uni03D5 /chi /psi
+  /omega /epsilon /uni03D1 /uni03F0 /uni03D6 /uni03F1 /uni03C2 /phi
+% 0xC0
+  /.notdef /u1D6E2 /u1D6E3 /u1D6E4 /u1D6E5 /u1D6E6 /u1D6E7 /u1D6E8
+  /u1D6E9 /u1D6EA /u1D6EB /u1D6EC /u1D6ED /u1D6EE /u1D6EF /u1D6F0
+% 0xD0
+  /u1D6F1 /u1D6F2 /u1D6F4 /u1D6F5 /u1D6F6 /u1D6F7 /u1D6F8 /u1D6F9 
+  /u1D6FA /u1D6F6.alt /u1D6F8.alt /uni03DD.mathit /uni03F6.mathit /uni2129.mathit /u1D706.barred /u1D706.slashed
+% 0xE0
+  /u1D715 /u1D6FC /u1D6FD /u1D6FE /u1D6FF /u1D716 /u1D701 /u1D702
+  /u1D703 /u1D704 /u1D705 /u1D706 /u1D707 /u1D708 /u1D709 /u1D70A
+% 0xF0
+   /u1D70B /u1D70C /u1D70E /u1D70F /u1D710 /u1D719 /u1D712 /u1D713 
+  /u1D714 /u1D700 /u1D717 /u1D718 /u1D71B /uF071A /u1D70D  /u1D711
+] def

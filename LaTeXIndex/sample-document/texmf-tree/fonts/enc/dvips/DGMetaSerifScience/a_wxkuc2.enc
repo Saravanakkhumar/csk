@@ -1,0 +1,61 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_wxkuc2avfovuklbwoagea5un2h
+% Encoding created by otftotfm on Sun May  5 21:27:11 2013
+% Command line follows encoding
+/AutoEnc_wxkuc2avfovuklbwoagea5un2h [
+%00
+  /uni040A /uni0409 /uni040F /uni042D /uni0406 /uni0404 /uni0402 /uni040B
+  /uni045A.sc /uni0459.sc /uni045F.sc /uni044D.sc /uni0456.sc /uni0454.sc /uni0452.sc /uni045B.sc
+%10
+  /uni042E /uni0416 /uni0419 /uni0401 /uni0474 /uni0472 /uni0405 /uni042F
+  /uni044E.sc /uni0436.sc /uni0439.sc /uni0451.sc /uni0475.sc /uni0473.sc /uni0455.sc /uni044F.sc
+%20
+  /dieresis /exclam /quotedblright /uni0462 /.notdef /percent /acute /quoteright
+  /parenleft /parenright /asterisk /uni0463.sc /comma /hyphen /period /slash
+%30
+  /zero /one /two /three /four /five /six /seven
+  /eight /nine /colon /semicolon /guillemotleft /dotlessi.sc /guillemotright /question
+%40
+  /breve /uni0410 /uni0411 /uni0426 /uni0414 /uni0415 /uni0424 /uni0413
+  /uni0425 /uni0418 /uni0408 /uni041A /uni041B /uni041C /uni041D /uni041E
+%50
+  /uni041F /uni0427 /uni0420 /uni0421 /uni0422 /uni0423 /uni0412 /uni0429
+  /uni0428 /uni042B /uni0417 /bracketleft /quotedblleft /bracketright /uni042C /uni042A
+%60
+  /quoteleft /uni0430.sc /uni0431.sc /uni0446.sc /uni0434.sc /uni0435.sc /uni0444.sc /uni0433.sc
+  /uni0445.sc /uni0438.sc /uni0458.sc /uni043A.sc /uni043B.sc /uni043C.sc /uni043D.sc /uni043E.sc
+%70
+  /uni043F.sc /uni0447.sc /uni0440.sc /uni0441.sc /uni0442.sc /uni0443.sc /uni0432.sc /uni0449.sc
+  /uni0448.sc /uni044B.sc /uni0437.sc /endash /emdash /uni2116 /uni044C.sc /uni044A.sc
+%80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /hyphen
+] def
+% Command line: 'otftotfm --automatic --encoding=ot2 --tfm-directory=.
+% --vf-directory=. --type1-directory=. --truetype-directory=.
+% --encoding-directory=. --map-file=./DGMetaSerifScience.map --no-updmap
+% --feature=kern --feature=liga --feature=lnum --feature=pnum --feature=smcp
+% --unicoding=germandbls =: SSsmall --ligkern=hyphen hyphenchar =: hyphen DG
+% MetaSerif Science-Regular.otf DGMetaSerifScience-lf-sc-ot2'

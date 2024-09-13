@@ -1,0 +1,51 @@
+%%
+%% This is file `omlminionmath.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `oml,minionmath,oldmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{omlminionmath.fd}
+ [Traditional TeX Math Setup (OldMath),\space
+  TeX Math Italic,\space
+  Minion Math
+ ]
+\DeclareFontFamily{OML}{minionmath}{\skewchar\font127 }
+\DeclareFontShape{OML}{minionmath}{m}{it}{
+   <-6>        MinionMath-MediumTiny-OML
+   <6-8.5>     MinionMath-MediumCapt-OML
+   <8.5-13.5>  MinionMath-Medium-OML
+   <13.5-24.5> MinionMath-Medium-OML
+   <24.5->     MinionMath-Medium-OML}{}
+\DeclareFontShape{OML}{minionmath}{d}{it}{
+   <-6>        MinionMath-MediumTiny-OML
+   <6-8.5>     MinionMath-Mediuomlapt-OML
+   <8.5-13.5>  MinionMath-Medium-OML
+   <13.5-24.5> MinionMath-Medium-OML
+   <24.5->     MinionMath-Medium-OML}{}
+\DeclareFontShape{OML}{minionmath}{sb}{it}{
+   <-6>        MinionMath-Bold-OML
+   <6-8.5>     MinionMath-Bold-OML
+   <8.5-13.5>  MinionMath-Bold-OML
+   <13.5-24.5> MinionMath-Bold-OML
+   <24.5->     MinionMath-Bold-OML}{}
+\DeclareFontShape{OML}{minionmath}{b}{it}{
+   <-6>        MinionMath-Bold-OML
+   <6-8.5>     MinionMath-Bold-OML
+   <8.5-13.5>  MinionMath-Bold-OML
+   <13.5-24.5> MinionMath-Bold-OML
+   <24.5->     MinionMath-Bold-OML}{}
+\DeclareFontShape{OML}{minionmath}{bx}{it}{<->ssub * minionmath/b/n}{}
+
+%% 
+%%
+%% End of file `omlminionmath.fd'.

@@ -1,0 +1,63 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "NewMath 0.60 / MinionMath 1.024",
+%   date = "24jul2012",
+%   filename = "minionmath-msa.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX NewMath math symbol one encoding."
+% }
+%
+/MinionMath-MSAEncoding [          % now 256 chars follow
+% 0x00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x10
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x20
+  /uFFFFC /uni229D /uni229B /uni229A /uni21BB /uni21BA /uni21B6 /uni21B7
+  /uni21C8 /uni21CA /uni21BE /uni21C2 /uni21BF /uni21C3 /uni21B0 /uni21B1
+% 0x30
+  /u1D7D8 /u1D7D9 /u1D7DA /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /uni231E /uni231F /uni231C /uni231D /uni22CB /uni22CC
+% 0x40
+  /.notdef /u1D538 /u1D539 /uni2102 /u1D53B /u1D53C /u1D53D /u1D53E
+  /uni210D /u1D540 /u1D541 /u1D542 /u1D543 /u1D544 /uni2115 /u1D546
+% 0x50
+  /uni2119 /uni211A /uni211D /u1D54A /u1D54B /u1D54C /u1D54D /u1D54E
+  /u1D54F /u1D550 /uni2124 /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /u1D55C /.notdef /.notdef /.notdef /.notdef
+% 0x70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uFFFFD
+% 0x80
+  /uni2A95 /uni2A96 /uni22E6 /uni22E7 /uni2A85 /uni2A86 /uni2A89 /uni2A8A
+  /uni22DE /uni22DF /uni22E8 /uni22E9 /uni2AB7 /uni2AB8 /uni2AB9 /uni2ABA
+% 0x90
+  /uni2266 /uni2267 /uF3826 /uF3827 /uni2268 /uni2269 /uni2268.vs1 /uni2269.vs1
+  /uni22D6 /uni22D7 /uni2276 /uni2277 /uni22DA /uni22DB /uni2A8B /uni2A8C
+% 0xA0
+  /uni2A87 /uni2A88 /uni2288 /uni2289 /uni228A.vs1 /uni228B.vs1 /uni228A /uni228B
+  /uni2AC5 /uni2AC6 /uF382C /uF382D /uni2ACB.vs1 /uni2ACC.vs1 /uni2ACB /uni2ACC
+% 0xB0
+  /uni22D0 /uni22D1 /uni22D2 /uni22D3 /therefore /uni2235 /uni22D4 /uni2214
+  /uni2253 /uni2251 /uni2252 /uni225C /uni2257 /uni2256 /uni224F /uni224E
+% 0xC0
+  /uni22CF /uni22CE /uni2322.alt /uni2323.alt /uni22BB /uni22BC /uni2A5E /uni22BD
+  /uni2221.alt /uni2222.alt /uni2224 /uni2226 /uni2223.small /uni2225.small /uF3810 /uF3811
+% 0xD0
+  /uni22A9 /uni22AA /uni22A8 /uni22AB /uni22AE /uF3807 /uni22AD /uni22AF
+  /uni2AE3 /uF3609 /uni2AE4 /uni2AE5 /uF3808 /uF3809 /uF380A /uF380B
+% 0xE0
+  /uni22A1 /uni229E /uni229F /uni22A0 /uni25FC /lozenge /uni29EB /uF3005
+  /uF3DA3 /uF3DB3 /uF3D73 /uF3D83 /uF3D7B /uF3D8B /uni2B1E /uF3D7E 
+% 0xF0
+  /uF3402 /uni2201 /uni22BA /uni2713.alt /uni2300 /uni221D.alt /uni2216 /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+
+

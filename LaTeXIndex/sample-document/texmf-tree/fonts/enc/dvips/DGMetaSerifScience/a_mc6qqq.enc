@@ -1,0 +1,61 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_mc6qqqlen2iexmftrftxpqgs7c
+% Encoding created by otftotfm on Sun May  5 21:27:35 2013
+% Command line follows encoding
+/AutoEnc_mc6qqqlen2iexmftrftxpqgs7c [
+%00
+  /grave /acute /circumflex /tilde /dieresis /dotbelowcomb /ring /caron
+  /breve /macron /dotaccent /cedilla /f_f /quotesinglbase /guilsinglleft /guilsinglright
+%10
+  /quotedblleft /quotedblright /quotedblbase /guillemotleft /guillemotright /endash /emdash /uni200C
+  /uni2080 /dotlessi /uni1EF6 /uni1EF7 /uni1EF4 /uni1EF5 /Dcroat /dcroat
+%20
+  /uni2423 /exclam /quotedbl /numbersign /dollar.osf /percent /ampersand /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.osf /one.osf /two.osf /three.osf /four.osf /five.osf /six.osf /seven.osf
+  /eight.osf /nine.osf /colon /semicolon /less /equal /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+%60
+  /quoteleft /a /b /c /d /e /f /g
+  /h /i /j /k /l /m /n /o
+%70
+  /p /q /r /s /t /u /v /w
+  /x /y /z /braceleft /bar /braceright /asciitilde /uni00AD
+%80
+  /Agrave /Aacute /Atilde /uni1EA2 /uni1EA0 /Acircumflex /uni1EA6 /uni1EA4
+  /uni1EAA /uni1EA8 /uni1EAC /Abreve /uni1EB0 /uni1EAE /uni1EB4 /uni1EB2
+%90
+  /uni1EB6 /Egrave /Eacute /uni1EBC /uni1EBA /uni1EB8 /Ecircumflex /uni1EC0
+  /uni1EBE /uni1EC4 /uni1EC2 /uni1EC6 /Igrave /Iacute /Itilde /uni1EC8
+%A0
+  /agrave /aacute /atilde /uni1EA3 /uni1EA1 /acircumflex /uni1EA7 /uni1EA5
+  /uni1EAB /uni1EA9 /uni1EAD /abreve /uni1EB1 /uni1EAF /uni1EB5 /uni1EB3
+%B0
+  /uni1EB7 /egrave /eacute /uni1EBD /uni1EBB /uni1EB9 /ecircumflex /uni1EC1
+  /uni1EBF /uni1EC5 /uni1EC3 /uni1EC7 /igrave /iacute /itilde /uni1EC9
+%C0
+  /uni1ECA /Ograve /Oacute /Otilde /uni1ECE /uni1ECC /Ocircumflex /uni1ED2
+  /uni1ED0 /uni1ED6 /uni1ED4 /uni1ED8 /Ohorn /uni1EDC /uni1EDA /uni1EE0
+%D0
+  /uni1EDE /uni1EE2 /Ugrave /Uacute /Utilde /uni1EE6 /uni1EE4 /Uhorn
+  /uni1EEA /uni1EE8 /uni1EEE /uni1EEC /uni1EF0 /Ygrave /Yacute /uni1EF8
+%E0
+  /uni1ECB /ograve /oacute /otilde /uni1ECF /uni1ECD /ocircumflex /uni1ED3
+  /uni1ED1 /uni1ED7 /uni1ED5 /uni1ED9 /ohorn /uni1EDD /uni1EDB /uni1EE1
+%F0
+  /uni1EDF /uni1EE3 /ugrave /uacute /utilde /uni1EE7 /uni1EE5 /uhorn
+  /uni1EEB /uni1EE9 /uni1EEF /uni1EED /uni1EF1 /ygrave /yacute /uni1EF9
+] def
+% Command line: 'otftotfm --automatic --encoding=t5 --tfm-directory=.
+% --vf-directory=. --type1-directory=. --truetype-directory=.
+% --encoding-directory=. --map-file=./DGMetaSerifScience.map --no-updmap
+% --feature=kern --feature=liga --feature=onum --feature=pnum
+% --ligkern=hyphen hyphenchar =: hyphen DG MetaSerif Science-Regular.otf
+% DGMetaSerifScience-osf-t5'

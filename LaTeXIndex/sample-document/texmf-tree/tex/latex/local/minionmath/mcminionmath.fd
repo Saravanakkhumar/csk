@@ -1,0 +1,51 @@
+%%
+%% This is file `mcminionmath.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `mc,minionmath,newmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{mcminionmath.fd}
+ [2006/30/01 NewMath v0.59a,\space
+  Math Core,\space
+  Minion Math
+ ]
+\DeclareFontFamily{MC}{minionmath}{\skewchar\font127 }
+\DeclareFontShape{MC}{minionmath}{m}{n}{
+   <-6>        MinionMath-MediumTiny-MC
+   <6-8.5>     MinionMath-MediumCapt-MC
+   <8.5-13.5>  MinionMath-Medium-MC
+   <13.5-24.5> MinionMath-Medium-MC
+   <24.5->     MinionMath-Medium-MC}{}
+\DeclareFontShape{MC}{minionmath}{d}{n}{
+   <-6>        MinionMath-MediumTiny-MC
+   <6-8.5>     MinionMath-MediumCapt-MC
+   <8.5-13.5>  MinionMath-Medium-MC
+   <13.5-24.5> MinionMath-Medium-MC
+   <24.5->     MinionMath-Medium-MC}{}
+\DeclareFontShape{MC}{minionmath}{sb}{n}{
+   <-6>        MinionMath-Bold-MC
+   <6-8.5>     MinionMath-Bold-MC
+   <8.5-13.5>  MinionMath-Bold-MC
+   <13.5-24.5> MinionMath-Bold-MC
+   <24.5->     MinionMath-Bold-MC}{}
+\DeclareFontShape{MC}{minionmath}{b}{n}{
+   <-6>        MinionMath-Bold-MC
+   <6-8.5>     MinionMath-Bold-MC
+   <8.5-13.5>  MinionMath-Bold-MC
+   <13.5-24.5> MinionMath-Bold-MC
+   <24.5->     MinionMath-Bold-MC}{}
+\DeclareFontShape{MC}{minionmath}{bx}{n}{<->ssub * minionmath/b/n}{}
+
+%% 
+%%
+%% End of file `mcminionmath.fd'.

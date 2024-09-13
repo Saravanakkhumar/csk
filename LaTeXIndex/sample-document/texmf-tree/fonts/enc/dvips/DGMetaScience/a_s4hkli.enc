@@ -1,0 +1,61 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_s4hklir3l7qppqj7thvwuoiide
+% Encoding created by otftotfm on Sun May  5 22:39:16 2013
+% Command line follows encoding
+/AutoEnc_s4hklir3l7qppqj7thvwuoiide [
+%00
+  /uni2000 /uni2001 /uni2002 /uni2003 /uni2004 /uni2005 /uni2006 /uni2007
+  /uni2008 /uni2009 /uni200A /uni200B /uni200C /uni200D /uni200E /uni200F
+%10
+  /uni2010 /uni2011 /figuredash /endash /emdash /uni2015 /uni2016 /underscoredbl
+  /quoteleft /quoteright /quotesinglbase /quotereversed /quotedblleft /quotedblright /quotedblbase /uni201F
+%20
+  /dagger /daggerdbl /bullet /uni2023 /onedotenleader /twodotenleader /ellipsis /uni2027
+  /uni2028 /uni2029 /uni202A /uni202B /uni202C /uni202D /uni202E /uni202F
+%30
+  /perthousand /uni2031 /minute /second /uni2034 /uni2035 /uni2036 /uni2037
+  /uni2038 /guilsinglleft /guilsinglright /uni203B /exclamdbl /uni203D /uni203E /uni203F
+%40
+  /uni2040 /uni2041 /uni2042 /uni2043 /fraction /uni2045 /uni2046 /uni2047
+  /uni2048 /uni2049 /uni204A /uni204B /uni204C /uni204D /uni204E /uni204F
+%50
+  /uni2050 /uni2051 /uni2052 /uni2053 /uni2054 /uni2055 /uni2056 /uni2057
+  /uni2058 /uni2059 /uni205A /uni205B /uni205C /uni205D /uni205E /uni205F
+%60
+  /uni2060 /uni2061 /uni2062 /uni2063 /uni2064 /uni206A /uni206B /uni206C
+  /uni206D /uni206E /uni206F /uni2070 /uni2074 /uni2075 /uni2076 /uni2077
+%70
+  /uni2078 /uni2079 /uni2080 /uni2081 /uni2082 /uni2083 /uni2084 /uni2085
+  /uni2086 /uni2087 /uni2088 /uni2089 /Euro /uni20B4 /uni2116 /uni2117
+%80
+  /trademark /Omega /estimated /uni2150 /uni2151 /uni2152 /onethird /twothirds
+  /uni2155 /uni2156 /uni2157 /uni2158 /uni2159 /uni215A /oneeighth /threeeighths
+%90
+  /fiveeighths /seveneighths /uni215F /uni2189 /arrowleft /arrowup /arrowright /arrowdown
+  /arrowboth /arrowupdn /uni2196 /uni2197 /uni2198 /uni2199 /partialdiff /Delta
+%A0
+  /product /summation /minus /uni2215 /uni2219 /radical /infinity /integral
+  /approxequal /notequal /lessequal /greaterequal /dotmath /angleleft /angleright /uni2400
+%B0
+  /uni2401 /uni2402 /uni2403 /uni2404 /uni2405 /uni2406 /uni2407 /uni2408
+  /uni2409 /uni240A /uni240B /uni240C /uni240D /uni240E /uni240F /uni2410
+%C0
+  /uni2411 /uni2412 /uni2413 /uni2414 /uni2415 /uni2416 /uni2417 /uni2418
+  /uni2419 /uni241A /uni241B /uni241C /uni241D /uni241E /uni241F /uni2420
+%D0
+  /uni2421 /uni2422 /uni2423 /uni2424 /uni2425 /uni2426 /filledbox /H22073
+  /uni25B4 /uni25B8 /uni25BE /uni25C2 /lozenge /circle /H18533 /uni267E
+%E0
+  /arrowleft.ss01 /arrowup.ss01 /arrowright.ss01 /arrowdown.ss01 /arrowboth.ss01 /arrowupdn.ss01 /uni2196.ss01 /uni2197.ss01
+  /uni2198.ss01 /uni2199.ss01 /arrowleft.ss02 /arrowup.ss02 /arrowright.ss02 /arrowdown.ss02 /arrowboth.ss02 /arrowupdn.ss02
+%F0
+  /uni2196.ss02 /uni2197.ss02 /uni2198.ss02 /uni2199.ss02 /orn001 /orn002 /orn003 /orn004
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=2bs --tfm-directory=.
+% --vf-directory=. --type1-directory=. --truetype-directory=.
+% --encoding-directory=. --map-file=./DGMetaScience.map --no-updmap
+% --feature=kern --feature=liga --feature=lnum --feature=pnum
+% --ligkern=hyphen hyphenchar =: hyphen DG Meta Science-Regular.otf
+% DGMetaScience-lf-2bs'

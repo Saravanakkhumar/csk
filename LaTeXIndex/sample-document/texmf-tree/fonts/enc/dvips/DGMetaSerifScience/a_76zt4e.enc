@@ -1,0 +1,61 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_76zt4epdwnwvrnt3eyflkwr6ea
+% Encoding created by otftotfm on Sun May  5 21:26:58 2013
+% Command line follows encoding
+/AutoEnc_76zt4epdwnwvrnt3eyflkwr6ea [
+%00
+  /uni02CB /uni02CA /circumflex /tilde /dieresis /uni02BA /ring /caron
+  /breve /uni02C9 /dotaccent /cedilla /ogonek /space /uni030D /uni030E
+%10
+  /uni030F /uni0311 /uni0321 /uni0322 /uni02BE /uni02BF /uni032A /uni032B
+  /uni02DF /dotlessi.sc /uni0237.sc /uni02D6 /uni02D4 /uni02D5 /uni033A /uni02EB
+%20
+  /uni033B /uni01C3 /uni02C8 /uni033C /.notdef /.notdef /uni0360 /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /uni0289 /uni0268 /uni028C /uni025C /uni0265 /uni0250 /uni0252 /uni0264
+  /uni0275 /uni0258 /uni02D0 /uni02D1 /uni203F /equal /uni2040 /question
+%40
+  /uni0259.sc /uni0251 /beta.sc /uni0255 /eth.sc /uni025B /uni0278 /uni0263
+  /uni0266 /uni026A /uni029D /uni0281 /uni028E /uni0271 /eng.sc /uni0254
+%50
+  /uni0294 /uni0295 /uni027E /uni0283 /theta.sc /uni028A /uni028B /uni026F
+  /chi.sc /uni028F /uni0292 /bracketleft /uni02BD /bracketright /uni02FA /uni02F9
+%60
+  /uni02BB /a.sc /b.sc /c.sc /d.sc /e.sc /f.sc /uni0261
+  /h.sc /i.sc /j.sc /k.sc /l.sc /m.sc /n.sc /o.sc
+%70
+  /p.sc /q.sc /r.sc /s.sc /t.sc /u.sc /v.sc /w.sc
+  /x.sc /y.sc /z.sc /uni01C1 /uni01C0 /uni01C2 /uni02DE /uni02CC
+%80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni2197 /uni2198
+  /uni1DC4 /uni1DC5 /uni1DC8 /uni1DC9 /.notdef /.notdef /.notdef /.notdef
+%A0
+  /uni0180 /dcroat.sc /uni0221 /uni1D91 /uni1D07 /g.sc /.notdef /uni0285
+  /uni1D0A /uni029E /uni019A /lambda.sc /uni019B /.notdef /uni0235 /.notdef
+%B0
+  /omega.sc /omega.sc /uni0286 /uni01AB /uni0236 /uni02A6 /uni02AE /uni02AF
+  /uni0293 /uni01B9 /uni044C.sc /uni044A.sc /uni02C0 /uni02C2 /uni02C3 /.notdef
+%C0
+  /uni1D00 /uni0188 /uni0297 /uni02A4 /uni025A /uni029A /uni025E /uni025D
+  /.notdef /uni029B /uni0267 /uni029C /uni0269 /.notdef /uni0199 /uni029F
+%D0
+  /uni026E /uni0277 /uni01A5 /uni02A0 /uni027C /uni027A /uni01AD /uni0276
+  /uni0287 /uni02A7 /uni1D1C /uni0296 /uni02A1 /uni02A2 /uni0225 /uni01BF
+%E0
+  /uni0299 /uni0253 /uni0257 /uni0256 /uni0260 /uni0262 /ae.sc /ccedilla.sc
+  /hbar.sc /uni025F /uni0284 /uni026B /uni026C /uni026D /uni0270 /uni0273
+%F0
+  /uni0274 /uni0272 /uni0298 /uni027D /uni0279 /uni027B /uni0280 /oe.sc
+  /oslash.sc /uni0282 /uni0288 /uni028D /uni0290 /uni0291 /thorn.sc /uni0195
+] def
+% Command line: 'otftotfm --automatic --encoding=t3 --tfm-directory=.
+% --vf-directory=. --type1-directory=. --truetype-directory=.
+% --encoding-directory=. --map-file=./DGMetaSerifScience.map --no-updmap
+% --feature=kern --feature=liga --feature=lnum --feature=smcp --feature=tnum
+% --unicoding=germandbls =: SSsmall --ligkern=hyphen hyphenchar =: hyphen DG
+% MetaSerif Science-Regular.otf DGMetaSerifScience-tlf-sc-t3'

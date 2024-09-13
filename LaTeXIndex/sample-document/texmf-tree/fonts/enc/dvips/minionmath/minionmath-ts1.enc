@@ -1,0 +1,66 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "1.00 / MinionMath 1.024 / MinionPro 2.xxx",
+%   date = "25jun2012",
+%   filename = "minionmath-ts1.enc",
+%   license = "part of MinionMath fonts, (c) 2008-2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX Text Companion Symbols 1 - TS1."
+% }
+%
+% CODINGSCHEME TEX TEXT COMPANION SYMBOLS 1 - TS1
+%
+
+/MinionMath-TS1Encoding [          % now 256 chars follow
+% 0x00
+  /grave.cap /acute.cap /circumflex.cap /tilde.cap /dieresis.cap /hungarumlaut.cap /ring.cap /caron.cap
+  /breve.cap /macron.cap /dotaccent.cap /cedilla.cap /ogonek.cap /.notdef /.notdef /.notdef
+% 0x10
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x20
+  /.notdef /.notdef /.notdef /.notdef /dollar /.notdef /.notdef /quotesingle
+  /.notdef /.notdef /.notdef /.notdef /comma /.notdef /period /fraction
+% 0x30
+  /zero.taboldstyle /one.taboldstyle /two.taboldstyle /three.taboldstyle 
+  /four.taboldstyle /five.taboldstyle /six.taboldstyle /seven.taboldstyle
+  /eight.taboldstyle /nine.taboldstyle /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x40
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /Omega
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x60
+  /grave /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /bullet.004 /.notdef /.notdef /.notdef
+% 0x70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /asciitilde /.notdef
+% 0x80
+  /breve /caron /hungarumlaut /.notdef /dagger /daggerdbl /.notdef /perthousand
+  /bullet /.notdef /dollar.taboldstyle /cent.taboldstyle /florin /colonmonetary /.notdef /.notdef
+% 0x90
+  /.notdef /peseta /lira /.notdef /.notdef /.notdef /dong /trademark
+  /.notdef /.notdef /.notdef /uni2116 /.notdef /estimated /.notdef /.notdef
+% 0xA0
+  /.notdef /.notdef /cent /sterling /currency /yen /brokenbar /section
+  /dieresis /copyright /ordfeminine /.notdef /logicalnot /.notdef /registered /macron
+% 0xB0
+  /degree /plusminus /two.superior /three.superior /acute /mu /paragraph /periodcentered
+  /.notdef /one.superior /ordmasculine /radical /onequarter /onehalf /threequarters /Euro
+% 0xC0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xD0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xE0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xF0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+

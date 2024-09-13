@@ -1,0 +1,61 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "1.00 / XITS Math 1.104",
+%   date = "25jun2012",
+%   filename = "minionmath-xits-bf-gc1.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "XITS bold glyph container 1 encoding."
+% }
+%
+/MinionMath-XITSBoldAEncoding [          % now 256 chars follow
+% 0x00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x10
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /u1D4F2.dtls /u1D4F3.dtls /u1D58E.dtls /u1D58F.dtls /.notdef /.notdef /.notdef
+% 0x20
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x30
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x40 -- Script Uppercase (Bold)
+  /.notdef /u1D4D0 /u1D4D1 /u1D4D2 /u1D4D3 /u1D4D4 /u1D4D5 /u1D4D6
+  /u1D4D7 /u1D4D8 /u1D4D9 /u1D4DA /u1D4DB /u1D4DC /u1D4DD /u1D4DE
+% 0x50
+  /u1D4DF /u1D4E0 /u1D4E1 /u1D4E2 /u1D4E3 /u1D4E4 /u1D4E5 /u1D4E6
+  /u1D4E7 /u1D4E8 /u1D4E9 /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x60 -- Script Lowercase (Bold)
+  /.notdef /u1D4DA /u1D4DB /u1D4DC /u1D4DD /u1D4DE /u1D4DF /u1D4E0
+  /u1D4E1 /u1D4E2 /u1D4E3 /u1D4E4 /u1D4E5 /u1D4E6 /u1D4E7 /u1D4E8
+% 0x70
+  /u1D4E9 /u1D4EA /u1D4EB /u1D4EC /u1D4ED /u1D4EE /u1D4EF /u1D4F0
+  /u1D4F1 /u1D4F2 /u1D4F3 /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x80 -- Fraktur Uppercase (Bold)
+  /.notdef /u1D56C /u1D56D /u1D56E /u1D56F /u1D570 /u1D571 /u1D572
+  /u1D573 /u1D574 /u1D575 /u1D576 /u1D577 /u1D578 /u1D579 /u1D57A
+% 0x90
+  /u1D57B /u1D57C /u1D57D /u1D57E /u1D57F /u1D580 /u1D581 /u1D582
+  /u1D583 /u1D584 /u1D585 /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xA0 -- Fraktur Lowercase (Bold)
+  /.notdef /u1D586 /u1D587 /u1D588 /u1D589 /u1D58A /u1D58B /u1D58C 
+  /u1D58D /u1D58E /u1D58F /u1D590 /u1D591 /u1D592 /u1D593 /u1D594
+% 0xB0
+  /u1D595 /u1D596 /u1D597 /u1D598 /u1D599 /u1D59A /u1D59B /u1D59C
+  /u1D59D /u1D59E /u1D59F /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xC0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xD0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xE0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xF0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def

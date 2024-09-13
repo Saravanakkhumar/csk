@@ -1,0 +1,60 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_dgg2cq527ye5oryllu3c24dxlg
+% Encoding created by otftotfm on Sun May  5 22:39:04 2013
+% Command line follows encoding
+/AutoEnc_dgg2cq527ye5oryllu3c24dxlg [
+%00
+  /zero.tf /one.tf /two.tf /three.tf /four.tf /five.tf /six.tf /seven.tf
+  /eight.tf /nine.tf /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%10
+  /zero /one /two /three /four /five /six /seven
+  /eight /nine /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /zero.tosf /one.tosf /two.tosf /three.tosf /four.tosf /five.tosf /six.tosf /seven.tosf
+  /eight.tosf /nine.tosf /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%30
+  /uni2070 /onesuperior /twosuperior /threesuperior /uni2074 /uni2075 /uni2076 /uni2077
+  /uni2078 /uni2079 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%40
+  /uni2080 /uni2081 /uni2082 /uni2083 /uni2084 /uni2085 /uni2086 /uni2087
+  /uni2088 /uni2089 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /zero.numr /one.numr /two.numr /three.numr /four.numr /five.numr /six.numr /seven.numr
+  /eight.numr /nine.numr /.notdef /.notdef /.notdef /.notdef /.notdef /fraction
+%60
+  /zero.dnom /one.dnom /two.dnom /three.dnom /four.dnom /five.dnom /six.dnom /seven.dnom
+  /eight.dnom /nine.dnom /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%70
+  /zero.osf /one.osf /two.osf /three.osf /four.osf /five.osf /six.osf /seven.osf
+  /eight.osf /nine.osf /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%80
+  /.notdef /.notdef /.notdef /arrowleft /arrowright /arrowleft /arrowright /arrowleft
+  /arrowright /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /filledbox /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /hyphen /hyphen
+] def
+% Command line: 'otftotfm --automatic --encoding=u --tfm-directory=.
+% --vf-directory=. --type1-directory=. --truetype-directory=.
+% --encoding-directory=. --map-file=./DGMetaScience.map --no-updmap
+% --feature=kern --feature=liga --ligkern=hyphen hyphenchar =: hyphen DG
+% Meta Science-Regular.otf DGMetaScience-tlf-u'

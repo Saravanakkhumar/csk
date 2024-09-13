@@ -1,0 +1,61 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "NewMath 0.60 / MinionMath 1.024",
+%   date = "24jul2012",
+%   filename = "minionmath-mse.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX NewMath math symbol five encoding (glyph container / experimental)."
+% }
+%
+/MinionMath-MSEEncoding [          % now 256 chars follow
+% 0x00
+  /uni21CC /uni21CB /uni21A0 /uni219E /uni21C7 /uni21C9 /uni21A3 /uni21A2
+  /uni21C6 /uni21C4 /uni21AB /uni21AC /uni21DB /uni21DA /.notdef /.notdef
+% 0x10
+  /uni2AB5 /uni2AB6 /.notdef /.notdef /.notdef /.notdef /.notdef /uni200B
+  /uni2423 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x20
+  /uFFFFC /uF3A20 /uni22B8 /uni2720 /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x30
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x40
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /section /uni24C7 /uni24C8 /paragraph /yen /.notdef /.notdef /uFFFFD
+% 0x80
+  /uni219A /uni219B /uni21CD /uni21CF /uni21CE /uni21AE /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /uni2031 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xA0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /uni0237 /.notdef /.notdef /uni2117 /.notdef /.notdef
+% 0xB0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /uni203B /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xC0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xD0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xE0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xF0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /spade /uni2661 /uni2662 /club
+] def

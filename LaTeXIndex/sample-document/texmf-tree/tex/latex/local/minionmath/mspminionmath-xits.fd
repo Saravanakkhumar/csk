@@ -1,0 +1,50 @@
+%%
+%% This is file `mspminionmath-xits.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `msp,minionmath-xits,newmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{mspminionmath-xits.fd}
+ [2006/30/01 NewMath v0.59a,\space
+  Math Symbol Principal,\space
+ ]
+\DeclareFontFamily{MSP}{minionmath-xits}{\skewchar\font127 }
+\DeclareFontShape{MSP}{minionmath-xits}{m}{n}{
+   <-6>        MinionMath-MediumTiny-MSP-xits
+   <6-8.5>     MinionMath-MediumCapt-MSP-xits
+   <8.5-13.5>  MinionMath-Medium-MSP-xits
+   <13.5-24.5> MinionMath-Medium-MSP-xits
+   <24.5->     MinionMath-Medium-MSP-xits}{}
+\DeclareFontShape{MSP}{minionmath-xits}{d}{n}{
+   <-6>        MinionMath-MediumTiny-MSP-xits
+   <6-8.5>     MinionMath-MediumCapt-MSP-xits
+   <8.5-13.5>  MinionMath-Medium-MSP-xits
+   <13.5-24.5> MinionMath-Medium-MSP-xits
+   <24.5->     MinionMath-Medium-MSP-xits}{}
+\DeclareFontShape{MSP}{minionmath-xits}{sb}{n}{
+   <-6>        MinionMath-Bold-MSP-xits
+   <6-8.5>     MinionMath-Bold-MSP-xits
+   <8.5-13.5>  MinionMath-Bold-MSP-xits
+   <13.5-24.5> MinionMath-Bold-MSP-xits
+   <24.5->     MinionMath-Bold-MSP-xits}{}
+\DeclareFontShape{MSP}{minionmath-xits}{b}{n}{
+   <-6>        MinionMath-Bold-MSP-xits
+   <6-8.5>     MinionMath-Bold-MSP-xits
+   <8.5-13.5>  MinionMath-Bold-MSP-xits
+   <13.5-24.5> MinionMath-Bold-MSP-xits
+   <24.5->     MinionMath-Bold-MSP-xits}{}
+\DeclareFontShape{MSP}{minionmath-xits}{bx}{n}{<->ssub * minionmath/b/n}{}
+
+%% 
+%%
+%% End of file `mspminionmath-xits.fd'.

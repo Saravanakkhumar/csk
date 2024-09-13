@@ -1,0 +1,99 @@
+%%
+%% This is file `t1minionmath.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `t1,minionmath,newmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{t1minionmath.fd}
+ [2006/30/01 NewMath v0.59a,\space
+  Extended TeX Font Encoding - Latin,\space
+  Minion Math
+ ]
+\DeclareFontFamily{T1}{minionmath}{}
+\DeclareFontShape{T1}{minionmath}{m}{n}{
+   <-6>        MinionMath-MediumTiny-T1
+   <6-8.5>     MinionMath-MediumCapt-T1
+   <8.5-13.5>  MinionMath-Medium-T1
+   <13.5-24.5> MinionMath-Medium-T1
+   <24.5->     MinionMath-Medium-T1}{}
+\DeclareFontShape{T1}{minionmath}{d}{n}{
+   <-6>        MinionMath-MediumTiny-T1
+   <6-8.5>     MinionMath-MediumCapt-T1
+   <8.5-13.5>  MinionMath-Medium-T1
+   <13.5-24.5> MinionMath-Medium-T1
+   <24.5->     MinionMath-Medium-T1}{}
+\DeclareFontShape{T1}{minionmath}{sb}{n}{
+   <-6>        MinionMath-Bold-T1
+   <6-8.5>     MinionMath-Bold-T1
+   <8.5-13.5>  MinionMath-Bold-T1
+   <13.5-24.5> MinionMath-Bold-T1
+   <24.5->     MinionMath-Bold-T1}{}
+\DeclareFontShape{T1}{minionmath}{b}{n}{
+   <-6>        MinionMath-Bold-T1
+   <6-8.5>     MinionMath-Bold-T1
+   <8.5-13.5>  MinionMath-Bold-T1
+   <13.5-24.5> MinionMath-Bold-T1
+   <24.5->     MinionMath-Bold-T1}{}
+\DeclareFontShape{T1}{minionmath}{bx}{n} {<->ssub * minionmath/b/n}{}
+
+%%%   \DeclareFontShape{T1}{minionmath}{m}{it}{
+%%%      <-6>        MinionMath-ItMediumTiny-T1
+%%%      <6-8.5>     MinionMath-ItMediumCapt-T1
+%%%      <8.5-13.5>  MinionMath-It-T1
+%%%      <13.5-24.5> MinionMath-ItSubh-T1
+%%%      <24.5->     MinionMath-ItDisp-T1}{}
+%%%   \DeclareFontShape{T1}{minionmath}{d}{it}{
+%%%      <-6>        MinionMath-ItMediumTiny-T1
+%%%      <6-8.5>     MinionMath-ItMediumCapt-T1
+%%%      <8.5-13.5>  MinionMath-It-T1
+%%%      <13.5-24.5> MinionMath-ItSubh-T1
+%%%      <24.5->     MinionMath-ItDisp-T1}{}
+%%%   \DeclareFontShape{T1}{minionmath}{sb}{it}{
+%%%      <-6>        MinionMath-BoldItMediumTiny-T1
+%%%      <6-8.5>     MinionMath-BoldItMediumCapt-T1
+%%%      <8.5-13.5>  MinionMath-BoldIt-T1
+%%%      <13.5-24.5> MinionMath-BoldItSubh-T1
+%%%      <24.5->     MinionMath-BoldItDisp-T1}{}
+%%%   \DeclareFontShape{T1}{minionmath}{b}{it}{
+%%%      <-6>        MinionMath-BoldItMediumTiny-T1
+%%%      <6-8.5>     MinionMath-BoldItMediumCapt-T1
+%%%      <8.5-13.5>  MinionMath-BoldIt-T1
+%%%      <13.5-24.5> MinionMath-BoldItSubh-T1
+%%%      <24.5->     MinionMath-BoldItDisp-T1}{}
+%%%   \DeclareFontShape{T1}{minionmath}{bx}{it}{<->ssub * minionmath/b/it}{}
+
+\DeclareFontShape{T1}{minionmath}{m}{it}{
+   <-8.5>      MinionPro-ItMediumCapt-lf-l1-t1
+   <8.5-13.5>  MinionPro-It-lf-l1-t1
+   <13.5-24.5> MinionPro-ItSubh-lf-l1-t1
+   <24.5->     MinionPro-ItDisp-lf-l1-t1}{}
+\DeclareFontShape{T1}{minionmath}{d}{it}{
+   <-8.5>      MinionPro-ItMediumCapt-lf-l1-t1
+   <8.5-13.5>  MinionPro-It-lf-l1-t1
+   <13.5-24.5> MinionPro-ItSubh-lf-l1-t1
+   <24.5->     MinionPro-ItDisp-lf-l1-t1}{}
+\DeclareFontShape{T1}{minionmath}{sb}{it}{
+   <-8.5>      MinionPro-BoldItMediumCapt-lf-l1-t1
+   <8.5-13.5>  MinionPro-BoldIt-lf-l1-t1
+   <13.5-24.5> MinionPro-BoldItSubh-lf-l1-t1
+   <24.5->     MinionPro-BoldItDisp-lf-l1-t1}{}
+\DeclareFontShape{T1}{minionmath}{b}{it}{
+   <-8.5>      MinionPro-BoldItMediumCapt-lf-l1-t1
+   <8.5-13.5>  MinionPro-BoldIt-lf-l1-t1
+   <13.5-24.5> MinionPro-BoldItSubh-lf-l1-t1
+   <24.5->     MinionPro-BoldItDisp-lf-l1-t1}{}
+\DeclareFontShape{T1}{minionmath}{bx}{it}{<->ssub * minionmath/b/it}{}
+
+%% 
+%%
+%% End of file `t1minionmath.fd'.

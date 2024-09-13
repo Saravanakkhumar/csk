@@ -1,0 +1,61 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "NewMath 0.60 / MinionMath 1.024",
+%   date = "25jun2012",
+%   filename = "minionmath-msp.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX NewMath math symbol principal encoding."
+% }
+%
+/MinionMath-MSPEncoding [          % now 256 chars follow
+% 0x00
+  /gravecomb /acutecomb /uni0302 /tildecomb /uni0308 /uni0311 /uni030A /uni030C
+  /uni0306 /uni0304 /uni0307 /uni20DB /uni20DC /uni20D7 /uni20D6 /uni20E1
+% 0x10
+  /uF3C08 /uni0346 /uF3C21 /uF3C22 /uF3C23 /uF3C24 /uF3C25 /uF3C26
+  /uF3C20 /.notdef /.notdef /uF3C10 /uF3C11 /uni2322 /uni2323 /uni224D
+% 0x20
+  /uFFFFC /uF3001 /minus /equal /equivalence /plus /plusminus /uni2213
+  /.notdef /uni2250 /divide /uni22C7 /multiply /uni22C9 /uni22CA /uni22C8
+% 0x30
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /universal /existential /uni2204 /uF2186 /uF2187 /uF2191
+% 0x40
+  /logicalnot /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /integral.small /uni222C.small /uni222D.small /uni222E.small /uni222F.small
+% 0x60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uFFFFD
+% 0x80
+  /union /intersection /uni2294 /uni2293 /logicaland /logicalor /uni25B3 /uF3D9A
+  /uni228E /circleplus /uni2296 /circlemultiply /uni2298 /uni2299 /uni2218 /uni2219
+% 0x90
+  /reflexsubset /reflexsuperset /propersubset /propersuperset /uni2291 /uni2292 /uni228F /uni2290
+  /uni22B2 /uni22B3 /uni22B4 /uni22B5 /uni22EA /uni22EB /uni22EC /uni22ED
+% 0xA0
+  /less /greater /lessequal /greaterequal /uni2A7D /uni2A7E /uni2272 /uni2273
+  /uni226E /uni226F /uni2270 /uni2271 /uF3820 /uF3821 /uni2274 /uni2275
+% 0xB0
+  /uni227A /uni227B /uni2AAF /uni2AB0 /uni227C /uni227D /uni227E /uni227F
+  /uni2280 /uni2281 /uF3822 /uF3823 /uni22E0 /uni22E1 /uF3824 /uF3825
+% 0xC0
+  /uni226A /uni226B /uni22D8 /uni22D9 /uni20DD /uni25FB /uni22C4 /uni2B26
+  /similar /approxequal /congruent /uni2243 /uni223D /uni224A /uni2220.alt /uF3000 
+% 0xD0
+  /uni2241 /uni2249 /uni2247 /uni2242 /uni22CD /uni2240 /uni0338 /uni21DD
+  /arrowleft /arrowright /uF3A00 /arrowboth /uF3A03 /uF3A02 /arrowup /arrowdblup
+% 0xE0
+  /arrowdblleft /arrowdblright /uF3A10 /arrowdblboth /uF3A13 /uF3A12 /arrowdown /arrowdbldown
+  /uni21BC /uni21C0 /uni21BD /uni21C1 /uF3A04 /uF3A05 /arrowupdn /uni21D5
+% 0xF0
+  /uni22A2 /uni22A3 /element /suchthat /uni22A4 /uni27CB /uni2196 /uni2197
+  /uni22AC /uF380C /notelement /uni220C /perpendicular /uni27CD /uni2199 /uni2198
+] def

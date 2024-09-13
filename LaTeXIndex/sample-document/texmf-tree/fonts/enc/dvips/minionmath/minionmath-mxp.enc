@@ -1,0 +1,62 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "NewMath 0.60 / MinionMath 1.024",
+%   date = "25jun2012",
+%   filename = "minionmath-mxp.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX NewMath math extension principal encoding."
+% }
+%
+/MinionMath-MXPEncoding [          % now 256 chars follow
+% 0x00
+  /bracketleft.vsize1 /bracketright.vsize1 /uni27E6.vsize1 /uni27E7.vsize1 /parenleft.vsize1 /parenright.vsize1 /braceleft.vsize1 /braceright.vsize1
+  /uni230A.vsize1 /uni230B.vsize1 /uni2308.vsize1 /uni2309.vsize1 /uni27E8.vsize1 /uni27E9.vsize1 /slash.vsize1 /backslash.vsize1
+% 0x10
+  /uni0302.hsize1 /uni23DE.left /uni23DE.mid /uni23DE.right /uni23DE.ext /radical.top /arrowup.top /arrowdblup.top
+  /tildecomb.hsize1 /uni23DF.left /uni23DF.mid /uni23DF.right /uni23DF.ext /radical.ext /arrowup.ext /arrowdblup.ext
+% 0x20
+  /uFFFFC /uF5128 /uF5129 /uF512A /radical.alt /radical.bot /arrowdown.bot /arrowdbldown.bot
+  /bracketleft.top /bracketright.top /uni27E6.top /uni27E7.top /parenleft.top /parenright.top /braceleft.top /braceright.top
+% 0x30
+  /bracketleft.ext /bracketright.ext /uni27E6.ext /uni27E7.ext /parenleft.ext /parenright.ext /braceleft.ext /braceright.ext
+  /bracketleft.bot /bracketright.bot /uni27E6.bot /uni27E7.bot /parenleft.bot /parenright.bot /braceleft.mid /braceright.mid
+% 0x40
+  /summation /product /uni2210 /uni2A00 /uni2A01 /uni2A02 /braceleft.bot /braceright.bot
+  /summation.vsize1 /product.vsize1 /uni2210.vsize1 /uni2A00.vsize1 /uni2A01.vsize1 /uni2A02.vsize1 /uF3A0F /uF3A1F
+% 0x50
+  /integral /uni222C /uni222D /uni222E /uni222F /uni22C3 /uni22C2 /uni2A04
+  /integral.vsize1 /uni222C.vsize1 /uni222D.vsize1 /uni222E.vsize1 /uni222F.vsize1 /uni22C3.vsize1 /uni22C2.vsize1 /uni2A04.vsize1
+% 0x60
+  /uni22C1 /uni22C0 /uni2A06 /uni2A05 
+  /uni22C1.vsize1 /uni22C0.vsize1 /uni2A06.vsize1 /uni2A05.vsize1 
+  /uni0302.hsize2 /uni0302.hsize3 /uni0302.hsize4 /uni0302.hsize5 /uni0302.hsize6 /uni0302.hsize7 /uni0302.hsize9 /uni0302.hsize11
+% 0x70
+  /tildecomb.hsize2 /tildecomb.hsize3 /tildecomb.hsize4 /tildecomb.hsize5 /tildecomb.hsize6 /tildecomb.hsize7 /tildecomb.hsize9 /tildecomb.hsize11
+  /radical.vsize1 /radical.vsize3 /radical.vsize5 /radical.vsize7 /radical.vsize9 /radical.vsize11 /radical.vsize13 /uFFFFD
+% 0x80
+  /bracketleft.vsize2 /bracketright.vsize2 /uni27E6.vsize2 /uni27E7.vsize2 /parenleft.vsize2 /parenright.vsize2 /braceleft.vsize2 /braceright.vsize2
+  /bracketleft.vsize3 /bracketright.vsize3 /uni27E6.vsize3 /uni27E7.vsize3 /parenleft.vsize3 /parenright.vsize3 /braceleft.vsize3 /braceright.vsize3
+% 0x90
+  /bracketleft.vsize4 /bracketright.vsize4 /uni27E6.vsize4 /uni27E7.vsize4 /parenleft.vsize4 /parenright.vsize4 /braceleft.vsize4 /braceright.vsize4
+  /bracketleft.vsize5 /bracketright.vsize5 /uni27E6.vsize5 /uni27E7.vsize5 /parenleft.vsize5 /parenright.vsize5 /braceleft.vsize5 /braceright.vsize5
+% 0xA0
+  /bracketleft.vsize6 /bracketright.vsize6 /uni27E6.vsize6 /uni27E7.vsize6 /parenleft.vsize6 /parenright.vsize6 /braceleft.vsize6 /braceright.vsize6
+  /bracketleft.vsize7 /bracketright.vsize7 /uni27E6.vsize7 /uni27E7.vsize7 /parenleft.vsize7 /parenright.vsize7 /braceleft.vsize7 /braceright.vsize7
+% 0xB0
+  /uni230A.vsize2 /uni230B.vsize2 /uni2308.vsize2 /uni2309.vsize2 /uni27E8.vsize2 /uni27E9.vsize2 /slash.vsize2 /backslash.vsize2
+  /uni230A.vsize3 /uni230B.vsize3 /uni2308.vsize3 /uni2309.vsize3 /uni27E8.vsize3 /uni27E9.vsize3 /slash.vsize3 /backslash.vsize3
+% 0xC0
+  /uni230A.vsize4 /uni230B.vsize4 /uni2308.vsize4 /uni2309.vsize4 /uni27E8.vsize4 /uni27E9.vsize4 /slash.vsize4 /backslash.vsize4
+  /uni230A.vsize5 /uni230B.vsize5 /uni2308.vsize5 /uni2309.vsize5 /uni27E8.vsize5 /uni27E9.vsize5 /slash.vsize5 /backslash.vsize5
+% 0xD0
+  /uni230A.vsize6 /uni230B.vsize6 /uni2308.vsize6 /uni2309.vsize6 /uni27E8.vsize6 /uni27E9.vsize6 /slash.vsize6 /backslash.vsize6
+  /uni230A.vsize7 /uni230B.vsize7 /uni2308.vsize7 /uni2309.vsize7 /uni27E8.vsize7 /uni27E9.vsize7 /slash.vsize7 /backslash.vsize7
+% 0xE0
+  /parenleft.vsize8 /parenleft.vsize9 /parenleft.vsize11 /parenleft.vsize13 /parenleft.vsize15 /parenleft.vsize17 /parenleft.vsize19 /.notdef
+  /parenright.vsize8 /parenright.vsize9 /parenright.vsize11 /parenright.vsize13 /parenright.vsize15 /parenright.vsize17 /parenright.vsize19 /.notdef
+% 0xF0
+  /uni27E8.vsize8 /uni27E8.vsize9 /uni27E8.vsize11 /uni27E8.vsize13 /uni27E8.vsize15 /uni27E8.vsize17 /uni27E8.vsize19 /.notdef
+  /uni27E9.vsize8 /uni27E9.vsize9 /uni27E9.vsize11 /uni27E9.vsize13 /uni27E9.vsize15 /uni27E9.vsize17 /uni27E9.vsize19 /.notdef
+] def

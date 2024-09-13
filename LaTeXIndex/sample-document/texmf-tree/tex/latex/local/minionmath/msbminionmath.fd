@@ -1,0 +1,51 @@
+%%
+%% This is file `msbminionmath.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `msb,minionmath,newmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{msbminionmath.fd}
+ [2006/30/01 NewMath v0.59a,\space
+  Math Symbol 2,\space
+  Minion Math
+ ]
+\DeclareFontFamily{MSB}{minionmath}{\skewchar\font127 }
+\DeclareFontShape{MSB}{minionmath}{m}{n}{
+   <-6>        MinionMath-MediumTiny-MSB
+   <6-8.5>     MinionMath-MediumCapt-MSB
+   <8.5-13.5>  MinionMath-Medium-MSB
+   <13.5-24.5> MinionMath-Medium-MSB
+   <24.5->     MinionMath-Medium-MSB}{}
+\DeclareFontShape{MSB}{minionmath}{d}{n}{
+   <-6>        MinionMath-MediumTiny-MSB
+   <6-8.5>     MinionMath-MediumCapt-MSB
+   <8.5-13.5>  MinionMath-Medium-MSB
+   <13.5-24.5> MinionMath-Medium-MSB
+   <24.5->     MinionMath-Medium-MSB}{}
+\DeclareFontShape{MSB}{minionmath}{sb}{n}{
+   <-6>        MinionMath-Bold-MSB
+   <6-8.5>     MinionMath-Bold-MSB
+   <8.5-13.5>  MinionMath-Bold-MSB
+   <13.5-24.5> MinionMath-Bold-MSB
+   <24.5->     MinionMath-Bold-MSB}{}
+\DeclareFontShape{MSB}{minionmath}{b}{n}{
+   <-6>        MinionMath-Bold-MSB
+   <6-8.5>     MinionMath-Bold-MSB
+   <8.5-13.5>  MinionMath-Bold-MSB
+   <13.5-24.5> MinionMath-Bold-MSB
+   <24.5->     MinionMath-Bold-MSB}{}
+\DeclareFontShape{MSB}{minionmath}{bx}{n}{<->ssub * minionmath/b/n}{}
+
+%% 
+%%
+%% End of file `msbminionmath.fd'.

@@ -1,0 +1,61 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "NewMath 0.60 / MinionMath 1.024",
+%   date = "25jun2012",
+%   filename = "minionmath-mxa.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "MinionMath TeX NewMath math extension one encoding."
+% }
+%
+/MinionMath-MXAEncoding [          % now 256 chars follow
+% 0x00
+  /uni2A03 /uF5816 /uni2AFF /uF5820 /uni2A0B /uni2A0F /uF5821 /uni2AFC
+  /uni2A03.vsize1 /uF5816.vsize1 /uni2AFF.vsize1 /uF5820.vsize1 /uni2A0B.vsize1 /uni2A0F.vsize1 /uF5821.vsize1 /uni2AFC.vsize1
+% 0x10
+  /uF5840 /uF5841 /uF5825 /uF5826 /uF5827 /uni2A09 /uF5830 /uF5831
+  /uF5840.vsize1 /uF5841.vsize1 /uF5825.vsize1 /uF5826.vsize1 /uF5827.vsize1 /uni2A09.vsize1 /uF5830.vsize1 /uF5831.vsize1
+% 0x20
+  /uFFFFC /.notdef /.notdef /.notdef /.notdef /.notdef /uF5824  /uF5824.vsize1
+  /uni0304.hsize1 /uni0311.hsize1 /uni20D7.hsize1 /uni20D6.hsize1 /uni20E1.hsize1 /uF5C70.hsize1 /uF5C80.hsize1 /.notdef
+% 0x30
+  /uni2983.top /uni2984.top /uni2983.vsize1 /uni2984.vsize1 /uni3014.vsize1 /uni3015.vsize1 /uni2989.vsize1 /uni298A.vsize1
+  /uni2983.mid /uni2984.mid /uni3014.top /uni3015.top /.notdef /.notdef /.notdef /.notdef
+% 0x40
+  /uni2983.ext /uni2984.ext /uni3014.ext /uni3015.ext /.notdef /.notdef /.notdef /.notdef
+  /uni2983.bot /uni2984.bot /uni3014.bot /uni3015.bot /.notdef /.notdef /.notdef /.notdef
+% 0x50
+  /uni3014.vsize2 /uni3015.vsize2 /uni2989.vsize2 /uni298A.vsize2 /uni2983.vsize2 /uni2984.vsize2 /.notdef /.notdef
+  /uni3014.vsize3 /uni3015.vsize3 /uni2989.vsize3 /uni298A.vsize3 /uni2983.vsize3 /uni2984.vsize3 /.notdef /.notdef
+% 0x60
+  /uni3014.vsize4 /uni3015.vsize4 /uni2989.vsize4 /uni298A.vsize4 /uni2983.vsize4 /uni2984.vsize4 /.notdef /.notdef
+  /uni3014.vsize5 /uni3015.vsize5 /uni2989.vsize5 /uni298A.vsize5 /uni2983.vsize5 /uni2984.vsize5 /.notdef /.notdef
+% 0x70
+  /uni3014.vsize6 /uni3015.vsize6 /uni2989.vsize6 /uni298A.vsize6 /uni2983.vsize6 /uni2984.vsize6 /.notdef /.notdef
+  /uni3014.vsize7 /uni3015.vsize7 /uni2989.vsize7 /uni298A.vsize7 /uni2983.vsize7 /uni2984.vsize7 /.notdef /uFFFFD
+% 0x80
+  /uni2989.vsize8 /uni2989.vsize9 /uni2989.vsize11 /uni2989.vsize13 /uni2989.vsize15 /uni2989.vsize17 /uni2989.vsize19 /.notdef
+  /uni298A.vsize8 /uni298A.vsize9 /uni298A.vsize11 /uni298A.vsize13 /uni298A.vsize15 /uni298A.vsize17 /uni298A.vsize19 /.notdef
+% 0x90
+  /uni0304.hsize2 /uni0304.hsize3 /uni0304.hsize4 /uni0304.hsize5 /uni0304.hsize6 /uni0304.hsize7 /uni0304.hsize9 /uni0304.hsize11
+  /uni0311.hsize2 /uni0311.hsize3 /uni0311.hsize4 /uni0311.hsize5 /uni0311.hsize6 /uni0311.hsize7 /uni0311.hsize9 /uni0311.hsize11
+% 0xA0
+  /uni20D7.hsize2 /uni20D7.hsize3 /uni20D7.hsize4 /uni20D7.hsize5 /uni20D7.hsize6 /uni20D7.hsize7 /uni20D7.hsize9 /uni20D7.hsize11
+  /uni20D6.hsize2 /uni20D6.hsize3 /uni20D6.hsize4 /uni20D6.hsize5 /uni20D6.hsize6 /uni20D6.hsize7 /uni20D6.hsize9 /uni20D6.hsize11
+% 0xB0
+  /uni20E1.hsize2 /uni20E1.hsize3 /uni20E1.hsize4 /uni20E1.hsize5 /uni20E1.hsize6 /uni20E1.hsize7 /uni20E1.hsize9 /uni20E1.hsize11
+  /uF5C70.hsize2 /uF5C70.hsize3 /uF5C70.hsize4 /uF5C70.hsize5 /uF5C70.hsize6 /uF5C70.hsize7 /uF5C70.hsize9 /uF5C70.hsize11
+% 0xC0
+  /uF5C80.hsize2 /uF5C80.hsize3 /uF5C80.hsize4 /uF5C80.hsize5 /uF5C80.hsize6 /uF5C80.hsize7 /uF5C80.hsize9 /uF5C80.hsize11
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xD0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xE0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xF0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def

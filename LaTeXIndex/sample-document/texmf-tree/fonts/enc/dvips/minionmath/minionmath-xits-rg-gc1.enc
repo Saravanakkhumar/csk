@@ -1,0 +1,61 @@
+% @psencodingfile{
+%   author = "Johannes Kuester",
+%   version = "1.00 / XITS Math 1.104",
+%   date = "25jun2012",
+%   filename = "minionmath-xits-rg-gc1.enc",
+%   license = "part of MinionMath fonts, (c) 2008–2012 typoma GmbH, Germany",
+%   email = "info@typoma.com",
+%   codetable = "ISO/ASCII",
+%   docstring = "XITS regular glyph container 1 encoding."
+% }
+%
+/MinionMath-XITSRegularAEncoding [          % now 256 chars follow
+% 0x00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x10
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /u1D4BE.dtls /u1D4BF.dtls /u1D526.dtls /u1D527.dtls /.notdef /.notdef /.notdef
+% 0x20
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x30
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x40 -- Script Uppercase (Regular)
+  /.notdef /u1D49C /uni212C /u1D49E /u1D49F /uni2130 /uni2131 /u1D4A2
+  /uni210B /uni2110 /u1D4A5 /u1D4A6 /uni2112 /uni2133 /u1D4A9 /u1D4AA
+% 0x50
+  /u1D4AB /u1D4AC /uni211B /u1D4AE /u1D4AF /u1D4B0 /u1D4B1 /u1D4B2
+  /u1D4B3 /u1D4B4 /u1D4B5 /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x60 -- Script Lowercase (Regular)
+  /.notdef /u1D4B6 /u1D4B7 /u1D4B8 /u1D4B9 /uni212F /u1D4BB /uni210A
+  /u1D4BD /u1D4BE /u1D4BF /u1D4C0 /u1D4C1 /u1D4C2 /u1D4C3 /uni2134
+% 0x70
+  /u1D4C5 /u1D4C6 /u1D4C7 /u1D4C8 /u1D4C9 /u1D4CA /u1D4CB /u1D4CC
+  /u1D4CD /u1D4CE /u1D4CF /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0x80 -- Fraktur Uppercase (Regular)
+  /.notdef /u1D504 /u1D505 /uni212D /u1D507 /u1D508 /u1D509 /u1D50A
+  /uni210C /uni2111 /u1D50D /u1D50E /u1D50F /u1D510 /u1D511 /u1D512
+% 0x90
+  /u1D513 /u1D514 /uni211C /u1D516 /u1D517 /u1D518 /u1D519 /u1D51A 
+  /u1D51B /u1D51C /uni2128 /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xA0 -- Fraktur Lowercase (Regular)
+  /.notdef /u1D51E /u1D51F /u1D520 /u1D521 /u1D522 /u1D523 /u1D524
+  /u1D525 /u1D526 /u1D527 /u1D528 /u1D529 /u1D52A /u1D52B /u1D52C
+% 0xB0
+  /u1D52D /u1D52E /u1D52F /u1D530 /u1D531 /u1D532 /u1D533 /u1D534
+  /u1D535 /u1D536 /u1D537 /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xC0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xD0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xE0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+% 0xF0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def

@@ -1,0 +1,50 @@
+%%
+%% This is file `ms2minionmath-xits.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `ms2,minionmath-xits,newmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{ms2minionmath-xits.fd}
+ [2006/30/01 NewMath v0.59a,\space
+  Math Symbol 2,\space
+ ]
+\DeclareFontFamily{MS2}{minionmath-xits}{\skewchar\font127 }
+\DeclareFontShape{MS2}{minionmath-xits}{m}{n}{
+   <-6>        MinionMath-MediumTiny-MSB-xits
+   <6-8.5>     MinionMath-MediumCapt-MSB-xits
+   <8.5-13.5>  MinionMath-Medium-MSB-xits
+   <13.5-24.5> MinionMath-Medium-MSB-xits
+   <24.5->     MinionMath-Medium-MSB-xits}{}
+\DeclareFontShape{MS2}{minionmath-xits}{d}{n}{
+   <-6>        MinionMath-MediumTiny-MSB-xits
+   <6-8.5>     MinionMath-MediumCapt-MSB-xits
+   <8.5-13.5>  MinionMath-Medium-MSB-xits
+   <13.5-24.5> MinionMath-Medium-MSB-xits
+   <24.5->     MinionMath-Medium-MSB-xits}{}
+\DeclareFontShape{MS2}{minionmath-xits}{sb}{n}{
+   <-6>        MinionMath-Bold-MSB-xits
+   <6-8.5>     MinionMath-Bold-MSB-xits
+   <8.5-13.5>  MinionMath-Bold-MSB-xits
+   <13.5-24.5> MinionMath-Bold-MSB-xits
+   <24.5->     MinionMath-Bold-MSB-xits}{}
+\DeclareFontShape{MS2}{minionmath-xits}{b}{n}{
+   <-6>        MinionMath-Bold-MSB-xits
+   <6-8.5>     MinionMath-Bold-MSB-xits
+   <8.5-13.5>  MinionMath-Bold-MSB-xits
+   <13.5-24.5> MinionMath-Bold-MSB-xits
+   <24.5->     MinionMath-Bold-MSB-xits}{}
+\DeclareFontShape{MS2}{minionmath-xits}{bx}{n}{<->ssub * minionmath/b/n}{}
+
+%% 
+%%
+%% End of file `ms2minionmath-xits.fd'.

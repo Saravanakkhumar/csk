@@ -1,0 +1,51 @@
+%%
+%% This is file `omsbminionmath.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% minionmathfont.fdd  (with options: `omsb,minionmath,oldmath')
+%% 
+%% This file belongs to the `typoma Minion Math' fonts
+%% and is part of their accompanying bundle of LaTeX files.
+%% 
+%% Copyright (C) 2008-2012 typoma GmbH, Germany. http://www.typoma.com
+%% All rights reserved.
+%% 
+%% This is a generated file -- do not modify its content.
+%% 
+ \ProvidesFile{omsbminionmath.fd}
+ [Traditional TeX Math Setup (OldMath),\space
+  AMS Math Symbols B,\space
+  Minion Math
+ ]
+\DeclareFontFamily{OMSB}{minionmath}{}
+\DeclareFontShape{OMSB}{minionmath}{m}{n}{
+   <-6>        MinionMath-MediumTiny-OMSB
+   <6-8.5>     MinionMath-MediumCapt-OMSB
+   <8.5-13.5>  MinionMath-Medium-OMSB
+   <13.5-24.5> MinionMath-Medium-OMSB
+   <24.5->     MinionMath-Medium-OMSB}{}
+\DeclareFontShape{OMSB}{minionmath}{d}{n}{
+   <-6>        MinionMath-MediumTiny-OMSB
+   <6-8.5>     MinionMath-MediumCapt-OMSB
+   <8.5-13.5>  MinionMath-Medium-OMSB
+   <13.5-24.5> MinionMath-Medium-OMSB
+   <24.5->     MinionMath-Medium-OMSB}{}
+\DeclareFontShape{OMSB}{minionmath}{sb}{n}{
+   <-6>        MinionMath-Bold-OMSB
+   <6-8.5>     MinionMath-Bold-OMSB
+   <8.5-13.5>  MinionMath-Bold-OMSB
+   <13.5-24.5> MinionMath-Bold-OMSB
+   <24.5->     MinionMath-Bold-OMSB}{}
+\DeclareFontShape{OMSB}{minionmath}{b}{n}{
+   <-6>        MinionMath-Bold-OMSB
+   <6-8.5>     MinionMath-Bold-OMSB
+   <8.5-13.5>  MinionMath-Bold-OMSB
+   <13.5-24.5> MinionMath-Bold-OMSB
+   <24.5->     MinionMath-Bold-OMSB}{}
+\DeclareFontShape{OMSB}{minionmath}{bx}{n}{<->ssub * minionmath/b/n}{}
+
+%% 
+%%
+%% End of file `omsbminionmath.fd'.

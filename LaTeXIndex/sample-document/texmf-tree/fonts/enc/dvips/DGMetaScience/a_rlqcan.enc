@@ -1,0 +1,63 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_rlqcand5234nm3s4octn44fbua
+% Encoding created by otftotfm on Sun May  5 22:39:12 2013
+% Command line follows encoding
+/AutoEnc_rlqcand5234nm3s4octn44fbua [
+%00
+  /gravecomb /acutecomb /uni0302 /tildecomb /uni0308 /uni030B /uni030A /uni030C
+  /uni0306 /uni0304 /uni0307 /cedilla /ogonek /quotesinglbase /asterisk /C
+%10
+  /exclamdown /questiondown /quotedblbase /endash /.notdef /.notdef /.notdef /.notdef
+  /arrowleft /arrowright /.notdef /.notdef /.notdef /.notdef /.notdef /uni200C
+%20
+  /uni2422 /.notdef /.notdef /.notdef /dollar.tosf /.notdef /.notdef /quotesingle
+  /.notdef /.notdef /.notdef /.notdef /comma /.notdef /period /fraction
+%30
+  /zero.tosf /one.tosf /two.tosf /three.tosf /four.tosf /five.tosf /six.tosf /seven.tosf
+  /eight.tosf /nine.tosf /.notdef /.notdef /angleleft /minus /angleright /.notdef
+%40
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /Omega
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /arrowup /arrowdown
+%60
+  /grave /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /asciitilde /.notdef
+%80
+  /breve /caron /hungarumlaut /uni030F /dagger /daggerdbl /uni2016 /perthousand
+  /bullet /.notdef /.notdef /.notdef /florin /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /uni203D /.notdef /.notdef /trademark
+  /uni2031 /.notdef /.notdef /uni2116 /uni2052 /estimated /.notdef /.notdef
+%A0
+  /uni2045 /uni2046 /cent.tosf /sterling.tosf /currency.tosf /yen.tosf /brokenbar /section
+  /dieresis /copyright /ordfeminine /.notdef /logicalnot /uni2117 /registered /macron
+%B0
+  /degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+  /uni203B /onesuperior /ordmasculine /radical /onequarter /onehalf /threequarters /Euro.tosf
+%C0
+  /filledbox /H22073 /uni25B4 /uni25B8 /uni25BE /uni25C2 /lozenge /circle
+  /H18533 /uni267E /bar.one /bar.two /orn001 /orn002 /orn003 /orn004
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /multiply /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /arrowleft.ss01 /arrowup.ss01 /arrowright.ss01 /arrowdown.ss01 /arrowboth.ss01 /arrowupdn.ss01 /uni2196.ss01 /uni2197.ss01
+  /uni2198.ss01 /uni2199.ss01 /arrowleft.ss02 /arrowup.ss02 /arrowright.ss02 /arrowdown.ss02 /arrowboth.ss02 /arrowupdn.ss02
+%F0
+  /uni2196.ss02 /uni2197.ss02 /uni2198.ss02 /uni2199.ss02 /.notdef /hyphen /divide /hyphen
+  /uniFB04 /uniFB03 /uniFB00 /fl /l /fi /i /f
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ts1
+% --tfm-directory=. --vf-directory=. --type1-directory=.
+% --truetype-directory=. --encoding-directory=.
+% --map-file=./DGMetaScience.map --no-updmap --coding-scheme=TEX TEXT
+% COMPANION SYMBOLS 1---TS1 --feature=onum --feature=tnum --ligkern=f i =:
+% fi --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi
+% --ligkern=ff l =: ffl --ligkern=hyphen hyphenchar =: hyphen DG Meta
+% Science-Regular.otf DGMetaScience-tlf-ts1'

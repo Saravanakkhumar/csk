@@ -1,0 +1,61 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_hjdhctzwkkv5gyywmoywk54k2h
+% Encoding created by otftotfm on Sun May  5 22:39:11 2013
+% Command line follows encoding
+/AutoEnc_hjdhctzwkkv5gyywmoywk54k2h [
+%00
+  /uniE00A /uniE010 /uniE025 /uniE02C /uniE033 /uniE036 /uniE03A /uniE03D
+  /uniE03F /uniE041 /uniE042 /uniE043 /uniE044 /uniE066 /uniE076 /uniE077
+%10
+  /uniE099 /uniE0B7 /uniE0BC /uniE0D1 /uniE0E1 /uniE0E8 /uniE0EA /uniE0EB
+  /uniE0EE /uniE0F0 /uniE101 /uniE116 /uniE135 /uniE137 /uniE143 /uniE150
+%20
+  /uniE152 /uniE153 /uniE154 /uniE162 /uniE168 /uniE19E /uniE1B8 /uniE1D2
+  /uniE1DC /uniE21B /uniE22D /uniE244 /uniE246 /uniE259 /uniE25D /uniE260
+%30
+  /uniE26D /uniE282 /uniE288 /uniE2E2 /uniE2EE /uniE309 /uniE30B /uniE315
+  /uniE317 /uniE32B /uniE32D /uniE33A /uniE33B /uniE342 /uniE34B /uniE34C
+%40
+  /uniE34D /uniE350 /uniE353 /uniE357 /uniE373 /uniE375 /uniE376 /uniE37C
+  /uniE3D3 /uniE40A /uniE410 /uniE41A /uniE41D /uniE41F /uniE425 /uniE42C
+%50
+  /uniE42D /uniE42E /uniE433 /uniE436 /uniE43A /uniE43D /uniE43F /uniE441
+  /uniE442 /uniE443 /uniE444 /uniE44D /uniE466 /uniE476 /uniE477 /uniE498
+%60
+  /uniE499 /uniE49F /uniE4B7 /uniE4BC /uniE4CD /uniE4CF /uniE4D1 /uniE4E1
+  /uniE4E2 /uniE4E3 /uniE4E8 /uniE4EA /uniE4EB /uniE4EE /uniE4F0 /uniE501
+%70
+  /uniE516 /uniE535 /uniE537 /uniE543 /uniE54A /uniE54B /uniE550 /uniE552
+  /uniE553 /uniE554 /uniE562 /uniE568 /uniE596 /uniE59E /uniE5A4 /uniE5B8
+%80
+  /uniE5C5 /uniE5D2 /uniE5D7 /uniE5DC /uniE5EE /uniE60E /uniE61B /uniE62C
+  /uniE62D /uniE637 /uniE643 /uniE644 /uniE645 /uniE646 /uniE647 /uniE659
+%90
+  /uniE65D /uniE660 /uniE665 /uniE66D /uniE681 /uniE682 /uniE688 /uniE68B
+  /uniE6A3 /uniE6E2 /uniE6EE /uniE709 /uniE70B /uniE715 /uniE717 /uniE727
+%A0
+  /uniE72B /uniE72C /uniE72D /uniE73A /uniE73B /uniE742 /uniE743 /uniE74B
+  /uniE74C /uniE74D /uniE750 /uniE753 /uniE754 /uniE757 /uniE773 /uniE775
+%B0
+  /uniE776 /uniE77C /uniE781 /uniE7C1 /uniE7CC /uniE7D3 /uniE8D1 /uniE8D5
+  /uniE8D7 /uniE8E0 /uniE8E1 /uniE8E2 /uniE8E3 /uniE8E4 /uniE8E5 /uniE8E6
+%C0
+  /uniE8E7 /uniE8E8 /uniE8E9 /uniE8EA /uniE8EB /uniE8EC /uniE8ED /uniE8EF
+  /uniE8F0 /uniE8F1 /uniE8F2 /uniE8F3 /uniEAF3 /uniEBB7 /uniEBB8 /uniEBC4
+%D0
+  /uniEBC5 /uniEBC8 /uniEBC9 /uniEBDE /uniEBDF /uniEBE2 /uniEBE3 /uniEEE6
+  /uniEFAD /uniF03C /uniF7B2 /uniF7B5 /uniFB00.sc /uniFB03.sc /uniFB04.sc /uniFEFF
+%E0
+  /bar.one /bar.two /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=pua --tfm-directory=.
+% --vf-directory=. --type1-directory=. --truetype-directory=.
+% --encoding-directory=. --map-file=./DGMetaScience.map --no-updmap
+% --feature=kern --feature=liga --feature=lnum --feature=smcp --feature=tnum
+% --unicoding=germandbls =: SSsmall --ligkern=hyphen hyphenchar =: hyphen DG
+% Meta Science-Regular.otf DGMetaScience-tlf-sc-pua'
