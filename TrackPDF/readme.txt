@@ -4,4 +4,4 @@
 
 3. if track pdf doc is input.
 
-4. if proof pdf option input is tracked tex source.
+4. if we choose proof pdf option, the input was tracked tex source.

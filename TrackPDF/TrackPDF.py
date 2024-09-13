@@ -136,7 +136,9 @@ def TrackConversion(htmlFileCnt,htmlpath):
                             each_para.text = listDict[listType].split(",")[0] + "/custom-new-line/\\item " + each_para.text
                         else:
                             each_para.text = listDict[listType].split(",")[0] + "/custom-new-line/\\item "
+
                         closingList.append(listDict[listType].split(",")[1])
+
                     else:
                         if each_para.text:
                             each_para.text = "/custom-new-line/\\item " + each_para.text
@@ -689,11 +691,10 @@ def ProofPDFConversion(texpath):
     with open(treePath, "r", encoding=fileCnt[1], errors="ignore") as f1:
         treeCnt = f1.read()
         
-    pattern = r"LatexMacroNode\(parsing_state=\<parsing state ([0-9]+)\>, pos=([0-9]+), len=([0-9]+), macroname='(DIFadd|DIFdel)',"
+    pattern = r"LatexMacroNode\(parsing_state=\<parsing state ([0-9]+)\>, pos=([0-9]+), len=([0-9]+), macroname='(DIFdel)',"
 
     matches = re.findall(pattern, treeCnt, flags=re.S)
 
-    delCount = 1
     for eachMatch in reversed(matches):
         if eachMatch[3] == "DIFdel":
             st = int(eachMatch[1])
@@ -712,7 +713,19 @@ def ProofPDFConversion(texpath):
 
                 latexCnt = latexCnt[:st] + latexCnt[endGroupNode:]
 
-        elif eachMatch[3] == "DIFadd":
+
+    walkerNodesOne = LatexWalkerIntialization(latexCnt, treePath, fileCnt[1])
+    
+    with open(treePath, "r", encoding=fileCnt[1], errors="ignore") as f1:
+        treeCnt = f1.read()
+        
+    pattern = r"LatexMacroNode\(parsing_state=\<parsing state ([0-9]+)\>, pos=([0-9]+), len=([0-9]+), macroname='(DIFadd)',"
+
+    matches = re.findall(pattern, treeCnt, flags=re.S)
+
+    for eachMatch in reversed(matches):
+
+        if eachMatch[3] == "DIFadd":
             st = int(eachMatch[1])
             en = int(eachMatch[1]) + int(eachMatch[2])
             str_cnt = latexCnt[st: en]
